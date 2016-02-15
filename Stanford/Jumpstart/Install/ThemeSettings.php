@@ -26,6 +26,13 @@ class ThemeSettings extends \AbstractInstallTask {
     variable_set('admin_theme', 'stanford_seven');
     variable_set('node_admin_theme', 1);
 
+     // Set the default theme options.
+    $theme_settings = variable_get('theme_stanford_framework_settings', array());
+    $theme_settings['choosestyle_styleoptions'] = 'style-custom';
+    $theme_settings['fonts'] = 'fonts-sans';
+    $theme_settings['styles'] = 'styles-light';
+    variable_set('theme_stanford_framework_settings', $theme_settings);
+
   }
 
 }

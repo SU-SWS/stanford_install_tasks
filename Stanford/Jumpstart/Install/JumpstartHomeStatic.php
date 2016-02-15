@@ -44,12 +44,6 @@ class JumpstartHomeStatic extends \AbstractInstallTask {
     variable_set('stanford_jumpstart_home_active_body_class', 'stanford-jumpstart-home-palm');
     variable_set('context_status', $context_status);
 
-    // Set the default theme options.
-    $theme_settings = variable_get('theme_stanford_framework_settings', array());
-    $theme_settings['choosestyle_styleoptions'] = 'style-custom';
-    $theme_settings['fonts'] = 'fonts-sans';
-    $theme_settings['styles'] = 'styles-light';
-    variable_set('theme_stanford_framework_settings', $theme_settings);
   }
 
   /**
