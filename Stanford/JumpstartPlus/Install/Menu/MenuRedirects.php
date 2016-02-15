@@ -26,7 +26,7 @@ class MenuRedirects extends \AbstractInstallTask {
     );
 
     foreach ($redirects as $source => $dest) {
-      $redirect = new stdClass();
+      $redirect = new \stdClass();
       $source_path = drupal_lookup_path('source', $source);
 
       if ($source_path == FALSE || $source_path == "<front>" || $source_path == "home") {
