@@ -22,11 +22,9 @@ class BlockSettings extends \AbstractInstallTask {
     // the blocks table with the new themes.
     drupal_flush_all_caches();
 
-    // Check our chosen authentication scheme.
-    $auth_method = variable_get('stanford_sites_auth_method', 'webauth');
-
     // If we're using WMD hide the block.
-    if ($auth_method == 'webauth') {
+    // @todo: Refactor this out once environment stuff is set.
+    if (module_exists("webauth")) {
       db_update('block')
         ->fields(array('status' => 0))
         ->condition('module', 'webauth')

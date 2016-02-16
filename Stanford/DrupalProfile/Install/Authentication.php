@@ -104,6 +104,8 @@ class Authentication extends \AbstractInstallTask {
    */
   public function requirements() {
     return array(
+      'webauth',
+      'webauth_extras',
       'user',
     );
   }

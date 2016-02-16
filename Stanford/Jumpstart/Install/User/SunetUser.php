@@ -39,17 +39,15 @@ class SunetUser extends \AbstractInstallTask {
       $roles = array(DRUPAL_AUTHENTICATED_RID => TRUE, $sunet_role->rid => TRUE, $owner_role->rid => TRUE);
       $edit['roles'] = $roles;
       $user3 = user_save($user3, $edit);
+    }
 
-      // Check our chosen authentication scheme.
-      $auth_method = variable_get('stanford_sites_auth_method', 'webauth');
+    // @TODO: Refactor out once environment stuff is set.
+    if (module_exists('simplesamlphp') && $user3) {
+      user_set_authmaps($user3, array('authname_simplesamlphp_auth' => $authname));
+    }
 
-      if ($auth_method == 'simplesamlphp') {
-        user_set_authmaps($user3, array('authname_simplesamlphp_auth' => $authname));
-      }
-      elseif ($authname == "webauth") {
-        user_set_authmaps($user3, array('authname_webauth' => $authname));
-      }
-
+    if (module_exists("webauth")) {
+      user_set_authmaps($user3, array('authname_webauth' => $authname));
     }
 
   }

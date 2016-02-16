@@ -6,7 +6,7 @@
 
 namespace Environment\Sites\Install;
 
-class GeneralSettings extends \AbstractInstallTask {
+class WebauthSettings extends \AbstractInstallTask {
 
   /**
    * Set the site name.
@@ -22,11 +22,9 @@ class GeneralSettings extends \AbstractInstallTask {
    * @param array $tasks
    */
   public function requirements() {
-    // These are added here so they get enabled at module enable time.
     return array(
-      'stanford_sites_helper',
-      'stanford_sites_systemtools',
-      'stanford_jumpstart_login',
+      'webauth',
+      'webauth_extras',
     );
   }
 
