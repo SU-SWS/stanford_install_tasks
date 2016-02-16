@@ -22,11 +22,8 @@ class SunetUser extends \AbstractInstallTask {
 
     // Need this for UI install.
     require_once DRUPAL_ROOT . '/includes/password.inc';
-    $config_form_data = $install_state['forms']['install_configure_form'];
 
-    $sunetid    = "webservices";
-
-    $sunet = strtolower(trim($sunetid));
+    $sunet = "webservices";
     $authname = $sunet . '@stanford.edu';
     $sunet_role = user_role_load_by_name('SUNet User');
     $owner_role = user_role_load_by_name('site owner');
@@ -46,7 +43,7 @@ class SunetUser extends \AbstractInstallTask {
       user_set_authmaps($user3, array('authname_simplesamlphp_auth' => $authname));
     }
 
-    if (module_exists("webauth")) {
+    if (module_exists("webauth") && $user3) {
       user_set_authmaps($user3, array('authname_webauth' => $authname));
     }
 
