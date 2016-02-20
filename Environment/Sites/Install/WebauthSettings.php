@@ -25,6 +25,7 @@ class WebauthSettings extends \AbstractInstallTask {
     return array(
       'webauth',
       'webauth_extras',
+      // 'stanford_webauth_block', // when it is ready...
     );
   }
 
