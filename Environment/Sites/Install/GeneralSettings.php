@@ -26,7 +26,6 @@ class GeneralSettings extends \AbstractInstallTask {
     return array(
       'stanford_sites_helper',
       'stanford_sites_systemtools',
-      'stanford_jumpstart_login',
     );
   }
 
