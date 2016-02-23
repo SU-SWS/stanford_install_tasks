@@ -23,6 +23,7 @@ class GeneralSettings extends \AbstractInstallTask {
    */
   public function requirements() {
     return array(
+      // List some development modules here.
     );
   }
 
