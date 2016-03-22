@@ -52,11 +52,11 @@ class ImportJSAcademicNodes extends \AbstractInstallTask {
 
     // JSA ONLY CONTENT.
     $filters = array('tid_raw' => array('33'));  // 33 is term id for jsa
-    $view_importer = new SitesContentImporterViews();
+    $view_importer = new \SitesContentImporterViews();
     $view_importer->set_endpoint($endpoint);
     $view_importer->set_resource('content');
     $view_importer->set_filters($filters);
-    $view_importer->add_uuid_restrictions($restrict);
+    $importer->add_uuid_restrictions($restrict);
     $view_importer->import_content_by_views_and_filters();
 
   }
