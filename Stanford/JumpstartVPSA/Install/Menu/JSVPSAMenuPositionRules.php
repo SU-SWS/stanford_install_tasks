@@ -83,7 +83,8 @@ class JSVPSAMenuPositionRules extends \AbstractInstallTask {
       ),
     );
     foreach ($rules as $mp_rule) {
-      $this->insert_menu_rule($mp_rule);
+      $rule = new \Stanford\Utility\Install\InsertMenuRule();
+      $rule->insert_menu_rule($mp_rule);
     }
 
   }
