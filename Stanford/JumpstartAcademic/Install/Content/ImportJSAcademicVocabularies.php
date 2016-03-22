@@ -22,7 +22,7 @@ class ImportJSAcademicVocabularies extends \AbstractInstallTask {
 
     // Restrictions.
     // These entities we do not want even if they appear in the feed.
-    array(
+    $restrict = array(
       'tags',              // tags vocabulary
       'sites_products',    // products vocabulary
     );
