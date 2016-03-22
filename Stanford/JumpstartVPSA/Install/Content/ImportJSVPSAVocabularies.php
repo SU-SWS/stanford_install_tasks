@@ -4,7 +4,7 @@
  * Abstract Task Class.
  */
 
-namespace Stanford\Jumpstart\Install\Content;
+namespace Stanford\JumpstartVPSA\Install\Content;
 /**
  *
  */
