@@ -14,7 +14,7 @@ namespace Stanford\JumpstartVPSA\Install\Content;
 class ImportJSVPSABeans extends \AbstractInstallTask {
 
   /**
-   * Set the site name.
+   * Import JSVPSA BEANs.
    *
    * @param array $args
    *   Installation arguments.

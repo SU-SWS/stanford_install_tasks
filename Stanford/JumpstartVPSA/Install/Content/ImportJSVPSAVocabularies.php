@@ -11,7 +11,7 @@ namespace Stanford\JumpstartVPSA\Install\Content;
 class ImportJSVPSAVocabularies extends \AbstractInstallTask {
 
   /**
-   * Set the site name.
+   * Import JSVPSA Vocabularies and terms.
    *
    * @param array $args
    *   Installation arguments.
