@@ -1,8 +1,7 @@
 <?php
 /**
  * @file
- * This function saves all of the available views in to the database so that
- * the menu system can find them.
+ * This function creates a new Menu Position rule.
  */
 
 namespace Stanford\Utility\Install;
