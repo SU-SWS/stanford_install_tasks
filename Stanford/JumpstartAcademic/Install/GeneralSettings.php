@@ -4,7 +4,7 @@
  * Abstract Task Class.
  */
 
-namespace Stanford\SitesAcademic\Install;
+namespace Stanford\JumpstartAcademic\Install;
 /**
  *
  */
