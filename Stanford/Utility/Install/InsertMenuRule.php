@@ -8,8 +8,6 @@
 namespace Stanford\Utility\Install;
 
 /**
- *
-/**
  * Create new Menu Position Rule.
  * @param array $mp_rules A multidimensional array with the following keys:
  * 'link_title' : Link title in the Main Menu. Assuming depth of 1
@@ -20,7 +18,7 @@ namespace Stanford\Utility\Install;
 class InsertMenuRule extends \AbstractInstallTask {
 
 
-  public function insert_menu_rule(&$args = array()) {
+  public function insert_menu_rule(&$mp_rule = array()) {
 
     module_load_include('inc', 'menu_position', 'menu_position.admin');
     // Get the mlid of the parent link.
