@@ -23,6 +23,20 @@ class ImportJSVPSANodes extends \AbstractInstallTask {
 
     $endpoint = "https://sites.stanford.edu/jsa-content/jsainstall";
 
+    // All RECENT CONTENT.
+    $content_types = array(
+      // 'stanford_event', removed in order to allow for specific tagging.
+      'stanford_news_item',
+      'stanford_slide',
+      'stanford_person',
+    );
+    $importer = new \SitesContentImporter();
+    $importer->set_endpoint($endpoint);
+    // Tell the importer what is what.
+    $importer->add_import_content_type($content_types);
+    // Calling this imports the 20 most recent of each content type.
+    $importer->importer_content_nodes_recent_by_type();
+
     // JSVPSA ONLY CONTENT - Tid 39 = JSVPSA.
     $filters = array('sites_products' => array('39'));
     $view_importer = new \SitesContentImporterViews();
