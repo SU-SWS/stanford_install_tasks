@@ -32,6 +32,7 @@ class ImportJSVPSANodes extends \AbstractInstallTask {
     );
     $importer = new \SitesContentImporter();
     $importer->set_endpoint($endpoint);
+    $importer->add_field_processor(array("body" => "\Stanford\Jumpstart\Install\Content\Importer\ImporterFieldProcessorCustomBody"));
     // Tell the importer what is what.
     $importer->add_import_content_type($content_types);
     // Calling this imports the 20 most recent of each content type.
