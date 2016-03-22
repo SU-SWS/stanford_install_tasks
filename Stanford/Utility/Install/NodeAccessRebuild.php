@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * This function removes any view that has been saved to the database.
+ * This function rebuilds the node access database.
  */
 
 namespace Stanford\Utility\Install;
