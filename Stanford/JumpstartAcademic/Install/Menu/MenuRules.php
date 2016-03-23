@@ -52,17 +52,17 @@ class MenuRules extends \AbstractInstallTask {
     //    ),
     //  ),
     //);
-    //$rules[] = array(
-    //  'link_title' => 'Events',
-    //  'admin_title' => 'Events by content type',
-    //  'conditions' => array(
-    //    'content_type' => array(
-    //      'content_type' => array(
-    //        'stanford_event' => 'stanford_event',
-    //      ),
-    //    ),
-    //  ),
-    //);
+    $rules[] = array(
+      'link_title' => 'Events',
+      'admin_title' => 'Events by content type',
+      'conditions' => array(
+        'content_type' => array(
+          'content_type' => array(
+            'stanford_event' => 'stanford_event',
+          ),
+        ),
+      ),
+    );
     $rules[] = array(
       'link_title' => 'Events',
       'admin_title' => 'Events by path',
