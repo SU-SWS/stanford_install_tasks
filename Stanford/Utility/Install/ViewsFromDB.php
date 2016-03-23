@@ -5,8 +5,13 @@
  */
 
 namespace Stanford\Utility\Install;
+
 /**
- *
+ * Removes all the default views from the DB after the site has been built.
+ * Menu needs them to exist in the DB during the installation process as it
+ * is unable to read the views and page paths from the features when saving
+ * menu items this early in the sites life. A side effect is that all the
+ * default views are enabled when saved to the db and they should not be.
  */
 class ViewsFromDB extends \AbstractInstallTask {
 
