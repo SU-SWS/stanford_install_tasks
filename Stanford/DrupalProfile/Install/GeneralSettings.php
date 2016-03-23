@@ -60,7 +60,7 @@ class GeneralSettings extends \AbstractInstallTask {
    */
   public function requirements() {
     return array(
-      'openlayers',
+      //'openlayers', // We set the variable to point to an external CDN for the OpenLayers library, but don't want to enable by default.
       'pathauto',
       'node',
     );

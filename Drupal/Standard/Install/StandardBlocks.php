@@ -25,7 +25,8 @@ class StandardBlocks extends \AbstractInstallTask {
         'theme' => $admin_theme,
         'status' => 1,
         'weight' => 10,
-        'region' => 'dashboard_main',
+        // Region is set to 'dashboard_main' in the Standard installation profile, but we don't want dashboard as a dependency.
+        'region' => -1,
         'pages' => '',
         'cache' => -1,
       ),
@@ -65,7 +66,8 @@ class StandardBlocks extends \AbstractInstallTask {
         'theme' => $admin_theme,
         'status' => 1,
         'weight' => 0,
-        'region' => 'dashboard_sidebar',
+        // Region is set to 'dashboard_main' in the Standard installation profile, but we don't want dashboard as a dependency.
+        'region' => -1,
         'pages' => '',
         'cache' => -1,
       ),
@@ -75,7 +77,8 @@ class StandardBlocks extends \AbstractInstallTask {
         'theme' => $admin_theme,
         'status' => 1,
         'weight' => -10,
-        'region' => 'dashboard_sidebar',
+        // Region is set to 'dashboard_main' in the Standard installation profile, but we don't want dashboard as a dependency.
+        'region' => -1,
         'pages' => '',
         'cache' => -1,
       ),
@@ -174,7 +177,7 @@ class StandardBlocks extends \AbstractInstallTask {
       'search',
       'system',
       'node',
-      'dashboard',
+      // 'dashboard', // We don't want to enable dashboard. See comments above.
     );
   }
 
