@@ -6,9 +6,18 @@
  */
 
 namespace Stanford\Utility\Install;
+
 /**
+ * Menu imports process does not find any paths from views defined in
+ * features at this point. We will need to make it aware of them before
+ * trying to import the menus links. Menu import uses drupal_valid_path() in
+ * order to determine if a path is valid. drupal_valid_path() looks into the
+ * menu router table for paths. At this point the menu_router table does not
+ * have any views urls.
  *
+ * menu_rebuild() doesn't work. Nice try!
  */
+
 class ViewsToDB extends \AbstractInstallTask {
 
 
