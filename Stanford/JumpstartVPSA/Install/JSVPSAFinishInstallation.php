@@ -33,10 +33,6 @@ class JSVPSAFinishInstallation extends \AbstractInstallTask {
     // Call flush all caches so that the blocks table gets populated.
     drupal_static_reset();
     drupal_flush_all_caches();
-    // Revert dem all!
-    // features_rebuild();
-    // features_revert();
-    features_revert('stanford_video');
     // Small fix for a menu bug
     db_update('menu_links')
       ->fields(array(
