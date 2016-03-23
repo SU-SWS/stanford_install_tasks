@@ -43,35 +43,35 @@ class MenuRules extends \AbstractInstallTask {
         ),
       ),
     );
-    $rules[] = array(
-      'link_title' => 'News',
-      'admin_title' => 'News by path',
-      'conditions' => array(
-        'pages' => array(
-          'pages' => 'news/*',
-        ),
-      ),
-    );
-    $rules[] = array(
-      'link_title' => 'Events',
-      'admin_title' => 'Events by content type',
-      'conditions' => array(
-        'content_type' => array(
-          'content_type' => array(
-            'stanford_event' => 'stanford_event',
-          ),
-        ),
-      ),
-    );
-    $rules[] = array(
-      'link_title' => 'Events',
-      'admin_title' => 'Events by path',
-      'conditions' => array(
-        'pages' => array(
-          'pages' => 'events/*',
-        ),
-      ),
-    );
+    //$rules[] = array(
+    //  'link_title' => 'News',
+    //  'admin_title' => 'News by path',
+    //  'conditions' => array(
+    //    'pages' => array(
+    //      'pages' => 'news/*',
+    //    ),
+    //  ),
+    //);
+    //$rules[] = array(
+    //  'link_title' => 'Events',
+    //  'admin_title' => 'Events by content type',
+    //  'conditions' => array(
+    //    'content_type' => array(
+    //      'content_type' => array(
+    //        'stanford_event' => 'stanford_event',
+    //      ),
+    //    ),
+    //  ),
+    //);
+    //$rules[] = array(
+    //  'link_title' => 'Events',
+    //  'admin_title' => 'Events by path',
+    //  'conditions' => array(
+    //    'pages' => array(
+    //      'pages' => 'events/*',
+    //    ),
+    //  ),
+    //);
 
     foreach ($rules as $mp_rule) {
       $rule = new \Stanford\Utility\Install\InsertMenuRule();
