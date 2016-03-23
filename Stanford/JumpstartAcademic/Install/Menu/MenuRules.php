@@ -23,15 +23,15 @@ class MenuRules extends \AbstractInstallTask {
     variable_set('menu_position_active_link_display', 'parent');
     // Define the rules.
     $rules = array();
-    $rules[] = array(
-      'link_title' => 'About',
-      'admin_title' => 'About by path',
-      'conditions' => array(
-        'pages' => array(
-          'pages' => 'about/*',
-        ),
-      ),
-    );
+    //$rules[] = array(
+    //  'link_title' => 'About',
+    //  'admin_title' => 'About by path',
+    //  'conditions' => array(
+    //    'pages' => array(
+    //      'pages' => 'about/*',
+    //    ),
+    //  ),
+    //);
     //$rules[] = array(
     //  'link_title' => 'News',
     //  'admin_title' => 'News by content type',
