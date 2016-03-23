@@ -73,23 +73,11 @@ class MenuRules extends \AbstractInstallTask {
       ),
     );
 
-    //foreach ($rules as $mp_rule) {
-    //  $this->insert_menu_rule($mp_rule);
-    //}
     foreach ($rules as $mp_rule) {
       $rule = new \Stanford\Utility\Install\InsertMenuRule();
       $rule->insert_menu_rule($mp_rule);
     }
 
-  }
-
-  /**
-   * Requirements. Duh.
-   */
-  public function requirements() {
-    return array(
-      'menu_position',
-    );
   }
 
 }
