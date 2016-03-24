@@ -18,7 +18,10 @@ class CreateMenuLinks extends \AbstractInstallTask {
 
 
   public function execute(&$args = array()) {
-
+    // Rebuild the menu cache before starting this.
+    drupal_static_reset();
+    menu_cache_clear_all();
+    menu_rebuild();
     // Loop through each of the items and save them.
     foreach ($args as $k => $v) {
       // Check to see if there is a parent declaration. If there is then find
