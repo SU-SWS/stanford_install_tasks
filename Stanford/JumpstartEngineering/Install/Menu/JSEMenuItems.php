@@ -273,17 +273,19 @@ class JSEMenuItems extends \AbstractInstallTask {
     menu_rebuild();
     $items[] = $main_menu;
     // Loop through each of the items and save them.
-    foreach($items as $k => $v) {
-      // Check to see if there is a parent declaration. If there is then find
-      // the mlid of the parent item and attach it to the menu item being saved.
-      if (isset($v['parent'])) {
-        $v['plid'] = $items[$v['parent']]['mlid'];
-        unset($v['parent']); // Remove fluff before save.
+    foreach ($items as $index_one => $item) {
+      foreach($item as $k => $v) {
+        // Check to see if there is a parent declaration. If there is then find
+        // the mlid of the parent item and attach it to the menu item being saved.
+        if (isset($v['parent'])) {
+          $v['plid'] = $item[$v['parent']]['mlid'];
+          unset($v['parent']); // Remove fluff before save.
+        }
+        // Save the menu item.
+        $mlid = menu_link_save($v);
+        $v['mlid'] = $mlid;
+        $item[$k] = $v;
       }
-      // Save the menu item.
-      $mlid = menu_link_save($v);
-      $v['mlid'] = $mlid;
-      $items[$k] = $v;
     }
 
   }
