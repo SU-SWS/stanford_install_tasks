@@ -274,18 +274,23 @@ class JSEMenuItems extends \AbstractInstallTask {
     $items[] = $main_menu;
     // Loop through each of the items and save them.
     foreach ($items as $index_one => $item) {
-      foreach($item as $k => $v) {
-        // Check to see if there is a parent declaration. If there is then find
-        // the mlid of the parent item and attach it to the menu item being saved.
-        if (isset($v['parent'])) {
-          $v['plid'] = $item[$v['parent']]['mlid'];
-          unset($v['parent']); // Remove fluff before save.
-        }
-        // Save the menu item.
-        $mlid = menu_link_save($v);
-        $v['mlid'] = $mlid;
-        $item[$k] = $v;
-      }
+      $linker = new \Stanford\Utility\Install\CreateMenuLinks();
+      $linker->execute($item);
+    }
+
+
+    // The home link weight needs to change.
+    $home_search = db_select('menu_links', 'ml')
+      ->fields('ml', array('mlid'))
+      ->condition('menu_name', 'main-menu')
+      ->condition('link_path', '<front>')
+      ->condition('link_title', 'Home')
+      ->execute()
+      ->fetchAssoc();
+    if (is_numeric($home_search['mlid'])) {
+      $menu_link = menu_link_load($home_search['mlid']);
+      $menu_link['weight'] = -50;
+      menu_link_save($menu_link);
     }
 
   }
