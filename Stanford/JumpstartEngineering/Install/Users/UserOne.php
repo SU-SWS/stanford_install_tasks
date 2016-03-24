@@ -20,6 +20,7 @@ class UserOne extends \AbstractInstallTask {
   public function execute(&$args = array()) {
 
     // Change user 1, currently admin, to jse-admins
+    $admin_role = user_role_load_by_name('administrator');
     $account = user_load(1, TRUE);
     $edit = array();
     $edit['mail'] = "jse-admins@lists.stanford.edu";
