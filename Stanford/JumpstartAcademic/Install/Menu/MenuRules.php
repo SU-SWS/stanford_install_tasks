@@ -32,26 +32,26 @@ class MenuRules extends \AbstractInstallTask {
     //    ),
     //  ),
     //);
-    //$rules[] = array(
-    //  'link_title' => 'News',
-    //  'admin_title' => 'News by content type',
-    //  'conditions' => array(
-    //    'content_type' => array(
-    //      'content_type' => array(
-    //        'stanford_news_item' => 'stanford_news_item',
-    //      ),
-    //    ),
-    //  ),
-    //);
-    //$rules[] = array(
-    //  'link_title' => 'News',
-    //  'admin_title' => 'News by path',
-    //  'conditions' => array(
-    //    'pages' => array(
-    //      'pages' => 'news/*',
-    //    ),
-    //  ),
-    //);
+    $rules[] = array(
+      'link_title' => 'News',
+      'admin_title' => 'News by content type',
+      'conditions' => array(
+        'content_type' => array(
+          'content_type' => array(
+            'stanford_news_item' => 'stanford_news_item',
+          ),
+        ),
+      ),
+    );
+    $rules[] = array(
+      'link_title' => 'News',
+      'admin_title' => 'News by path',
+      'conditions' => array(
+        'pages' => array(
+          'pages' => 'news/*',
+        ),
+      ),
+    );
     $rules[] = array(
       'link_title' => 'Events',
       'admin_title' => 'Events by content type',
