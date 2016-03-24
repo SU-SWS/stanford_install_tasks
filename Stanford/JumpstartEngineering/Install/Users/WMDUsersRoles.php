@@ -23,9 +23,9 @@ class WMDUsersRoles extends \AbstractInstallTask {
     // Need this for UI install.
     require_once DRUPAL_ROOT . '/includes/password.inc';
     $install_vars = variable_get('stanford_jumpstart_install', array());
-    $config_form_data = $install_state['forms']['install_configure_form'];
+    $config_form_data = $args['forms']['install_configure_form'];
     // Get some stored variables.
-    if ($install_state['interactive']) {
+    if ($args['interactive']) {
       $full_name = isset($install_vars['full_name']) ? $install_vars['full_name'] : "School of Engineering";
       $sunetid = isset($install_vars['sunetid']) ? $install_vars['sunetid'] : 'jse-admins';
     }
