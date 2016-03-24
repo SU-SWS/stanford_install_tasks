@@ -19,7 +19,7 @@ class ThemeSettings extends \AbstractInstallTask {
   public function execute(&$args = array()) {
 
     // Enable themes.
-    $themes = array('stanford_framework', 'stanford_seven');
+    $themes = array('stanford_framework', 'stanford_seven', 'open_framework');
     theme_enable($themes);
 
     variable_set('theme_default', 'stanford_framework');

@@ -24,7 +24,7 @@ class FixAliases extends \AbstractInstallTask {
     $map = array(
       'news/announcements'      => 'news',
       'events/upcoming-events'  => 'events',
-      'about/about-us'          => 'about',
+      'about/about-us-0'          => 'about',
     );
     // Update alias table.
     foreach ($map as $existing => $new) {

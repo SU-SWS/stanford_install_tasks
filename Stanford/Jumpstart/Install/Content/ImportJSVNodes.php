@@ -24,7 +24,7 @@ class ImportJSVNodes extends \AbstractInstallTask {
     $endpoint = "https://sites.stanford.edu/jsa-content/jsainstall";
 
     // JSV ONLY CONTENT - Tid 35 = JSV.
-    $filters = array('sites_products' => array('35'));
+    $filters = array('tid_raw' => array('35'));
     $view_importer = new \SitesContentImporterViews();
     $view_importer->set_endpoint($endpoint);
     $view_importer->set_resource('content');
