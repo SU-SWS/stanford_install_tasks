@@ -113,4 +113,17 @@ class CAPxDisplay extends \AbstractInstallTask {
 
     context_save($context);
   }
+
+  /**
+   * Define module requirements.
+   * @return array An array of required modules.
+   */
+  public function requirements() {
+    return array(
+      'context',
+      'contextual_view_modes',
+      'stanford_capx',
+    );
+  }
+
 }
