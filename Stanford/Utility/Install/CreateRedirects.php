@@ -51,6 +51,14 @@ class CreateRedirects extends \AbstractInstallTask {
 
   }
 
+  /**
+   * Define module requirements.
+   * @return array An array of required modules.
+   */
+  public function requirements() {
+    return array(
+      'redirect',
+    );
+  }
+
 }
-
-
