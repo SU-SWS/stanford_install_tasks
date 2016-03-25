@@ -29,12 +29,6 @@ class PicalHomepage extends \AbstractInstallTask {
     $enabled['stanford_jumpstart_home_morris'] = 1;
     $enabled['stanford_jumpstart_home_terman'] = 1;
     $enabled['stanford_jumpstart_home_pettit'] = 1;
-    // Disable these layouts.
-    unset($enabled['stanford_jumpstart_home_lomita']);
-    unset($enabled['stanford_jumpstart_home_mayfield_news_events']);
-    unset($enabled['stanford_jumpstart_home_palm_news_events']);
-    unset($enabled['stanford_jumpstart_home_panama_news_events']);
-    unset($enabled['stanford_jumpstart_home_serra_news_events']);
     unset($context_status['']);
     foreach ($names as $context_name) {
       $context_status[$context_name] = TRUE;
