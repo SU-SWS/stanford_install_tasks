@@ -9,13 +9,13 @@ namespace Stanford\Utility\Install;
 class CreateRedirects extends \AbstractInstallTask {
 
 
+  /**
+   * Create redirects
+   * @param $args an array where the key is the "from" path and the value is the "to" path.
+   *
+   * E.g., array("source" => "destination", "from" => "to")
+   */
   public function execute(&$args = array()) {
-    /**
-     * Create redirects
-     * @param $args an array where the key is the "from" path and the value is the "to" path.
-     *
-     * E.g., array("source" => "destination", "from" => "to")
-     */
     foreach ($args as $source => $dest) {
       $redirect = new \stdClass();
       $source_path = drupal_lookup_path('source', $source);
@@ -60,5 +60,6 @@ class CreateRedirects extends \AbstractInstallTask {
       'redirect',
     );
   }
+
 
 }
