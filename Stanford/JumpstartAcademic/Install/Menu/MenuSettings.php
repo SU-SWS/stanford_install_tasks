@@ -503,7 +503,7 @@ class MenuSettings extends \AbstractInstallTask {
     $items[] = $footer_academics;
     $items[] = $footer_news_events;
     $items[] = $footer_people;
-.
+
     // Loop through each of the items and save them.
     foreach ($items as $index_one => $item) {
       foreach($item as $k => $v) {
