@@ -33,4 +33,14 @@ class UserOne extends \AbstractInstallTask {
     $edit['timezone'] = variable_get('date_default_timezone', '');
     $account = user_save($account, $edit);
   }
+
+  /**
+   * Define module requirements.
+   * @return array An array of required modules.
+   */
+  public function requirements() {
+    return array(
+      'user',
+    );
+  }
 }
