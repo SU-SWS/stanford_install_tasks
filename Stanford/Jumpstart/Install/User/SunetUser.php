@@ -18,7 +18,7 @@ class SunetUser extends \AbstractInstallTask {
    */
   public function execute(&$args = array()) {
 
-    $install_state = $args['install_state'];
+    $install_state = $args;
 
     // Need this for UI install.
     require_once DRUPAL_ROOT . '/includes/password.inc';
@@ -56,10 +56,50 @@ class SunetUser extends \AbstractInstallTask {
    * @return [type]              [description]
    */
   public function form(&$form, &$form_state) {
-    $form["sites"]["mynewfield"] = array(
+    /**
+     * Grab requester's SUNetID.
+     * We will be setting this programatically so we do not want to present it to the user.
+     */
+    $form["sites"]["stanford_sites_requester_sunetid"] = array(
       "#type" => "textfield",
-      "#title" => t("My Sample field is nice."),
-      "#description" => t("I am a wombat"),
+      "#title" => t("SUNetID."),
+      "#description" => t("Requester's SUNetID."),
+      "#default_value" => "",
+    );
+  
+    /**
+     * Grab requester's preferred name.
+     * We will be setting this programatically so we do not want to present it to the user.
+     */
+    $form["sites"]['stanford_sites_requester_name'] = array(
+      "#type" => "textfield",
+      "#title" => t("Name."),
+      "#description" => t("Requester's preferred name"),
+      "#default_value" => "",
+    );
+  
+  
+    /**
+     * Grab requester's preferred email.
+     * We will be setting this programatically so we do not want to present it to the user.
+     */
+    $form["sites"]['stanford_sites_requester_email'] = array(
+      "#type" => "textfield",
+      "#title" => t("Email."),
+      "#description" => t("Requester's preferred email."),
+      "#default_value" => "",
+    );
+  
+    /**
+     * Set org type: group or dept.
+     * Blank if a personal site.
+     * We will be setting this programatically so we do not want to present it to the user.
+     */
+    $form['stanford_sites_org_type'] = array(
+      "#type" => "textfield",
+      "#title" => t("Group."),
+      "#description" => t("Requester's preferred email."),
+      "#default_value" => "",
     );
   }
 
