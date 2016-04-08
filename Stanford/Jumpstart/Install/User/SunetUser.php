@@ -50,6 +50,20 @@ class SunetUser extends \AbstractInstallTask {
   }
 
   /**
+   * [form description]
+   * @param  [type] &$form       [description]
+   * @param  [type] &$form_state [description]
+   * @return [type]              [description]
+   */
+  public function form(&$form, &$form_state) {
+    $form["sites"]["mynewfield"] = array(
+      "#type" => "textfield",
+      "#title" => t("My Sample field is nice."),
+      "#description" => t("I am a wombat"),
+    );
+  }
+
+  /**
    * [requirements description].
    *
    * @return [type] [description]
