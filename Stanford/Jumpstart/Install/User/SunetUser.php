@@ -102,13 +102,9 @@ class SunetUser extends \AbstractInstallTask {
 
     foreach ($keys as $key) {
       if (empty($values[$key])) {
-        form_set_error($key, $key . " must not be empty");
+        form_set_error($key, $key . " must not be empty.");
       }
     }
-  }
-
-  public function submit(&$form, &$form_state) {
-    // Do something?
   }
 
   /**
