@@ -95,12 +95,16 @@ class SunetUser extends \AbstractInstallTask {
      * Blank if a personal site.
      * We will be setting this programatically so we do not want to present it to the user.
      */
-    $form['stanford_sites_org_type'] = array(
+    $form["sites"]['stanford_sites_org_type'] = array(
       "#type" => "textfield",
       "#title" => t("Group."),
       "#description" => t("Requester's preferred email."),
       "#default_value" => "",
     );
+  }
+  
+  public function submit(&$form, &$form_state) {
+
   }
 
   /**
