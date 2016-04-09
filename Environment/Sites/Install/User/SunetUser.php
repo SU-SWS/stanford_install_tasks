@@ -4,7 +4,7 @@
  * Abstract Task Class.
  */
 
-namespace Stanford\Jumpstart\Install\User;
+namespace Environment\Sites\Install\User;
 /**
  *
  */
