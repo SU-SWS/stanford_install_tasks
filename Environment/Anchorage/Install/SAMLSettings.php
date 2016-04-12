@@ -24,7 +24,7 @@ class SAMLSettings extends \AbstractInstallTask {
    */
   public function requirements() {
     return array(
-      'stanford_SAML_block', // On environment brach.
+      'stanford_saml_block', // On environment brach.
     );
   }
 
