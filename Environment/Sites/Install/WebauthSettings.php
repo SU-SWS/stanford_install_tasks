@@ -24,7 +24,6 @@ class WebauthSettings extends \AbstractInstallTask {
   public function requirements() {
     return array(
       'webauth',
-      'webauth_extras',
       'stanford_webauth_block', // on environment branch
     );
   }
