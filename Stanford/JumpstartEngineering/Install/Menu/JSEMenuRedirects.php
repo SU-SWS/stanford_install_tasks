@@ -32,7 +32,6 @@ class JSEMenuRedirects extends \AbstractInstallTask {
     $redirecter = new \Stanford\Utility\Install\CreateRedirects();
     $redirecter->execute($redirects);
 
-
   }
 
 }

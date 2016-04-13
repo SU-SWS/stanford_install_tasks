@@ -17,12 +17,10 @@ class PicalPeople extends \AbstractInstallTask {
    *   Installation arguments.
    */
   public function execute(&$args = array()) {
-
     $context_status = variable_get('context_status', array());
     // Disable this context - We don't want the "Why I teach block".
     $context_status['people_faculty'] = TRUE;
     variable_set('context_status', $context_status);
-
   }
 
 }

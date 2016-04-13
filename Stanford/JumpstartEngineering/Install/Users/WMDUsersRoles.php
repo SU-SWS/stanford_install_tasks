@@ -4,7 +4,7 @@
  * Create and update users; map roles
  */
 
-namespace Stanford\JumpstartEngineering\Install\Users;
+namespace Stanford\JumpstartEngineering\Install\Sites;
 /**
  *
  */
@@ -23,41 +23,104 @@ class WMDUsersRoles extends \AbstractInstallTask {
     // Need this for UI install.
     require_once DRUPAL_ROOT . '/includes/password.inc';
 
-    $config_form_data = $args['forms']['install_configure_form'];
+    // Get config from the install form.
+    $sunetid = strtolower(trim($args['forms']['install_configure_form']['stanford_sites_requester_sunetid']));
+    $fullName = $args['forms']['install_configure_form']['stanford_sites_requester_name'];
+    $email = $args['forms']['install_configure_form']['stanford_sites_requester_email'];
 
-    // @todo: Get name and sunet from form.
-
-    $full_name = "Engineering"; // unsued var?
-    $sunetid = "jse-admins";
-
-    $sunet = strtolower(trim($sunetid));
-    $authname = $sunet . '@stanford.edu';
-    $sunet_role = user_role_load_by_name('SUNet User');
-    $owner_role = user_role_load_by_name('site owner');
-
-    // Change the sunet requester user to site owner.
-    $edit = array();
-    $user3 = user_load_by_mail($authname);
-
-    if ($user3) {
-
-      $roles = array(
-        DRUPAL_AUTHENTICATED_RID => TRUE,
-        $sunet_role->rid => TRUE,
-        $owner_role->rid => TRUE
-      );
-
-      $edit['roles'] = $roles;
-      $user3 = user_save($user3, $edit);
-      user_set_authmaps($user3, array('authname_webauth' => $authname));
+    if (empty($sunetid)) {
+      $sunetid = "jse-admins";
     }
+
+    if (empty($fullName)) {
+      $fullName = "Engineering";
+    }
+
+    if (empty($email)) {
+      $email = $sunetid . "@stanford.edu";
+    }
+
+    $authName = $sunet . '@stanford.edu';
+    $sunetRole = user_role_load_by_name('SUNet User');
+    $ownerRole = user_role_load_by_name('site owner');
+
+    if (!is_numeric($sunetRole->rid) || !is_numeric($ownerRole->rid)) {
+      throw new \Exception("A role or roles were missing when trying to create a sunet user");
+    }
+
+    $account = new \stdClass();
+    $account->is_new = TRUE;
+    $account->name = $fullName;
+    $account->pass = user_hash_password(user_password());
+    $account->mail = $email;
+    $account->init = $authName;
+    $account->status = TRUE;
+    $roles = array(DRUPAL_AUTHENTICATED_RID => TRUE, $sunetRole->rid => TRUE, $ownerRole->rid => TRUE);
+    $account->roles = $roles;
+    $account->timezone = variable_get('date_default_timezone', '');
+    $account = user_save($account);
+
+    user_set_authmaps($account, array('authname_webauth' => $authName));
 
     // Map soe:jse-admins to administrator role
-    // drush wamr soe:jse-admins administrator
-    if (module_exists('webauth_extras')) {
-      module_load_include('inc', 'webauth_extras', 'webauth_extras.drush');
-      drush_webauth_extras_webauth_map_role('soe:jse-admins', 'administrator');
-    }
+    // drush wamr soe:jse-admins administrator.
+    module_load_include('inc', 'webauth_extras', 'webauth_extras.drush');
+    drush_webauth_extras_webauth_map_role('soe:jse-admins', 'administrator');
 
   }
+
+
+  /**
+   * [form description]
+   * @param  [type] &$form       [description]
+   * @param  [type] &$form_state [description]
+   * @return [type]              [description]
+   */
+  public function form(&$form, &$form_state) {
+    /**
+     * Grab requester's SUNetID.
+     * We will be setting this programatically so we do not want to present it to the user.
+     */
+    $form["sites"]["stanford_sites_requester_sunetid"] = array(
+      "#type" => "textfield",
+      "#title" => t("SUNetID."),
+      "#description" => t("Requester's SUNetID."),
+    );
+
+    /**
+     * Grab requester's preferred name.
+     * We will be setting this programatically so we do not want to present it to the user.
+     */
+    $form["sites"]['stanford_sites_requester_name'] = array(
+      "#type" => "textfield",
+      "#title" => t("Name."),
+      "#description" => t("Requester's preferred name"),
+    );
+
+
+    /**
+     * Grab requester's preferred email.
+     * We will be setting this programatically so we do not want to present it to the user.
+     */
+    $form["sites"]['stanford_sites_requester_email'] = array(
+      "#type" => "textfield",
+      "#title" => t("Email."),
+      "#description" => t("Requester's preferred email."),
+    );
+
+  }
+
+  /**
+   * [requirements description].
+   *
+   * @return [type] [description]
+   */
+  public function requirements() {
+    return array(
+      'user',
+      'webauth',
+      'webauth_extras',
+    );
+  }
+
 }
