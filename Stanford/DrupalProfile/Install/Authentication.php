@@ -19,24 +19,13 @@ class Authentication extends \AbstractInstallTask {
    *   Installation arguments.
    */
   public function execute(&$args = array()) {
-    $helper = new \Stanford\DrupalProfile\Install\StanfordSites\SitesHelper();
-    // Enable our chosen authentication scheme.
-    // 'webauth' = WMD, 'simplesamlphp' = SimpleSAML.
-    $auth_method = variable_get('stanford_sites_auth_method', 'webauth');
-    if ($auth_method == 'simplesamlphp') {
-      module_enable(array('simplesamlphp_auth', 'stanford_ssp'));
-    }
-    else {
-      module_enable(array('webauth'));
-      if ($helper->stanfordSitesHosted()) {
-        module_enable(array('stanford_afs_quota'));
-        $this->stanfordSitesAddWebauthUser(
-          variable_get('stanford_sites_requester_sunetid'),
-          variable_get('stanford_sites_requester_name'),
-          variable_get('stanford_sites_requester_email')
-        );
-      }
-    }
+
+    $this->stanfordSitesAddWebauthUser(
+      variable_get('stanford_sites_requester_sunetid'),
+      variable_get('stanford_sites_requester_name'),
+      variable_get('stanford_sites_requester_email')
+    );
+
   }
 
 

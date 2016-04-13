@@ -18,8 +18,8 @@ class GeneralConfig extends \AbstractInstallTask {
 
     // Enable default permissions for system roles.
     $filtered_html_permission = "use text format filtered_html";
-    user_role_grant_permissions(DRUPAL_ANONYMOUS_RID, array('access content', 'access comments', $filtered_html_permission));
-    user_role_grant_permissions(DRUPAL_AUTHENTICATED_RID, array('access content', 'access comments', 'post comments', 'skip comment approval', $filtered_html_permission));
+    user_role_grant_permissions(DRUPAL_ANONYMOUS_RID, array('access content', $filtered_html_permission));
+    user_role_grant_permissions(DRUPAL_AUTHENTICATED_RID, array('access content', $filtered_html_permission));
 
     // Enable the admin theme.
     db_update('system')
@@ -39,7 +39,6 @@ class GeneralConfig extends \AbstractInstallTask {
    */
   public function requirements() {
     return  array(
-      'comment',
       'filter',
     );
   }

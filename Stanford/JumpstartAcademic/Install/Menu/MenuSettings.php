@@ -24,35 +24,35 @@ class MenuSettings extends \AbstractInstallTask {
     drupal_static_reset();
     menu_cache_clear_all();
     menu_rebuild();
-    
+
     /////////////////////////////////////////////////////////////////////////////
     // Jumpstart Academic Main Menus
     /////////////////////////////////////////////////////////////////////////////
-    
-    // Academics
+
+    // Academics.
     $main_menu['academics'] = array(
       'link_path' => drupal_get_normal_path('academics'),
       'link_title' => 'Academics',
       'menu_name' => 'main-menu',
       'weight' => -48,
-    );  
-    // Academics Overview
+    );
+    // Academics Overview.
     $main_menu['academics/academics-overview'] = array(
       'link_path' => drupal_get_normal_path('academics/academics-overview'),
       'link_title' => 'Overview',
       'menu_name' => 'main-menu',
       'weight' => -50,
       'parent' => 'academics',
-    );    
-    // Undergraduate Program
+    );
+    // Undergraduate Program.
     $main_menu['academics/undergraduate-program'] = array(
       'link_path' => drupal_get_normal_path('academics/undergraduate-program'),
       'link_title' => 'Undergraduate Program',
       'menu_name' => 'main-menu',
       'weight' => -48,
       'parent' => 'academics',
-    );   
-    // Major
+    );
+    // Major.
     $main_menu['academics/undergraduate-program/major'] = array(
       'link_path' => drupal_get_normal_path('academics/undergraduate-program/major'),
       'link_title' => 'Major',
@@ -60,7 +60,7 @@ class MenuSettings extends \AbstractInstallTask {
       'weight' => -48,
       'parent' => 'academics/undergraduate-program',
     );
-    // Minor
+    // Minor.
     $main_menu['academics/undergraduate-program/minor'] = array(
       'link_path' => drupal_get_normal_path('academics/undergraduate-program/minor'),
       'link_title' => 'Minor',
@@ -68,7 +68,7 @@ class MenuSettings extends \AbstractInstallTask {
       'weight' => -46,
       'parent' => 'academics/undergraduate-program',
     );
-    // Honors
+    // Honors.
     $main_menu['academics/undergraduate-program/honors'] = array(
       'link_path' => drupal_get_normal_path('academics/undergraduate-program/honors'),
       'link_title' => 'Honors',
@@ -76,7 +76,7 @@ class MenuSettings extends \AbstractInstallTask {
       'weight' => -44,
       'parent' => 'academics/undergraduate-program',
     );
-    // Coterminal Masters
+    // Coterminal Masters.
     $main_menu['academics/undergraduate-program/coterminal-masters'] = array(
       'link_path' => drupal_get_normal_path('academics/undergraduate-program/coterminal-masters'),
       'link_title' => 'Coterminal Masters',
@@ -84,7 +84,7 @@ class MenuSettings extends \AbstractInstallTask {
       'weight' => -42,
       'parent' => 'academics/undergraduate-program',
     );
-    // How to Declare
+    // How to Declare.
     $main_menu['academics/undergraduate-program/how-declare'] = array(
       'link_path' => drupal_get_normal_path('academics/undergraduate-program/how-declare'),
       'link_title' => 'How to Declare',
@@ -92,7 +92,7 @@ class MenuSettings extends \AbstractInstallTask {
       'weight' => -40,
       'parent' => 'academics/undergraduate-program',
     );
-    // Preparing to Graduate
+    // Preparing to Graduate.
     $main_menu['academics/undergraduate-program/preparing-graduate'] = array(
       'link_path' => drupal_get_normal_path('academics/undergraduate-program/preparing-graduate'),
       'link_title' => 'Preparing to Graduate',
@@ -100,7 +100,7 @@ class MenuSettings extends \AbstractInstallTask {
       'weight' => -38,
       'parent' => 'academics/undergraduate-program',
     );
-    // Peer Advisors
+    // Peer Advisors.
     $main_menu['academics/undergraduate-program/peer-advisors'] = array(
       'link_path' => drupal_get_normal_path('academics/undergraduate-program/peer-advisors'),
       'link_title' => 'Peer Advisors',
@@ -108,7 +108,7 @@ class MenuSettings extends \AbstractInstallTask {
       'weight' => -36,
       'parent' => 'academics/undergraduate-program',
     );
-    // Forms
+    // Forms.
     $main_menu['academics/undergraduate-program/forms'] = array(
       'link_path' => drupal_get_normal_path('academics/undergraduate-program/forms'),
       'link_title' => 'Forms',
@@ -116,47 +116,47 @@ class MenuSettings extends \AbstractInstallTask {
       'weight' => -34,
       'parent' => 'academics/undergraduate-program',
     );
-    // Resources
+    // Resources.
    $main_menu['academics/undergraduate-program/resources'] = array(
       'link_path' => drupal_get_normal_path('academics/undergraduate-program/resources'),
       'link_title' => 'Resources',
       'menu_name' => 'main-menu',
       'weight' => -32,
       'parent' => 'academics/undergraduate-program',
-    );  
-    // Graduate Programs
+    );
+    // Graduate Programs.
     $main_menu['academics/graduate-programs'] = array(
       'link_path' => drupal_get_normal_path('academics/graduate-programs'),
       'link_title' => 'Graduate Programs',
       'menu_name' => 'main-menu',
       'weight' => -46,
       'parent' => 'academics',
-    );  
-    // Doctoral Program
+    );
+    // Doctoral Program.
     $main_menu['academics/graduate-programs/doctoral-program'] = array(
       'link_path' => drupal_get_normal_path('academics/graduate-programs/doctoral-program'),
       'link_title' => 'Doctoral Program',
       'menu_name' => 'main-menu',
       'weight' => -50,
       'parent' => 'academics/graduate-programs',
-    );   
-    // Requirements
+    );
+    // Requirements.
     $main_menu['academics/graduate-programs/doctoral-program/requirements'] = array(
       'link_path' => drupal_get_normal_path('academics/graduate-programs/doctoral-program/requirements'),
       'link_title' => 'Requirements',
       'menu_name' => 'main-menu',
       'weight' => -50,
       'parent' => 'academics/graduate-programs/doctoral-program',
-    ); 
-    // How to Apply
+    );
+    // How to Apply.
     $main_menu['academics/graduate-programs/doctoral-program/how-apply'] = array(
       'link_path' => drupal_get_normal_path('academics/graduate-programs/doctoral-program/how-apply'),
       'link_title' => 'How to Apply',
       'menu_name' => 'main-menu',
       'weight' => -48,
       'parent' => 'academics/graduate-programs/doctoral-program',
-    ); 
-    // Masters Program
+    );
+    // Masters Program.
     $main_menu['academics/graduate-programs/masters-program'] = array(
       'link_path' => drupal_get_normal_path('academics/graduate-programs/masters-program'),
       'link_title' => 'Masters Program',
@@ -164,7 +164,7 @@ class MenuSettings extends \AbstractInstallTask {
       'weight' => -48,
       'parent' => 'academics/graduate-programs',
     );
-    // Requirements
+    // Requirements.
     $main_menu['academics/graduate-programs/masters-program/requirements'] = array(
       'link_path' => drupal_get_normal_path('academics/graduate-programs/masters-program/requirements'),
       'link_title' => 'Requirements',
@@ -172,7 +172,7 @@ class MenuSettings extends \AbstractInstallTask {
       'weight' => -50,
       'parent' => 'academics/graduate-programs/masters-program',
     );
-    // How to Apply
+    // How to Apply.
     $main_menu['academics/graduate-programs/masters-program/how-apply'] = array(
       'link_path' => drupal_get_normal_path('academics/graduate-programs/masters-program/how-apply'),
       'link_title' => 'How to Apply',
@@ -180,8 +180,8 @@ class MenuSettings extends \AbstractInstallTask {
       'weight' => -48,
       'parent' => 'academics/graduate-programs/masters-program',
     );
-      
-    // Graduate Admissions
+
+    // Graduate Admissions.
     $main_menu['academics/graduate-programs/graduate-admissions'] = array(
       'link_path' => drupal_get_normal_path('academics/graduate-programs/graduate-admissions'),
       'link_title' => 'Graduate Admissions',
@@ -189,7 +189,7 @@ class MenuSettings extends \AbstractInstallTask {
       'weight' => -46,
       'parent' => 'academics/graduate-programs',
     );
-    // Forms
+    // Forms.
     $main_menu['academics/graduate-programs/forms'] = array(
       'link_path' => drupal_get_normal_path('academics/graduate-programs/forms'),
       'link_title' => 'Forms',
@@ -197,7 +197,7 @@ class MenuSettings extends \AbstractInstallTask {
       'weight' => -44,
       'parent' => 'academics/graduate-programs',
     );
-    // Resources
+    // Resources.
     $main_menu['academics/graduate-programs/resources'] = array(
       'link_path' => drupal_get_normal_path('academics/graduate-programs/resources'),
       'link_title' => 'Resources',
@@ -205,7 +205,7 @@ class MenuSettings extends \AbstractInstallTask {
       'weight' => -42,
       'parent' => 'academics/graduate-programs',
     );
-    // Job Placement
+    // Job Placement.
     $main_menu['academics/graduate-programs/job-placement'] = array(
       'link_path' => drupal_get_normal_path('academics/graduate-programs/job-placement'),
       'link_title' => 'Job Placement',
@@ -213,7 +213,7 @@ class MenuSettings extends \AbstractInstallTask {
       'weight' => -40,
       'parent' => 'academics/graduate-programs',
     );
-    // Courses
+    // Courses.
     $main_menu['courses'] = array(
       'link_path' => drupal_get_normal_path('courses'),
       'link_title' => 'Courses',
@@ -221,14 +221,14 @@ class MenuSettings extends \AbstractInstallTask {
       'weight' => -8,
       'customized' => 1,
     );
-    // People
+    // People.
     $main_menu['people'] = array(
       'link_path' => drupal_get_normal_path('people'),
       'link_title' => 'People',
       'menu_name' => 'main-menu',
       'weight' => -7,
     );
-    // Faculty
+    // Faculty.
     $main_menu['people/faculty'] = array(
       'link_path' => drupal_get_normal_path('people/faculty'),
       'link_title' => 'Faculty',
@@ -237,7 +237,7 @@ class MenuSettings extends \AbstractInstallTask {
       'customized' => 1,
       'parent' => 'people',
     );
-    // Faculty
+    // Faculty.
     $main_menu['people/students'] = array(
       'link_path' => drupal_get_normal_path('people/students'),
       'link_title' => 'Students',
@@ -246,7 +246,7 @@ class MenuSettings extends \AbstractInstallTask {
       'customized' => 1,
       'parent' => 'people',
     );
-    // Staff
+    // Staff.
     $main_menu['people/staff'] = array(
       'link_path' => drupal_get_normal_path('people/staff'),
       'link_title' => 'Staff',
@@ -255,7 +255,7 @@ class MenuSettings extends \AbstractInstallTask {
       'customized' => 1,
       'parent' => 'people',
     );
-    // Publications
+    // Publications.
     $main_menu['publications'] = array(
       'link_path' => drupal_get_normal_path('publications'),
       'link_title' => 'Publications',
@@ -263,14 +263,14 @@ class MenuSettings extends \AbstractInstallTask {
       'weight' => -6,
       'customized' => 1,
     );
-    // News Landing
+    // News Landing.
     $main_menu['news'] = array(
       'link_path' => drupal_get_normal_path('news'),
       'link_title' => 'News',
       'menu_name' => 'main-menu',
       'weight' => -5,
     );
-    // News / Recent News
+    // News / Recent News.
     $main_menu['news/recent-news'] = array(
       'link_path' => 'news/recent-news',
       'link_title' => 'Recent News',
@@ -279,15 +279,15 @@ class MenuSettings extends \AbstractInstallTask {
       'parent' => 'news',
       'customized' => 1,
     );
-    // News / Department Newsletter
+    // News / Department Newsletter.
     $main_menu['news/department-newsletter'] = array(
       'link_path' => drupal_get_normal_path('news/department-newsletter'),
       'link_title' => 'Newsletter',
       'menu_name' => 'main-menu',
       'weight' => -8,
       'parent' => 'news',
-    ); 
-    // News / subscribe
+    );
+    // News / subscribe.
     $main_menu['news/subscribe'] = array(
       'link_path' => drupal_get_normal_path('news/subscribe'),
       'link_title' => 'Subscribe',
@@ -295,14 +295,14 @@ class MenuSettings extends \AbstractInstallTask {
       'weight' => -7,
       'parent' => 'news',
     );
-    // Events Landing
+    // Events Landing.
     $main_menu['events'] = array(
       'link_path' => drupal_get_normal_path('events'),
       'link_title' => 'Events',
       'menu_name' => 'main-menu',
       'weight' => -4,
-    ); 
-    // Events / Upcoming
+    );
+    // Events / Upcoming.
     $main_menu['events/upcoming-events'] = array(
       'link_path' => drupal_get_normal_path('events/upcoming-events'),
       'link_title' => 'Upcoming Events',
@@ -311,8 +311,8 @@ class MenuSettings extends \AbstractInstallTask {
       'parent' => 'events',
       'router_path' => 'events/upcoming-events',
       'customized' => 1,
-    ); 
-    // Events / Past
+    );
+    // Events / Past.
     $main_menu['events/past-events'] = array(
       'link_path' => drupal_get_normal_path('events/past-events'),
       'link_title' => 'Past Events',
@@ -322,14 +322,14 @@ class MenuSettings extends \AbstractInstallTask {
       'router_path' => 'events/past-events',
       'customized' => 1,
     );
-    // About
+    // About.
     $main_menu['about'] = array(
       'link_path' => drupal_get_normal_path('about'),
       'link_title' => 'About',
       'menu_name' => 'main-menu',
       'weight' => -3,
-    );  
-    // About / Overview
+    );
+    // About / Overview.
     $main_menu['about/overview'] = array(
       'link_path' => drupal_get_normal_path('about/about-us'),
       'link_title' => 'Overview',
@@ -337,7 +337,7 @@ class MenuSettings extends \AbstractInstallTask {
       'weight' => -10,
       'parent' => 'about', // must be saved prior to overview item.
     );
-    // About / location
+    // About / location.
     $main_menu['about/location'] = array(
       'link_path' => drupal_get_normal_path('about/location'),
       'link_title' => 'Location',
@@ -345,15 +345,15 @@ class MenuSettings extends \AbstractInstallTask {
       'weight' => -8,
       'parent' => 'about', // must be saved prior to contact item.
     );
-    // About / Contact
+    // About / Contact.
     $main_menu['about/contact'] = array(
       'link_path' => drupal_get_normal_path('about/contact'),
       'link_title' => 'Contact',
       'menu_name' => 'main-menu',
       'weight' => -6,
       'parent' => 'about', // must be saved prior to web-access item.
-    ); 
-    // About / affiliated-programs
+    );
+    // About / affiliated-programs.
     $main_menu['about/affiliated-programs'] = array(
       'link_path' => drupal_get_normal_path('about/affiliated-programs'),
       'link_title' => 'Affiliated Programs',
@@ -361,7 +361,7 @@ class MenuSettings extends \AbstractInstallTask {
       'weight' => -4,
       'parent' => 'about', // must be saved prior to contact item.
     );
-    // About / Make a Gift
+    // About / Make a Gift.
     $main_menu['about/giving'] = array(
       'link_path' => drupal_get_normal_path('about/giving'),
       'link_title' => 'Make A Gift',
@@ -369,102 +369,102 @@ class MenuSettings extends \AbstractInstallTask {
       'weight' => -2,
       'parent' => 'about', // must be saved prior to web-access item.
     );
-    
+
     /////////////////////////////////////////////////////////////////////////////
     // Footer Menus
     /////////////////////////////////////////////////////////////////////////////
-    
-    // About
+
+    // About.
     $footer_about['about'] = array(
       'link_path' => drupal_get_normal_path('about'),
       'link_title' => 'About Us',
       'menu_name' => 'menu-footer-about-menu',
       'weight' => -50,
     );
-    // Affiliated Programs
+    // Affiliated Programs.
     $footer_about['about/affiliated-programs'] = array(
       'link_path' => drupal_get_normal_path('about/affiliated-programs'),
       'link_title' => 'Affiliated Programs',
       'menu_name' => 'menu-footer-about-menu',
       'weight' => -48,
     );
-    // Location
+    // Location.
     $footer_about['about/location'] = array(
       'link_path' => drupal_get_normal_path('about/location'),
       'link_title' => 'Location',
       'menu_name' => 'menu-footer-about-menu',
       'weight' => -46,
     );
-    // Contact
+    // Contact.
     $footer_about['about/contact'] = array(
       'link_path' => drupal_get_normal_path('about/contact'),
       'link_title' => 'Contact',
       'menu_name' => 'menu-footer-about-menu',
       'weight' => -44,
     );
-    // Make a Gift
+    // Make a Gift.
     $footer_about['about/giving'] = array(
       'link_path' => drupal_get_normal_path('about/giving'),
       'link_title' => 'Make a Gift',
       'menu_name' => 'menu-footer-about-menu',
       'weight' => -42,
     );
-    
+
     // -------------------------------------------------------------------------
-    
-    // Overview
+
+    // Overview.
     $footer_academics['academics/academics-overview'] = array(
       'link_path' => drupal_get_normal_path('academics/academics-overview'),
       'link_title' => 'About Us',
       'menu_name' => 'menu-footer-academics-menu',
       'weight' => -50,
-    );   
-    // Undergraduate Program
+    );
+    // Undergraduate Program.
     $footer_academics['academics/undergraduate-program'] = array(
       'link_path' => drupal_get_normal_path('academics/undergraduate-program'),
       'link_title' => 'Undergraduate Program',
       'menu_name' => 'menu-footer-academics-menu',
       'weight' => -48,
-    );    
-    // Graduate Program
+    );
+    // Graduate Program.
     $footer_academics['academics/graduate-programs'] = array(
       'link_path' => drupal_get_normal_path('academics/graduate-programs'),
       'link_title' => 'Graduate Programs',
       'menu_name' => 'menu-footer-academics-menu',
       'weight' => -46,
-    );   
-    // Courses
+    );
+    // Courses.
     $footer_academics['courses'] = array(
       'link_path' => drupal_get_normal_path('courses'),
       'link_title' => 'Courses',
       'menu_name' => 'menu-footer-academics-menu',
       'weight' => -44,
     );
-    
+
     // -------------------------------------------------------------------------
-    
-    // Department Newsletter
+
+    // Department Newsletter.
     $footer_news_events['news/department-newsletter'] = array(
       'link_path' => drupal_get_normal_path('news/department-newsletter'),
       'link_title' => 'Department Newsletter',
       'menu_name' => 'menu-footer-news-events-menu',
       'weight' => -50,
     );
-    // Recent News
+    // Recent News.
     $footer_news_events['news/recent-news'] = array(
       'link_path' => drupal_get_normal_path('news/recent-news'),
       'link_title' => 'Recent News',
       'menu_name' => 'menu-footer-news-events-menu',
       'weight' => -48,
     );
-    // Subscribe
+    // Subscribe.
     $footer_news_events['news/subscribe'] = array(
       'link_path' => drupal_get_normal_path('news/subscribe'),
       'link_title' => 'Subscribe',
       'menu_name' => 'menu-footer-news-events-menu',
       'weight' => -46,
     );
-    // Upcoming events
+    // Upcoming events.
     $footer_news_events['events/upcoming-events'] = array(
       'link_path' => drupal_get_normal_path('events/upcoming-events'),
       'link_title' => 'Upcoming Events',
@@ -473,31 +473,31 @@ class MenuSettings extends \AbstractInstallTask {
       'router_path' => 'events/upcoming-events',
       'customized' => 1,
     );
-    
+
     // -------------------------------------------------------------------------
-    
-    // Faculty
+
+    // Faculty.
     $footer_people['people/faculty'] = array(
       'link_path' => drupal_get_normal_path('people/faculty'),
       'link_title' => 'Faculty',
       'menu_name' => 'menu-footer-people-menu',
       'weight' => -50,
     );
-    // Students
+    // Students.
     $footer_people['people/students'] = array(
       'link_path' => drupal_get_normal_path('people/students'),
       'link_title' => 'Students',
       'menu_name' => 'menu-footer-people-menu',
       'weight' => -48,
     );
-    // Staff
-   $footer_people['people/staff'] = array(
+    // Staff.
+    $footer_people['people/staff'] = array(
       'link_path' => drupal_get_normal_path('people/staff'),
       'link_title' => 'Staff',
       'menu_name' => 'menu-footer-people-menu',
       'weight' => -46,
     );
-   
+
     $items[] = $main_menu;
     $items[] = $footer_about;
     $items[] = $footer_academics;

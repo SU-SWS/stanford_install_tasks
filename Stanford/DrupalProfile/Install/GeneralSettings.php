@@ -51,6 +51,7 @@ class GeneralSettings extends \AbstractInstallTask {
       'favicon_upload' => '',
       'favicon_mimetype' => 'image/vnd.microsoft.icon',
     );
+
     variable_set('theme_seven_settings', $theme_seven_settings);
 
   }
