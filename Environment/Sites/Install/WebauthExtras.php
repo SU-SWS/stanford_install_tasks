@@ -4,11 +4,11 @@
  * Abstract Task Class.
  */
 
-namespace Stanford\Jumpstart\Install;
+namespace Environment\Sites\Install;
 /**
  *
  */
-class Authentication extends \AbstractInstallTask {
+class WebauthExtras extends \AbstractInstallTask {
 
   /**
    * Set the site name.
