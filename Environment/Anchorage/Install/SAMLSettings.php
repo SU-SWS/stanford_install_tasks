@@ -26,6 +26,7 @@ class SAMLSettings extends \AbstractInstallTask {
     return array(
       'stanford_saml_block',
       'simplesamlphp_auth',
+      'stanford_ssp',
     );
   }
 
