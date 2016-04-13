@@ -133,16 +133,17 @@ class StandardBlocks extends \AbstractInstallTask {
         'pages' => '',
         'cache' => -1,
       ),
-      array(
-        'module' => 'system',
-        'delta' => 'powered-by',
-        'theme' => $default_theme,
-        'status' => 1,
-        'weight' => 10,
-        'region' => 'footer',
-        'pages' => '',
-        'cache' => -1,
-      ),
+      // No one will miss me.
+      // array(
+      //   'module' => 'system',
+      //   'delta' => 'powered-by',
+      //   'theme' => $default_theme,
+      //   'status' => 1,
+      //   'weight' => 10,
+      //   'region' => 'footer',
+      //   'pages' => '',
+      //   'cache' => -1,
+      // ),
       array(
         'module' => 'system',
         'delta' => 'help',
