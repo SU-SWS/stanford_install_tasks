@@ -20,6 +20,8 @@ class EnableModules extends \AbstractInstallTask {
     // administrator role and errors out otherwise.
     module_enable(array('stanford_sites_helper'));
     module_enable(array('stanford_sites_systemtools'));
+    module_enable(array('stanford_afs_quota'));
+
   }
 
 }

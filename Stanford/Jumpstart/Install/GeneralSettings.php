@@ -18,11 +18,7 @@ class GeneralSettings extends \AbstractInstallTask {
    */
   public function execute(&$args = array()) {
 
-    $four_oh_four = drupal_get_normal_path('404');
-    variable_set('site_404', $four_oh_four);
-
     // Turn views into more developer like.
-
     // This function is only available through drush...
     if (function_exists("views_development_settings")) {
       views_development_settings();

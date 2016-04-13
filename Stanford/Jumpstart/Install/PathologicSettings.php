@@ -25,7 +25,6 @@ class PathologicSettings extends \AbstractInstallTask {
     if (strpos("https://sites.stanford.edu", $base_url)) {
       $local_paths = str_replace('https://sites.stanford.edu', '', $base_url) . '/';
     }
-    // $local_paths .= "\n/jsa-content/\nhttps://sites.stanford.edu/jsa-content/";
 
     $settings = serialize(array(
       'local_paths' => $local_paths,
