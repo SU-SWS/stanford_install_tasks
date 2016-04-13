@@ -21,7 +21,3 @@ class EnableModules extends \AbstractInstallTask {
   }
 
 }
-
-
-
-
