@@ -130,8 +130,9 @@ class BlockSettings extends \AbstractInstallTask {
   public function requirements() {
     return array(
       'system',
-      'search',
       'user',
+      'bean',
+      'block',
     );
   }
 
