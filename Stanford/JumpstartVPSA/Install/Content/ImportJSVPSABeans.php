@@ -46,6 +46,7 @@ class ImportJSVPSABeans extends \AbstractInstallTask {
       '3a68f54e-fb65-40ec-ace2-3e9e977c1765', // VPSA Story Telling Block
       'ff9d9ee1-3a23-433b-9d80-d15bb46a466b', // Full Width Banner Short
     );
+
     $importer = new \SitesContentImporter();
     $importer->set_endpoint($endpoint);
     $importer->set_bean_uuids($uuids);

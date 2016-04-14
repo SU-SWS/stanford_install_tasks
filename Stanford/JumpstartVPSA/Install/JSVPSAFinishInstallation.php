@@ -21,6 +21,7 @@ class JSVPSAFinishInstallation extends \AbstractInstallTask {
     // Set the homepage to the home node.
     $home_node_path = drupal_get_normal_path('home');
     variable_set('site_frontpage', $home_node_path);
+
     // Oh man so many static variables to kill!
     static $ordered;
     static $all_links;
@@ -30,9 +31,11 @@ class JSVPSAFinishInstallation extends \AbstractInstallTask {
     $all_links = null;
     $cache = null;
     $drupal_static_cache = null;
+
     // Call flush all caches so that the blocks table gets populated.
     drupal_static_reset();
     drupal_flush_all_caches();
+
     // Small fix for a menu bug
     db_update('menu_links')
       ->fields(array(
@@ -40,6 +43,7 @@ class JSVPSAFinishInstallation extends \AbstractInstallTask {
       ))
       ->condition('link_path', 'admin/manage')
       ->execute();
+
     // Add some block titles.
     // module, delta, title
     $blocks = array(
