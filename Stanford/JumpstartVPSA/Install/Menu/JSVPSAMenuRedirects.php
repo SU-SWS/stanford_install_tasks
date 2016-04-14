@@ -23,6 +23,7 @@ class JSVPSAMenuRedirects extends \AbstractInstallTask {
       'news' => 'news/announcements',
       'events' => 'events/upcoming-events',
     );
+
     foreach ($redirects as $source => $dest) {
       $redirect = new \stdClass();
       $source_path = drupal_lookup_path('source', $source);

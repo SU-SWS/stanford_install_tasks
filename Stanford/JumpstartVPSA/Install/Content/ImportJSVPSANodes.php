@@ -30,12 +30,15 @@ class ImportJSVPSANodes extends \AbstractInstallTask {
       'stanford_slide',
       'stanford_person',
     );
+
     $importer = new \SitesContentImporter();
     $importer->set_endpoint($endpoint);
     $importer->add_field_processor(array("body" => "\Stanford\Jumpstart\Install\Content\Importer\ImporterFieldProcessorCustomBody"));
     $importer->add_field_processor(array("field_s_destination_publish" => "\Stanford\Jumpstart\Install\Content\Importer\ImporterFieldProcessorCustomFieldSDestinationPublish"));
+
     // Tell the importer what is what.
     $importer->add_import_content_type($content_types);
+
     // Calling this imports the 20 most recent of each content type.
     $importer->importer_content_nodes_recent_by_type();
 

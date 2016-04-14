@@ -18,7 +18,6 @@ class JSVPSAContextualBlockClasses extends \AbstractInstallTask {
    */
   public function execute(&$args = array()) {
 
-
     // Insert contextual block classes.
     // -------------------------------------------------------------------------
     $cbc_layouts = array();
