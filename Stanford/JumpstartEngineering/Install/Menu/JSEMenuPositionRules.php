@@ -20,6 +20,7 @@ class JSEMenuPositionRules extends \AbstractInstallTask {
 
     # Set menu position default setting to 'mark the rule's parent menu item as being "active".'
     variable_set('menu_position_active_link_display', 'parent');
+
     // Define the rules.
     $rules = array();
     $rules[] = array(
@@ -168,7 +169,7 @@ class JSEMenuPositionRules extends \AbstractInstallTask {
         ),
       ),
     );
-    
+
     foreach ($rules as $mp_rule) {
       $rule = new \Stanford\Utility\Install\InsertMenuRule();
       $rule->insert_menu_rule($mp_rule);

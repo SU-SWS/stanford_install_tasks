@@ -30,6 +30,7 @@ class CAPxConfig extends \AbstractInstallTask {
       // Do the save.
       capx_mapper_save($mapper);
     }
+
     // Loop through the importer configurations and save them to the db.
     $importers = $this->get_capx_importers();
     foreach ($importers as $machine_name => $info) {
