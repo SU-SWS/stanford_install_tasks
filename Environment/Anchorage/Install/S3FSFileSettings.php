@@ -17,7 +17,6 @@ class S3FSFileSettings extends \AbstractInstallTask {
    *   Installation arguments.
    */
   public function execute(&$args = array()) {
-    module_enable(array('s3fs'));
     variable_set('s3fs_use_s3_for_public', 1);
     variable_set('s3fs_use_s3_for_private', 1);
   }
@@ -28,6 +27,7 @@ class S3FSFileSettings extends \AbstractInstallTask {
   public function requirements() {
     return array(
       's3fs',
+      'stanford_s3fs_if'
     );
   }
 
