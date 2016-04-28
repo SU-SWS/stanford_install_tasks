@@ -23,6 +23,7 @@ class StanfordPersonDefaultImage extends \AbstractInstallTask {
     $q->condition('fm.filename', 'default-profile-image.png', '=');
     $fid = $q->execute()->fetchField();
     
+    // This default image is being pulled in by CAP.
     variable_set('stanford_person_profile_picture', $fid);
   }
 
