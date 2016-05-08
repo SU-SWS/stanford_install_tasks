@@ -23,7 +23,8 @@ class ImportJSENodes extends \AbstractInstallTask {
     // This could take a while.
     drupal_set_time_limit(600);
 
-    $endpoint = 'https://sites.stanford.edu/jsa-content/jsainstall';
+    // @todo: Make this an option on the install form.
+    $endpoint = variable_get("stanford_content_server", "https://sites.stanford.edu/jsa-content/jsainstall");
     $filters = array('tid_raw' => array('55'));
 
     $view_importer = new \SitesContentImporterViews();

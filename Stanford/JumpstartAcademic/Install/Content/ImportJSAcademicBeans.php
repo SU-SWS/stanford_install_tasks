@@ -21,7 +21,8 @@ class ImportJSAcademicBeans extends \AbstractInstallTask {
    */
   public function execute(&$args = array()) {
 
-    $endpoint = "https://sites.stanford.edu/jsa-content/jsainstall";
+    // @todo: Make this an option on the install form.
+    $endpoint = variable_get("stanford_content_server", "https://sites.stanford.edu/jsa-content/jsainstall");
 
    // BEANS
     $uuids = array(
