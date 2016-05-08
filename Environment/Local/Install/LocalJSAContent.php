@@ -18,13 +18,4 @@ class LocalJSAContent extends \AbstractInstallTask {
     variable_set("stanford_content_server", "http://jsa-content.su.dev/jsainstall");
   }
 
-  /**
-   * @param array $tasks
-   */
-  public function requirements() {
-    return array(
-      // List some development modules here.
-    );
-  }
-
 }
