@@ -18,7 +18,8 @@ class ImportVocabularies extends \AbstractInstallTask {
    */
   public function execute(&$args = array()) {
 
-    $endpoint = "https://sites.stanford.edu/jsa-content/jsainstall";
+    // @todo: Make this an option on the install form.
+    $endpoint = variable_get("stanford_content_server", "https://sites.stanford.edu/jsa-content/jsainstall");
 
     // Restrictions.
     // These entities we do not want even if they appear in the feed.

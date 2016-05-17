@@ -21,9 +21,10 @@ class ImportJSPlusBEANs extends \AbstractInstallTask {
    */
   public function execute(&$args = array()) {
 
-    $endpoint = "https://sites.stanford.edu/jsa-content/jsainstall";
+    // @todo: Make this an option on the install form.
+    $endpoint = variable_get("stanford_content_server", "https://sites.stanford.edu/jsa-content/jsainstall");
 
-   // BEANS
+    // BEANS
     $uuids = array(
       'e813c236-7400-4f43-ad18-736617ceb28e', // Jumpstart Home Page Banner Image.
       '8c4ed672-debf-45a5-8dfc-ef42794b975b', // Jumpstart Homepage Tall Banner
