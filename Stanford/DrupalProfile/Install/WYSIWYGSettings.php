@@ -56,7 +56,9 @@ class WYSIWYGSettings extends \AbstractInstallTask {
         'remove_linebreaks' => 1,
         'apply_source_formatting' => 1,
         'paste_auto_cleanup_on_paste' => 1,
-        'block_formats' => "p, address, pre, h2, h3, h4, h5, h6"
+        'block_formats' => array(
+          "p", "address", "pre", "h2", "h3", "h4", "h5", "h6",
+        ),
         'css_setting' => 'theme',
         'css_path' => '',
         'css_classes' => ''
