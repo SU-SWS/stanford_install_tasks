@@ -69,15 +69,15 @@ class JumpstartSettings extends \AbstractInstallTask {
       array("stanford_jumpstart_layouts", "jumpstart-launch", "shortcuts-launch-block"),
     );
 
-    // Key all the values.
-    $insert = db_insert('block_class')->fields($fields);
 
     foreach ($values as $k => $value) {
       $db_values = array_combine($fields, $value);
-      $insert->values($db_values);
+      $update = db_update('block')->fields($db_values);
+      $update->condition($fields[0],$value[0]);
+      $update->condition($fields[1],$value[1]);
+      $update->execute();
     }
 
-    $insert->execute();
 
   }
 
@@ -89,6 +89,7 @@ class JumpstartSettings extends \AbstractInstallTask {
       'cbc',
       'stanford_jumpstart',
       'stanford_jumpstart_home',
+      'block_class',
     );
   }
 
