@@ -36,7 +36,7 @@ class JumpstartSettings extends \AbstractInstallTask {
     variable_set('contextual_block_class', $cbc_layouts);
 
     // Install block classes.
-    $fields = array('module', 'delta', 'css_class');
+    // $fields = array('module', 'delta', 'css_class');
     $values = array(
       array("bean", "social-media", "span4"),
       array("bean", "contact-block", "span4"),
@@ -73,8 +73,8 @@ class JumpstartSettings extends \AbstractInstallTask {
     foreach ($values as $k => $value) {
       // UPDATE block SET (module="bean",delta="social-media",css_class="span4") WHERE module="bean" AND delta="social-media
       $update = db_update('block')->fields(array('css_class' => $value[2]));
-      $update->condition($fields[0],$value[0]);
-      $update->condition($fields[1],$value[1]);
+      $update->condition('module',$value[0]);
+      $update->condition('delta',$value[1]);
       $update->execute();
     }
 
