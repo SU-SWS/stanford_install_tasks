@@ -134,6 +134,7 @@ class BlockSettings extends \AbstractInstallTask {
       'system',
       'search',
       'user',
+      'block_class',
     );
   }
 
