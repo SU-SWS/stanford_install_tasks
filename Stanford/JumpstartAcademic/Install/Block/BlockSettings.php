@@ -116,7 +116,7 @@ class BlockSettings extends \AbstractInstallTask {
     );
 
     foreach ($values as $k => $value) {
-      // UPDATE block SET (module="bean",delta="social-media",css_class="span4") WHERE module="bean" AND delta="social-media
+      // UPDATE block SET (module="bean",delta="social-media",css_class="span4") WHERE module="bean" AND delta="social-media"
       $update = db_update('block')->fields(array('css_class' => $value[2]));
       $update->condition('module',$value[0]);
       $update->condition('delta',$value[1]);
