@@ -18,18 +18,17 @@ class BlockClass extends \AbstractInstallTask {
    */
   public function execute(&$args = array()) {
 
-    $fields = array('module', 'delta', 'css_class');
     $values = array(
       array("bean", "drupalcamp-propose-a-session-but", "well"),
     );
 
-    // Key all the values.
-    $insert = db_insert('block_class')->fields($fields);
     foreach ($values as $k => $value) {
-      $db_values = array_combine($fields, $value);
-      $insert->values($db_values);
+      // UPDATE block SET (module="bean",delta="social-media",css_class="span4") WHERE module="bean" AND delta="social-media
+      $update = db_update('block')->fields(array('css_class' => $value[2]));
+      $update->condition('module',$value[0]);
+      $update->condition('delta',$value[1]);
+      $update->execute();
     }
-    $insert->execute();
 
   }
 
