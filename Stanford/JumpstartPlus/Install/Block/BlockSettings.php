@@ -32,7 +32,6 @@ class BlockSettings extends \AbstractInstallTask {
     variable_set('contextual_block_class', $cbc_layouts);
 
     // Block clases.
-    $fields = array('module', 'delta', 'css_class');
     $values = array(
       array("bean","jumpstart-home-page-about","well"),
       array("bean","homepage-about-block", 'well'),
@@ -113,13 +112,13 @@ class BlockSettings extends \AbstractInstallTask {
       array("views","ad215e0528148b386833fa3db1f3b7dc","well"),
     );
 
-    // Key all the values.
-    $insert = db_insert('block_class')->fields($fields);
     foreach ($values as $k => $value) {
-      $db_values = array_combine($fields, $value);
-      $insert->values($db_values);
+      // UPDATE block SET (module="bean",delta="social-media",css_class="span4") WHERE module="bean" AND delta="social-media"
+      $update = db_update('block')->fields(array('css_class' => $value[2]));
+      $update->condition('module',$value[0]);
+      $update->condition('delta',$value[1]);
+      $update->execute();
     }
-    $insert->execute();
 
   }
 
@@ -133,6 +132,7 @@ class BlockSettings extends \AbstractInstallTask {
       'user',
       'bean',
       'block',
+      'block_class'
     );
   }
 
