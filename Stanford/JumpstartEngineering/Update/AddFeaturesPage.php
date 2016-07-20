@@ -4,12 +4,11 @@
  * Abstract Task Class.
  */
 
-
-namespace Stanford\Jumpstart\Update;
+namespace Stanford\JumpstartEngineering\Update;
 /**
  *
  */
-class UpdateAddFeaturesPage extends \AbstractUpdateTask {
+class AddFeaturesPage extends \AbstractUpdateTask {
 
   protected $description = "Update the content of Add Features page";
 
