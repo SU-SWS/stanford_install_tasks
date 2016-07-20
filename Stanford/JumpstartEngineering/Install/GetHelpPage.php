@@ -11,7 +11,7 @@ namespace Stanford\JumpstartEngineering\Install;
 class GetHelpPage extends \AbstractInstallTask {
 
   /**
-   * Set Content for the Add features page.
+   * Set Content for the Get Help page.
    *
    * @param array $args
    *   Installation arguments.
