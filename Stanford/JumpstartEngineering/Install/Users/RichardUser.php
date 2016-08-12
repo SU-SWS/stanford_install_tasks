@@ -4,7 +4,7 @@
  * Abstract Task Class.
  */
 
-namespace Stanford\JumpstartEngineering\Install\User;
+namespace Stanford\JumpstartEngineering\Install\Users;
 /**
  *
  */
@@ -18,7 +18,7 @@ class RichardUser extends \AbstractInstallTask {
    */
   public function execute(&$args = array()) {
 
-    $editor_role = user_role_load_by_name('editor');
+    $editor_role = user_role_load_by_name('site member');
 
     // Create a Richard user for testing and give her the "editor" role.
     // drush --root=$siteroot ucrt Richard --password="Richard" --mail="sws-developers+Richard@lists.stanford.edu"
