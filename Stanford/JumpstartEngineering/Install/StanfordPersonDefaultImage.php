@@ -19,7 +19,7 @@ class StanfordPersonDefaultImage extends \AbstractInstallTask {
   public function execute(&$args = array()) {
     // Get the default banner image
     $filename = "profile-large-blank.png";
-    $file_path = libraries_get_path('tasks') . '/Stanford/Jumpstart/JumpstartEngineering/img/' . $filename;
+    $file_path = libraries_get_path('tasks') . '/Stanford/JumpstartEngineering/img/' . $filename;
     $image = file_get_contents($file_path);
 
     //Create a database entry.
@@ -27,17 +27,6 @@ class StanfordPersonDefaultImage extends \AbstractInstallTask {
 
     // And save the file id for default_image_ft to use.
     variable_set('stanford_person_profile_picture', $file->fid);
-
- /*
-    // Setting default image on stanford person using a variable leveraging default_image_ft module.
-    $q = db_select('file_managed', 'fm');
-    $q->addField('fm', 'fid');
-    $q->condition('fm.filename', 'default-profile-image.png', '=');
-    $fid = $q->execute()->fetchField();
-    
-    // This default image is being pulled in by CAP.
-    variable_set('stanford_person_profile_picture', $fid);
- */
   }
-
 }
+
