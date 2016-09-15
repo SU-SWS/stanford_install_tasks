@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * Create JSE menu items for the Private Pages section
+ * Create menu items for the site actions menu (admin shortcuts)
  */
 
 namespace Stanford\JumpstartEngineering\Install\Menu;
