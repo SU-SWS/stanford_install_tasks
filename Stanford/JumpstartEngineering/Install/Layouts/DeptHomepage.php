@@ -11,7 +11,7 @@ namespace Stanford\JumpstartEngineering\Install\Layouts;
 class DeptHomepage extends \AbstractInstallTask {
 
   /**
-   * Configure PICAL homepage layouts.
+   * Configure Department homepage layouts.
    *
    * @param array $args
    *   Installation arguments.
