@@ -8,7 +8,7 @@ namespace Stanford\JumpstartEngineering\Install\Layouts;
 /**
  *
  */
-class PicalHomepage extends \AbstractInstallTask {
+class DeptHomepage extends \AbstractInstallTask {
 
   /**
    * Configure PICAL homepage layouts.
@@ -19,18 +19,14 @@ class PicalHomepage extends \AbstractInstallTask {
   public function execute(&$args = array()) {
 
     // Set default layout
-    $default = 'stanford_jumpstart_home_morris';
-    variable_set('stanford_jumpstart_home_active_body_class', 'stanford-jumpstart-home-morris');
+    $default = 'stanford_jumpstart_home_gibbons';
+    variable_set('stanford_jumpstart_home_active_body_class', 'stanford-jumpstart-home-gibbons');
     $context_status = variable_get('context_status', array());
     $homecontexts = stanford_jumpstart_home_context_default_contexts();
     $names = array_keys($homecontexts);
 
-    // Enable these layouts for use by site owners.
-    $enabled['stanford_jumpstart_home_hoover'] = 1;
-    $enabled['stanford_jumpstart_home_morris'] = 1;
-    $enabled['stanford_jumpstart_home_terman'] = 1;
-    $enabled['stanford_jumpstart_home_pettit'] = 1;
-    $enabled['stanford_jumpstart_home_kays'] = 1;
+    // Enable this layout for use by site owners.
+    $enabled['stanford_jumpstart_home_gibbons'] = 1;
 
     // Not sure why we are getting an empty space...
     unset($context_status['']);
