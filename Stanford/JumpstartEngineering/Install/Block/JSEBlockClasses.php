@@ -20,8 +20,17 @@ class JSEBlockClasses extends \AbstractInstallTask {
 
     // Install default JSE block classes.
     $values = array(
-      array("bean", "jumpstart-small-custom-block", "well"),
       array("bean", "jumpstart-large-custom-block", "well"),
+      array("bean", "jumpstart-large-custom-block", "span8"),
+      array("bean", "jumpstart-small-custom-block-2", "well"),
+      array("bean", "jumpstart-small-custom-block-2", "span4"),
+      array("bean", "jumpstart-small-custom-block-3", "well"),
+      array("bean", "jumpstart-small-custom-block-3", "span4"),
+      array("bean", "jumpstart-small-custom-block-4", "well"),
+      array("bean", "jumpstart-small-custom-block-4", "span4"),
+      array("bean", "jumpstart-small-custom-block-5", "well"),
+      array("bean", "jumpstart-small-custom-block-5", "span4"),
+
     );
     foreach ($values as $k => $value) {
       // UPDATE block SET (module="bean",delta="social-media",css_class="span4") WHERE module="bean" AND delta="social-media"
