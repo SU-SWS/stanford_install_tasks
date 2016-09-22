@@ -22,6 +22,7 @@ class JSEBlockClasses extends \AbstractInstallTask {
     $values = array(
       array("bean", "jumpstart-home-page-banner---no-", "span8"),
       array("bean", "jumpstart-home-page-full-width-b", "span12"),
+      array("bean", "homepage-about-block", "well"),
       array("bean", "jumpstart-large-custom-block", "well span8"),
       array("bean", "jumpstart-small-custom-block", "well span4"),
       array("bean", "jumpstart-small-custom-block-2", "well span4"),
