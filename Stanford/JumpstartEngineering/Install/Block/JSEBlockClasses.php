@@ -31,10 +31,10 @@ class JSEBlockClasses extends \AbstractInstallTask {
       array("bean", "jumpstart-small-custom-block-5", "well span4"),
 
       // Affiliates two-stacked
-      array("view", "46f3a22e00be75cb8fe3bc16de17162a", "well span4"),
-      array("view", "stanford_events_views-block", "well span4"),
+      array("views", "46f3a22e00be75cb8fe3bc16de17162a", "well span4"),
+      array("views", "stanford_events_views-block", "well span4"),
       // News: 2 Item Recent News List Block
-      array("view", "f73ff55b085ea49217d347de6630cd5a", "well span4"),
+      array("views", "f73ff55b085ea49217d347de6630cd5a", "well span4"),
     );
 
     foreach ($values as $k => $value) {
