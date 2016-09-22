@@ -26,7 +26,7 @@ class DeptHomepage extends \AbstractInstallTask {
     $layout["sjh_stanford_jumpstart_home_gibbons"]["description"] = "<ul><li>Full-width banner block</li><li>Large About block</li><li>Auto-generated News block</li><li>Five small custom block</li></ul><li>Auto-generated Events block</li>";
     $layout["sjh_stanford_jumpstart_home_gibbons"]["class"] = "stanford-jumpstart-home-gibbons";
 
-    variable_set('sju_stanford_jumpstart_home_gibbons', $layout);
+    variable_set('sjh_stanford_jumpstart_home_gibbons', $layout);
 
     // Set default layout
     $default = 'stanford_jumpstart_home_gibbons';
