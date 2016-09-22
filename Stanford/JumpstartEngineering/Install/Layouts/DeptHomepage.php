@@ -20,11 +20,11 @@ class DeptHomepage extends \AbstractInstallTask {
 
     // Add layout settings for Gibbons layout
     $layout = array();
-    $layout["sju_stanford_jumpstart_home_gibbons"]["context"] = "stanford_jumpstart_home_gibbons";
-    $layout["sju_stanford_jumpstart_home_gibbons"]["thumb"] = "js-home-gibbons.jpg";
-    $layout["sju_stanford_jumpstart_home_gibbons"]["title"] = "Gibbons";
-    $layout["sju_stanford_jumpstart_home_gibbons"]["description"] = "<ul><li>Full-width banner block</li><li>Large About block</li><li>Auto-generated News block</li><li>Five small custom block</li></ul><li>Auto-generated Events block</li>";
-    $layout["sju_stanford_jumpstart_home_gibbons"]["class"] = "stanford-jumpstart-home-gibbons";
+    $layout["sjh_stanford_jumpstart_home_gibbons"]["context"] = "stanford_jumpstart_home_gibbons";
+    $layout["sjh_stanford_jumpstart_home_gibbons"]["thumb"] = "js-home-gibbons.jpg";
+    $layout["sjh_stanford_jumpstart_home_gibbons"]["title"] = "Gibbons";
+    $layout["sjh_stanford_jumpstart_home_gibbons"]["description"] = "<ul><li>Full-width banner block</li><li>Large About block</li><li>Auto-generated News block</li><li>Five small custom block</li></ul><li>Auto-generated Events block</li>";
+    $layout["sjh_stanford_jumpstart_home_gibbons"]["class"] = "stanford-jumpstart-home-gibbons";
 
     variable_set('sju_stanford_jumpstart_home_gibbons', $layout);
 
