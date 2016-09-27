@@ -4,11 +4,11 @@
  * Abstract Task Class.
  */
 
-namespace Stanford\JumpstartAcademic\Install\Content;
+namespace Stanford\JumpstartLab\Install\Content;
 /**
  *
  */
-class ImportJSAcademicVocabularies extends \AbstractInstallTask {
+class ImportJSLabVocabularies extends \AbstractInstallTask {
 
   /**
    * Set the site name.
