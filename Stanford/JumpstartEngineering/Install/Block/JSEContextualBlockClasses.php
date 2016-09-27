@@ -27,7 +27,7 @@ class JSEContextualBlockClasses extends \AbstractInstallTask {
     $cbc_layouts['stanford_jumpstart_home_pettit']['bean-homepage-about-block'][] = 'span8 well';
     $cbc_layouts['stanford_jumpstart_home_terman']['bean-jumpstart-about-block'][] = 'span4 well';
 
-    $cbc_layouts['sitewide_jse']['bean-jse-logo-block'][] = 'span4';
+    $cbc_layouts['sitewide_jse']['bean-jse-linked-logo-block'][] = 'span4';
     $cbc_layouts['sitewide_jse']['bean-jumpstart-footer-contact-block'][] = 'span2';
     $cbc_layouts['sitewide_jse']['bean-jumpstart-footer-social-media--0'][] = 'span2';
     $cbc_layouts['sitewide_jse']['bean-jumpstart-custom-footer-block'][] = 'span2';
