@@ -81,14 +81,15 @@ class MenuSettings extends \AbstractInstallTask {
       'parent' => 'projects',
     );
     // Projects / Sample Research Project One.
-    $main_menu['projects/sample-research-project-one'] = array(
-      'link_path' => drupal_get_normal_path('projects/sample-research-project-one'),
+    $main_menu['projects/project-example'] = array(
+      'link_path' => drupal_get_normal_path('projects/project-example'),
       'link_title' => 'Sample Research Project One',
       'menu_name' => 'main-menu',
       'weight' => -6,
       'customized' => 1,
       'parent' => 'projects',
     );
+/*
     // Projects / Sample Research Project Two.
     $main_menu['projects/sample-research-project-two'] = array(
       'link_path' => drupal_get_normal_path('projects/sample-research-project-two'),
@@ -107,6 +108,7 @@ class MenuSettings extends \AbstractInstallTask {
       'customized' => 1,
       'parent' => 'projects',
     );
+*/
     // Projects / Tools/Materials.
     $main_menu['projects/toolsmaterials'] = array(
       'link_path' => drupal_get_normal_path('projects/toolsmaterials'),
@@ -159,6 +161,7 @@ class MenuSettings extends \AbstractInstallTask {
       'customized' => 1,
       'parent' => 'participate',
     );
+/*
     // Participate / For Parents.
     $main_menu['participate/for-parents'] = array(
       'link_path' => drupal_get_normal_path('participate/for-parents'),
@@ -177,6 +180,7 @@ class MenuSettings extends \AbstractInstallTask {
       'customized' => 1,
       'parent' => 'participate',
     );
+*/
     // Resources.
     $main_menu['resources'] = array(
       'link_path' => drupal_get_normal_path('resources'),
