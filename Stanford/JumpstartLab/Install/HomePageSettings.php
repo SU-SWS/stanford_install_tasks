@@ -17,7 +17,7 @@ class HomePageSettings extends \AbstractInstallTask {
    *   Installation arguments.
    */
   public function execute(&$args = array()) {
-    $default = 'stanford_jumpstart_home_panama_news_events';
+    $default = 'stanford_jumpstart_home_mayfield';
     $context_status = variable_get('context_status', array());
     $homecontexts = stanford_jumpstart_home_context_default_contexts();
 
@@ -44,7 +44,7 @@ class HomePageSettings extends \AbstractInstallTask {
 
     // Save settings
     variable_set('stanford_jumpstart_home_active', $default);
-    variable_set('stanford_jumpstart_home_active_body_class', 'stanford-jumpstart-home-panama');
+    variable_set('stanford_jumpstart_home_active_body_class', 'stanford-jumpstart-home-mayfield');
     variable_set('context_status', $context_status);
   }
 
