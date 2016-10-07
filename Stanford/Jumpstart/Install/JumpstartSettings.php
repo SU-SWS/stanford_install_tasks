@@ -65,7 +65,7 @@ class JumpstartSettings extends \AbstractInstallTask {
       array("menu", "menu-admin-shortcuts-get-help", "shortcuts-help"),
       array("menu", "menu-admin-shortcuts-ready-to-la", "shortcuts-launch"),
       array("menu", "menu-admin-shortcuts-logout-link", "shortcuts-logout"),
-      array("menu", 'menu-related-links', 'span3'),
+      array("menu", "menu-related-links", "span3"),
       array("stanford_jumpstart_layouts", "jumpstart-launch", "shortcuts-launch-block"),
     );
 
