@@ -219,7 +219,7 @@ class CAPxConfig extends \AbstractInstallTask {
           'value' => '$.primaryContact.phoneNumbers.*',
         ),
         'field_s_person_profile_picture' => array(
-          0 => '$.profilePhotos.bigger',
+          0 => '$.profilePhotos.square',
         ),
         'field_s_person_staff_type' => array(
           'tid' => '',

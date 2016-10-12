@@ -23,8 +23,9 @@ class HomePageSettings extends \AbstractInstallTask {
 
     $names = array_keys($homecontexts);
 
-    // Enable these for site owners
+    // Enable these for site owners.
     $enabled['stanford_jumpstart_home_lomita'] = 1;
+    $enabled['stanford_jumpstart_home_mayfield'] = 1;
     $enabled['stanford_jumpstart_home_mayfield_news_events'] = 1;
     $enabled['stanford_jumpstart_home_palm_news_events'] = 1;
     $enabled['stanford_jumpstart_home_panama_news_events'] = 1;
@@ -42,10 +43,22 @@ class HomePageSettings extends \AbstractInstallTask {
     $context_status[$default] = FALSE;
     unset($context_status['']);
 
-    // Save settings
+    // Save settings.
     variable_set('stanford_jumpstart_home_active', $default);
     variable_set('stanford_jumpstart_home_active_body_class', 'stanford-jumpstart-home-mayfield');
     variable_set('context_status', $context_status);
+  }
+
+  /**
+   * Install Tasks requirements.
+   *
+   * @return array
+   *   An array of module dependency names.
+   */
+  public function requirements() {
+    return array(
+      'stanford_jumpstart_home',
+    );
   }
 
 }
