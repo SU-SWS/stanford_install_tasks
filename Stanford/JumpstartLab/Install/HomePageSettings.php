@@ -17,7 +17,7 @@ class HomePageSettings extends \AbstractInstallTask {
    *   Installation arguments.
    */
   public function execute(&$args = array()) {
-    $default = 'stanford_jumpstart_home_mayfield';
+    $default = 'stanford_jumpstart_home_mayfield_lab';
     $context_status = variable_get('context_status', array());
     $homecontexts = stanford_jumpstart_home_context_default_contexts();
 

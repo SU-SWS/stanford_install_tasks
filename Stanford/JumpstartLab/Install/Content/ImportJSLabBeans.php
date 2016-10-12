@@ -47,6 +47,7 @@ class ImportJSLabBeans extends \AbstractInstallTask {
       // For Home Page Layouts -------------------------------------------------
       '8c4ed672-debf-45a5-8dfc-ef42794b975b', // Jumpstart Homepage Tall Banner
       'b880d372-ef1c-4c85-93e8-6a47726d98c2', // Jumpstart Postcard with Video
+      'daf6420f-f02a-4eab-93ba-20afbbf52c14', // Jumpstart Homepage Research Projects Block
       'd643d114-c4bc-47b0-b0df-dbf1dc673a1a', // Jumpstart Info Text Block
       'f00c9906-971f-4d9d-b75c-23db1499318c', // Jumpstart Homepage Mission Block 2 (this should be 1, I think)
       '008d2300-a00d-4de9-bdce-39f7bc9f312d', // Jumpstart Homepage Mission Block 2

@@ -21,7 +21,7 @@ class BlockSettings extends \AbstractInstallTask {
     // Install contextual block class for Panama layout
     $cbc_layouts = array();
     $cbc_layouts['stanford_jumpstart_home_lomita']['bean-jumpstart-lead-text-with-body'][] = 'span6';
-    $cbc_layouts['stanford_jumpstart_home_mayfield']['bean-jumpstart-lead-text-with-body'][] = 'span6';
+    $cbc_layouts['stanford_jumpstart_home_mayfield']['bean-jumpstart-lead-text-with-body'][] = 'span12';
     $cbc_layouts['stanford_jumpstart_home_mayfield_news_events']['bean-jumpstart-lead-text-with-body'][] = 'span6';
     $cbc_layouts['stanford_jumpstart_home_palm']['bean-jumpstart-lead-text-with-body'][] = 'span6';
     $cbc_layouts['stanford_jumpstart_home_palm_news_events']['bean-jumpstart-lead-text-with-body'][] = 'span6';
