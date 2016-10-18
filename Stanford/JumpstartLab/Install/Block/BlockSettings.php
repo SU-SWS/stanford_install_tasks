@@ -37,6 +37,7 @@ class BlockSettings extends \AbstractInstallTask {
       array("bean","homepage-about-block", 'well'),
       array("bean","jumpstart-home-page-information-",'well'),
       array("bean","jumpstart-affiliated-programs","well"),
+      array("bean","homepage-research-projects-block","well"),
       array("bean","jumpstart-contact-us-postcard","well"),
       array("bean","jumpstart-degree-programs-info-f","well"),
       array("bean","jumpstart-featured-course","well"),
