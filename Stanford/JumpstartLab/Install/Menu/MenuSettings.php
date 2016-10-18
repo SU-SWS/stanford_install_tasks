@@ -265,28 +265,14 @@ class MenuSettings extends \AbstractInstallTask {
       'menu_name' => 'menu-footer-about-menu',
       'weight' => -50,
     );
-    // Affiliated Programs.
-    $footer_about['about/affiliated-programs'] = array(
-      'link_path' => drupal_get_normal_path('about/affiliated-programs'),
-      'link_title' => 'Affiliated Programs',
+    // About / Directions & Parking.
+    $footer_about['about/directions-parking'] = array(
+      'link_path' => drupal_get_normal_path('about/directions-parking'),
+      'link_title' => 'Directions & Parking',
       'menu_name' => 'menu-footer-about-menu',
-      'weight' => -48,
+      'weight' => -49,
     );
-    // Location.
-    $footer_about['about/location'] = array(
-      'link_path' => drupal_get_normal_path('about/location'),
-      'link_title' => 'Location',
-      'menu_name' => 'menu-footer-about-menu',
-      'weight' => -46,
-    );
-    // Contact.
-    $footer_about['about/contact'] = array(
-      'link_path' => drupal_get_normal_path('about/contact'),
-      'link_title' => 'Contact',
-      'menu_name' => 'menu-footer-about-menu',
-      'weight' => -44,
-    );
-    // Make a Gift.
+    // About / Make a Gift.
     $footer_about['about/giving'] = array(
       'link_path' => drupal_get_normal_path('about/giving'),
       'link_title' => 'Make a Gift',
@@ -294,99 +280,8 @@ class MenuSettings extends \AbstractInstallTask {
       'weight' => -42,
     );
 
-    // -------------------------------------------------------------------------
-
-    // Overview.
-    $footer_academics['academics/academics-overview'] = array(
-      'link_path' => drupal_get_normal_path('academics/academics-overview'),
-      'link_title' => 'About Us',
-      'menu_name' => 'menu-footer-academics-menu',
-      'weight' => -50,
-    );
-    // Undergraduate Program.
-    $footer_academics['academics/undergraduate-program'] = array(
-      'link_path' => drupal_get_normal_path('academics/undergraduate-program'),
-      'link_title' => 'Undergraduate Program',
-      'menu_name' => 'menu-footer-academics-menu',
-      'weight' => -48,
-    );
-    // Graduate Program.
-    $footer_academics['academics/graduate-programs'] = array(
-      'link_path' => drupal_get_normal_path('academics/graduate-programs'),
-      'link_title' => 'Graduate Programs',
-      'menu_name' => 'menu-footer-academics-menu',
-      'weight' => -46,
-    );
-    // Courses.
-    $footer_academics['courses'] = array(
-      'link_path' => drupal_get_normal_path('courses'),
-      'link_title' => 'Courses',
-      'menu_name' => 'menu-footer-academics-menu',
-      'weight' => -44,
-    );
-
-    // -------------------------------------------------------------------------
-
-    // Department Newsletter.
-    $footer_news_events['news/department-newsletter'] = array(
-      'link_path' => drupal_get_normal_path('news/department-newsletter'),
-      'link_title' => 'Department Newsletter',
-      'menu_name' => 'menu-footer-news-events-menu',
-      'weight' => -50,
-    );
-    // Recent News.
-    $footer_news_events['news/recent-news'] = array(
-      'link_path' => drupal_get_normal_path('news/recent-news'),
-      'link_title' => 'Recent News',
-      'menu_name' => 'menu-footer-news-events-menu',
-      'weight' => -48,
-    );
-    // Subscribe.
-    $footer_news_events['news/subscribe'] = array(
-      'link_path' => drupal_get_normal_path('news/subscribe'),
-      'link_title' => 'Subscribe',
-      'menu_name' => 'menu-footer-news-events-menu',
-      'weight' => -46,
-    );
-    // Upcoming events.
-    $footer_news_events['events/upcoming-events'] = array(
-      'link_path' => drupal_get_normal_path('events/upcoming-events'),
-      'link_title' => 'Upcoming Events',
-      'menu_name' => 'menu-footer-news-events-menu',
-      'weight' => -44,
-      'router_path' => 'events/upcoming-events',
-      'customized' => 1,
-    );
-
-    // -------------------------------------------------------------------------
-
-    // Faculty.
-    $footer_people['people/faculty'] = array(
-      'link_path' => drupal_get_normal_path('people/faculty'),
-      'link_title' => 'Faculty',
-      'menu_name' => 'menu-footer-people-menu',
-      'weight' => -50,
-    );
-    // Students.
-    $footer_people['people/students'] = array(
-      'link_path' => drupal_get_normal_path('people/students'),
-      'link_title' => 'Students',
-      'menu_name' => 'menu-footer-people-menu',
-      'weight' => -48,
-    );
-    // Staff.
-    $footer_people['people/staff'] = array(
-      'link_path' => drupal_get_normal_path('people/staff'),
-      'link_title' => 'Staff',
-      'menu_name' => 'menu-footer-people-menu',
-      'weight' => -46,
-    );
-
     $items[] = $main_menu;
     $items[] = $footer_about;
-    $items[] = $footer_academics;
-    $items[] = $footer_news_events;
-    $items[] = $footer_people;
 
     // Loop through each of the items and save them.
     foreach ($items as $index_one => $item) {
