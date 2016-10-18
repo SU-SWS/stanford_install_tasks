@@ -11,40 +11,34 @@ namespace Stanford\JumpstartEngineering\Install\Content;
 /**
  *
  */
-class ImportJSEBeans extends \AbstractInstallTask {
+class ImportJSECustomBeans extends \AbstractInstallTask {
 
   /**
-   * Import JSE BEANs.
+   * Import Custom BEANs.
    *
    * @param array $args
    *   Installation arguments.
    */
   public function execute(&$args = array()) {
 
-    // @todo: Make this an option on the install form.
     $endpoint = variable_get("stanford_content_server", "https://sites.stanford.edu/jsa-content/jsainstall");
 
     $uuids = array(
-      '04cef32d-aa4b-477c-850e-e9efd331fa4c',
-      // Jumpstart Home Page Banner - No Caption.
-      '40cabca1-7d44-42bf-a012-db53fdccd350',
-      // Jumpstart Large Custom Block.
-      '7e510af6-c003-402d-91a4-7480dac1484a',
       // Jumpstart Small Custom Block.
-      '2c570a0a-d52a-4e8b-bf36-ec01b2777932',
-      // JSE Logo Block.
-      '593aed4a-653e-4bea-8129-9733f4b2bd4b',
-      // JSE Linked Logo Block
-      '87527e6a-1f9e-4b39-a999-c138851b3a47',
-      // Jumpstart Custom Footer Block.
-      'afb406ad-c08f-4c91-a179-e703a8afc6ca',
-      // Jumpstart Home Page Full-Width Banner - No Caption
+      '7e510af6-c003-402d-91a4-7480dac1484a',
+      // Jumpstart Small Custom Block 2.
+      '27d46141-6f4f-4988-b054-ddb9797cfa6a',
+      // Jumpstart Small Custom Block 3.
+      '008e9fae-e2ca-4be7-a451-df0b794842d6',
+      //Jumpstart Small Custom Block 4
+      '6997adbe-96e6-43f9-b34c-03f6a23197c7',
+      // Jumpstart Small Custom Block 5
+      '7baae13f-7fc3-489c-bcd7-08698ab08d25',
     );
     $importer = new \SitesContentImporter();
     $importer->set_endpoint($endpoint);
     $importer->set_bean_uuids($uuids);
     $importer->import_content_beans();
-
   }
 
   /**

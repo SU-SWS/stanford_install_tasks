@@ -20,9 +20,23 @@ class JSEBlockClasses extends \AbstractInstallTask {
 
     // Install default JSE block classes.
     $values = array(
-      array("bean", "jumpstart-small-custom-block", "well"),
-      array("bean", "jumpstart-large-custom-block", "well"),
+      array("bean", "jumpstart-home-page-banner---no-", "span8"),
+      array("bean", "jumpstart-home-page-full-width-b", "span12"),
+      array("bean", "homepage-about-block", "well"),
+      array("bean", "jumpstart-large-custom-block", "well span8"),
+      array("bean", "jumpstart-small-custom-block", "well span4"),
+      array("bean", "jumpstart-small-custom-block-2", "well span4"),
+      array("bean", "jumpstart-small-custom-block-3", "well span4"),
+      array("bean", "jumpstart-small-custom-block-4", "well span4"),
+      array("bean", "jumpstart-small-custom-block-5", "well span4"),
+
+      // Affiliates two-stacked
+      array("views", "46f3a22e00be75cb8fe3bc16de17162a", "well span4"),
+      array("views", "stanford_events_views-block", "well span4"),
+      // News: 2 Item Recent News List Block
+      array("views", "f73ff55b085ea49217d347de6630cd5a", "well span4"),
     );
+
     foreach ($values as $k => $value) {
       // UPDATE block SET (module="bean",delta="social-media",css_class="span4") WHERE module="bean" AND delta="social-media"
       $update = db_update('block')->fields(array('css_class' => $value[2]));
