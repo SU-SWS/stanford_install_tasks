@@ -45,7 +45,11 @@ class HomePageSettings extends \AbstractInstallTask {
 
     // Save header background image.
     $uuid = '3331b480-51bd-4086-bafc-6b5cd342c410';
+    $endpoint = variable_get("stanford_content_server", "https://sites.stanford.edu/jsa-content/jsainstall");
+
     $file_processor = new \ImporterFieldProcessorFile();
+    $file_processor->set_endpoint($endpoint);
+
     $file = $file_processor->process_field_file_create_item($uuid);
     $fid = $file->fid;
 
