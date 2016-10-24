@@ -44,10 +44,8 @@ class HomePageSettings extends \AbstractInstallTask {
     unset($context_status['']);
 
     // Save header background image.
-    include_once DRUPAL_ROOT . '/sites/all/libraries/stanford_sites_content_importer/ImporterFieldProcessorFile.php';
-    include_once DRUPAL_ROOT . '/sites/all/libraries/stanford_sites_content_importer/ImporterFieldProcessor.php';
     $uuid = '3331b480-51bd-4086-bafc-6b5cd342c410';
-    $file_processor = new ImporterFieldProcessorFile();
+    $file_processor = new \ImporterFieldProcessorFile();
     $file = $file_processor->process_field_file_create_item($uuid);
     $fid = $file->fid;
 
