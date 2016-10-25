@@ -8,7 +8,7 @@ namespace Stanford\DrupalCamp\Install;
 /**
  *
  */
-class AccountSettings extends \AbstractInstallTask {
+class AccountSettings extends \ITasks\AbstractInstallTask {
 
   /**
    * Set the site name.

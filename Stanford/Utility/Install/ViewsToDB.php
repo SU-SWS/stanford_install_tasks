@@ -18,7 +18,7 @@ namespace Stanford\Utility\Install;
  * menu_rebuild() doesn't work. Nice try!
  */
 
-class ViewsToDB extends \AbstractInstallTask {
+class ViewsToDB extends \ITasks\AbstractInstallTask {
 
 
   public function execute(&$args = array()) {

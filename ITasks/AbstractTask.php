@@ -4,6 +4,11 @@
  * Abstract Task Class
  */
 
+namespace ITasks;
+
+/**
+ * Abstract class.
+ */
 abstract class AbstractTask {
 
   // Variables

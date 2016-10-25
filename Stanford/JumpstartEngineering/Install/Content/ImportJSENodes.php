@@ -11,7 +11,7 @@ namespace Stanford\JumpstartEngineering\Install\Content;
 /**
  *
  */
-class ImportJSENodes extends \AbstractInstallTask {
+class ImportJSENodes extends \ITasks\AbstractInstallTask {
 
   /**
    * Import JSE Nodes.

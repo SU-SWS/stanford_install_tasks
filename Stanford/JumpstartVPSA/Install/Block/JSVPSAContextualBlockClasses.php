@@ -8,7 +8,7 @@ namespace Stanford\JumpstartVPSA\Install\Block;
 /**
  *
  */
-class JSVPSAContextualBlockClasses extends \AbstractInstallTask {
+class JSVPSAContextualBlockClasses extends \ITasks\AbstractInstallTask {
 
   /**
    * Set Contextual Block Classes.

@@ -4,6 +4,11 @@
  * Task Interface
  */
 
+namespace ITasks;
+
+/**
+ * Class interface.
+ */
 interface InstallTaskInterface {
 
   /**

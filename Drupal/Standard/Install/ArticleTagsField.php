@@ -6,7 +6,7 @@
 
 namespace Drupal\Standard\Install;
 
-class ArticleTagsField extends \AbstractInstallTask {
+class ArticleTagsField extends \ITasks\AbstractInstallTask {
 
   /**
    * Set the site name.

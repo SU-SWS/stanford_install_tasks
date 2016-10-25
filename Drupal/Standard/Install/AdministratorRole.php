@@ -6,7 +6,7 @@
 
 namespace Drupal\Standard\Install;
 
-class AdministratorRole extends \AbstractInstallTask {
+class AdministratorRole extends \ITasks\AbstractInstallTask {
 
   /**
    * Set the site name.

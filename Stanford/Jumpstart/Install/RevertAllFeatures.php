@@ -6,7 +6,7 @@
 
 namespace Stanford\Jumpstart\Install;
 
-class RevertAllFeatures extends \AbstractInstallTask {
+class RevertAllFeatures extends \ITasks\AbstractInstallTask {
 
   /**
    * Set the site name.

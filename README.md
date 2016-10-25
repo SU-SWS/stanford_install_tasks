@@ -44,7 +44,7 @@ code below.
 
 namespace Organization\Group\Project\Install;
 
-class MyInstallTaskName extends \AbstractInstallTask {
+class MyInstallTaskName extends \ITasks\AbstractInstallTask {
 
   /**
    * Description of execute method.

@@ -11,7 +11,7 @@ namespace Stanford\JumpstartEngineering\Install\Content;
 /**
  *
  */
-class ImportJSECustomBeans extends \AbstractInstallTask {
+class ImportJSECustomBeans extends \ITasks\AbstractInstallTask {
 
   /**
    * Import Custom BEANs.
