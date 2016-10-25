@@ -5,11 +5,18 @@
  * to include dependencies. So this is why this ugly little guy is here.
  */
 
-$here = dirname(__FILE__);
+ /**
+  * Include the files necessary to do the install tasks.
+  */
+ function itasks_includes() {
 
-require_once $here . "/iTasks.php";
-// require_once $here . "/AbstractInstallTask.php";
-// require_once $here . "/AbstractTask.php";
-// require_once $here . "/AbstractUpdateTask.php";
-// require_once $here . "/InstallTaskInterface.php";
-// require_once $here . "/TaskEngine.php";
+   // Things take a long time to run. Lets try to up the limit.
+   ini_set('max_execution_time', 300); //300 seconds = 5 minutes
+
+   require_once dirname(__FILE__) . "/InstallTaskInterface.php";
+   require_once dirname(__FILE__) . "/AbstractTask.php";
+   require_once dirname(__FILE__) . "/AbstractInstallTask.php";
+   require_once dirname(__FILE__) . "/AbstractUpdateTask.php";
+   require_once dirname(__FILE__) . "/TaskEngine.php";
+
+ }
