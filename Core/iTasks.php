@@ -4,19 +4,16 @@
  * Enables modules and site configuration for a minimal site installation.
  */
 
- /**
-  * Include the files necessary to do the install tasks.
-  */
-function itasks_includes() {
-  // Things take a long time to run. Lets try to up the limit.
-  // 300 seconds = 5 minutes.
-  ini_set('max_execution_time', 300);
-  require_once dirname(__FILE__) . "/InstallTaskInterface.php";
-  require_once dirname(__FILE__) . "/AbstractTask.php";
-  require_once dirname(__FILE__) . "/AbstractInstallTask.php";
-  require_once dirname(__FILE__) . "/AbstractUpdateTask.php";
-  require_once dirname(__FILE__) . "/TaskEngine.php";
-}
+// Things take a long time to run. Lets try to up the limit.
+// 300 seconds = 5 minutes.
+ini_set('max_execution_time', 300);
+
+// A poor mans use statment list.
+require_once dirname(__FILE__) . "/InstallTaskInterface.php";
+require_once dirname(__FILE__) . "/AbstractTask.php";
+require_once dirname(__FILE__) . "/AbstractInstallTask.php";
+require_once dirname(__FILE__) . "/AbstractUpdateTask.php";
+require_once dirname(__FILE__) . "/TaskEngine.php";
 
 /**
  * The task execution function.
@@ -28,7 +25,6 @@ function itasks_includes() {
  * @param $install_state
  */
 function itask_run_install_task(&$install_state) {
-  itasks_includes();
   $engine = new TaskEngine($install_state['profile_info'], $install_state);
 
   $tasks = $engine->getTasks("install");
