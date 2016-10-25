@@ -4,7 +4,7 @@
  * Add block classes
  */
 
-namespace Stanford\JumpstartEngineering\Install\Block;
+namespace Stanford\JumpstartEngineering\Install\Courses;
 /**
  *
  */
