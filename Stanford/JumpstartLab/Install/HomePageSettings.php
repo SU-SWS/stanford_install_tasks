@@ -33,16 +33,6 @@ class HomePageSettings extends \AbstractInstallTask {
 
     unset($context_status['']);
 
-    foreach ($names as $context_name) {
-      $context_status[$context_name] = TRUE;
-      $settings = variable_get('sjh_' . $context_name, array());
-      $settings['site_admin'] = isset($enabled[$context_name]);
-      variable_set('sjh_' . $context_name, $settings);
-    }
-
-    $context_status[$default] = FALSE;
-    unset($context_status['']);
-
     // Save header background image.
     $uuid = '3331b480-51bd-4086-bafc-6b5cd342c410';
     $endpoint = variable_get("stanford_content_server", "https://sites.stanford.edu/jsa-content/jsainstall");
@@ -52,12 +42,23 @@ class HomePageSettings extends \AbstractInstallTask {
 
     $file = $file_processor->process_field_file_create_item($uuid);
     $fid = $file->fid;
+    $settings['header_image'] = $fid;
 
     // Save settings.
-    variable_set('header_image', $fid);
+    variable_set($settings['header_image'], $fid);
     variable_set('stanford_jumpstart_home_active', $default);
     variable_set('stanford_jumpstart_home_active_body_class', 'stanford-jumpstart-home-mayfield');
     variable_set('context_status', $context_status);
+
+    foreach ($names as $context_name) {
+      $context_status[$context_name] = TRUE;
+      $settings = variable_get('sjh_' . $context_name, array());
+      $settings['site_admin'] = isset($enabled[$context_name]);
+      variable_set('sjh_' . $context_name, $settings);
+    }
+
+    $context_status[$default] = FALSE;
+    unset($context_status['']);
   }
 
   /**
