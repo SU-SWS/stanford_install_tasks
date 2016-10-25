@@ -18,5 +18,6 @@
    require_once dirname(__FILE__) . "/AbstractInstallTask.php";
    require_once dirname(__FILE__) . "/AbstractUpdateTask.php";
    require_once dirname(__FILE__) . "/TaskEngine.php";
+   require_once dirname(__FILE__) . "/iTasks.php";
 
  }
