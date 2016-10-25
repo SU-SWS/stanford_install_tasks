@@ -30,7 +30,7 @@ Please follow PSR-4 naming conventions: http://www.php-fig.org/psr/psr-4/
 
 Install tasks should always be placed in an `Install` folder and then named
 descriptively. Install task files should always be named the same as the class
-name. The class should always extend AbstractInstallTask. The AbstractInstallTask
+name. The class should always extend \ITasks\AbstractInstallTask. The AbstractInstallTask
 class is found in the installation profile and not in this repository. Each
 install task has one required method called `execute`. Please see the boilerplate
 code below.
@@ -76,7 +76,7 @@ Please follow PSR-4 naming conventions: http://www.php-fig.org/psr/psr-4/
 
 Update tasks should always be placed in an `Update` folder and then named
 descriptively. Update task files should always be named the same as the class
-name. The class should always extend AbstractUpdateTask. The AbstractUpdateTask
+name. The class should always extend \ITasks\AbstractUpdateTask. The AbstractUpdateTask
 class is found in the installation profile and not in this repository. Each
 update task has one required method called `execute` and should include a
 $description variable. Please see the boilerplate code below.
@@ -91,7 +91,7 @@ namespace Organization\Group\Project;
 /**
  *
  */
-class MyUpdateTask extends \AbstractUpdateTask {
+class MyUpdateTask extends \ITasks\AbstractUpdateTask {
 
   // Description of update task.
   protected $description = "Change the site name to my new site name";
