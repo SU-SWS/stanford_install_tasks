@@ -6,7 +6,7 @@
 
 namespace Stanford\Utility\Install;
 
-class CreateRedirects extends \AbstractInstallTask {
+class CreateRedirects extends \ITasks\AbstractInstallTask {
 
 
   /**

@@ -13,7 +13,7 @@ namespace Stanford\Utility\Install;
  * menu items this early in the sites life. A side effect is that all the
  * default views are enabled when saved to the db and they should not be.
  */
-class ViewsFromDB extends \AbstractInstallTask {
+class ViewsFromDB extends \ITasks\AbstractInstallTask {
 
 
   public function execute(&$args = array()) {

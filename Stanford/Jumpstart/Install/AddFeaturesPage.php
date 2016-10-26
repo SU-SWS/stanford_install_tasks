@@ -8,7 +8,7 @@ namespace Stanford\Jumpstart\Install;
 /**
  *
  */
-class AddFeaturesPage extends \AbstractInstallTask {
+class AddFeaturesPage extends \ITasks\AbstractInstallTask {
 
   /**
    * Set Content for the Add features page.

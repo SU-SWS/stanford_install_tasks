@@ -8,7 +8,7 @@ namespace Stanford\Jumpstart\Install;
 /**
  *
  */
-class ThemeSettings extends \AbstractInstallTask {
+class ThemeSettings extends \ITasks\AbstractInstallTask {
 
   /**
    * Set the site name.

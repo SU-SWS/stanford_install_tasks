@@ -8,7 +8,7 @@ namespace Stanford\JumpstartAcademic\Install\Block;
 /**
  *
  */
-class BlockSettings extends \AbstractInstallTask {
+class BlockSettings extends \ITasks\AbstractInstallTask {
 
   /**
    * Set the site name.

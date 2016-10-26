@@ -8,7 +8,7 @@ namespace Stanford\JumpstartVPSA\Install;
 /**
  *
  */
-class JSVPSAFinishInstallation extends \AbstractInstallTask {
+class JSVPSAFinishInstallation extends \ITasks\AbstractInstallTask {
 
   /**
    * Enable a couple of final modules because they depend on everything.

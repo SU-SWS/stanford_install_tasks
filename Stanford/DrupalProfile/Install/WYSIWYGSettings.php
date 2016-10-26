@@ -6,7 +6,7 @@
 
 namespace Stanford\DrupalProfile\Install;
 
-class WYSIWYGSettings extends \AbstractInstallTask {
+class WYSIWYGSettings extends \ITasks\AbstractInstallTask {
 
   /**
    * Set the site name.

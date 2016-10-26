@@ -8,7 +8,7 @@ namespace Stanford\JumpstartAcademic\Install\Content;
 /**
  *
  */
-class ImportJSAcademicVocabularies extends \AbstractInstallTask {
+class ImportJSAcademicVocabularies extends \ITasks\AbstractInstallTask {
 
   /**
    * Set the site name.

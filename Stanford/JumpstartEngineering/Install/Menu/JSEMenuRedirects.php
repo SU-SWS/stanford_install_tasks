@@ -10,7 +10,7 @@ use Stanford\Utility\Install\CreateRedirects;
 /**
  *
  */
-class JSEMenuRedirects extends \AbstractInstallTask {
+class JSEMenuRedirects extends \ITasks\AbstractInstallTask {
 
   /**
    * Create menu redirects.

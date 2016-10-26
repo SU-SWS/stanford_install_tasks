@@ -6,7 +6,7 @@
 
 namespace Drupal\Standard\Install;
 
-class TagsTaxonomy extends \AbstractInstallTask {
+class TagsTaxonomy extends \ITasks\AbstractInstallTask {
 
   /**
    * Set the site name.

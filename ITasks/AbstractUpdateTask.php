@@ -4,7 +4,12 @@
  * Abstract Task Class
  */
 
-abstract class AbstractUpdateTask extends AbstractTask {
+namespace ITasks;
+
+/**
+ * Abstract Update Task class.
+ */
+abstract class AbstractUpdateTask extends \ITasks\AbstractTask {
 
   // The description of this update task.
   protected $description = "No description provided";
@@ -19,7 +24,7 @@ abstract class AbstractUpdateTask extends AbstractTask {
   public function getDescription() {
     return $this->description;
   }
-  
+
   /**
    * [form description]
    * @param  [type] $form        [description]

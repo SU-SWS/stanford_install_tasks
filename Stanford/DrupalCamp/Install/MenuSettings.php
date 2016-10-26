@@ -8,7 +8,7 @@ namespace Stanford\DrupalCamp\Install;
 /**
  *
  */
-class MenuSettings extends \AbstractInstallTask {
+class MenuSettings extends \ITasks\AbstractInstallTask {
 
   /**
    * Set the site name.

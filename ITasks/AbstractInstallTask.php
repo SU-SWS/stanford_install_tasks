@@ -4,7 +4,12 @@
  * Abstract Task Class
  */
 
-abstract class AbstractInstallTask extends AbstractTask implements InstallTaskInterface {
+namespace ITasks;
+
+/**
+ * Abstract install tasks.
+ */
+abstract class AbstractInstallTask extends \ITasks\AbstractTask implements \ITasks\InstallTaskInterface {
 
   protected $displayName;
   protected $display = TRUE;
@@ -18,7 +23,6 @@ abstract class AbstractInstallTask extends AbstractTask implements InstallTaskIn
    *
    * @param array $tasks
    *   An array of installation task objects.
-   *
    */
   public function installTaskAlter(&$tasks) {
     // You can modify other installation tasks here.

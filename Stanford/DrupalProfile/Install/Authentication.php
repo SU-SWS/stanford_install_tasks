@@ -10,7 +10,7 @@ namespace Stanford\DrupalProfile\Install;
 /**
  *
  */
-class Authentication extends \AbstractInstallTask {
+class Authentication extends \ITasks\AbstractInstallTask {
 
   /**
    * Set the site name.

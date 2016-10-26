@@ -11,7 +11,7 @@ namespace Stanford\JumpstartAcademic\Install\Content;
 /**
  *
  */
-class ImportJSAcademicBeans extends \AbstractInstallTask {
+class ImportJSAcademicBeans extends \ITasks\AbstractInstallTask {
 
   /**
    * Set the site name.

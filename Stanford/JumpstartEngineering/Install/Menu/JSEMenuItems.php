@@ -8,7 +8,7 @@ namespace Stanford\JumpstartEngineering\Install\Menu;
 /**
  *
  */
-class JSEMenuItems extends \AbstractInstallTask {
+class JSEMenuItems extends \ITasks\AbstractInstallTask {
 
   /**
    * Create menu items.

@@ -11,7 +11,7 @@ namespace Stanford\DrupalCamp\Install\Content;
 /**
  *
  */
-class ImportDrupalCampBeans extends \AbstractInstallTask {
+class ImportDrupalCampBeans extends \ITasks\AbstractInstallTask {
 
   /**
    * Set the site name.

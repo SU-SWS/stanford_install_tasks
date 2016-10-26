@@ -8,7 +8,7 @@ namespace Stanford\JumpstartAcademic\Install;
 /**
  *
  */
-class EnableModules extends \AbstractInstallTask {
+class EnableModules extends \ITasks\AbstractInstallTask {
 
   /**
    * Set the site name.

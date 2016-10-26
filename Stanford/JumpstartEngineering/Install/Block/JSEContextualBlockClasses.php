@@ -8,7 +8,7 @@ namespace Stanford\JumpstartEngineering\Install\Block;
 /**
  *
  */
-class JSEContextualBlockClasses extends \AbstractInstallTask {
+class JSEContextualBlockClasses extends \ITasks\AbstractInstallTask {
 
   /**
    * Set Contextual Block Classes.

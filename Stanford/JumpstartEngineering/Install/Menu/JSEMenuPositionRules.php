@@ -8,7 +8,7 @@ namespace Stanford\JumpstartEngineering\Install\Menu;
 /**
  *
  */
-class JSEMenuPositionRules extends \AbstractInstallTask {
+class JSEMenuPositionRules extends \ITasks\AbstractInstallTask {
 
   /**
    * Create Menu Position rules.

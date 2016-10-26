@@ -3,8 +3,11 @@
  * @file
  * A shared, namespaced, and other stuff things and stuff.
  */
+
+namespace ITasks;
+
 /**
- *
+ * Task engine that runs all the things.
  */
 class TaskEngine {
 
