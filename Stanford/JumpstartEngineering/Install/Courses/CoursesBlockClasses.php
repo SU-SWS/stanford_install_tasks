@@ -8,7 +8,8 @@ namespace Stanford\JumpstartEngineering\Install\Courses;
 /**
  *
  */
-class CoursesBlockClasses extends \AbstractInstallTask {
+
+class CoursesBlockClasses extends \ITasks\AbstractInstallTask {
 
   /**
    * Set Block Classes.
