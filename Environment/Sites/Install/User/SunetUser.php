@@ -8,7 +8,7 @@ namespace Environment\Sites\Install\User;
 /**
  *
  */
-class SunetUser extends \AbstractInstallTask {
+class SunetUser extends \ITasks\AbstractInstallTask {
 
   /**
    * Set the site name.

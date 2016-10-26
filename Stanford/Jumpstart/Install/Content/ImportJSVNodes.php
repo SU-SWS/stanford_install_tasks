@@ -11,7 +11,7 @@ namespace Stanford\Jumpstart\Install\Content;
 /**
  *
  */
-class ImportJSVNodes extends \AbstractInstallTask {
+class ImportJSVNodes extends \ITasks\AbstractInstallTask {
 
   /**
    * Set the site name.

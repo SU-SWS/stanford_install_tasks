@@ -14,7 +14,7 @@ namespace Stanford\Utility\Install;
  * 'conditions' : multidimensional array of Menu Position conditions
  */
 
-class InsertMenuRule extends \AbstractInstallTask {
+class InsertMenuRule extends \ITasks\AbstractInstallTask {
 
 
   public function insert_menu_rule(&$mp_rule = array()) {

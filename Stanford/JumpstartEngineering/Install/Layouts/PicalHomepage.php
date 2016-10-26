@@ -8,7 +8,7 @@ namespace Stanford\JumpstartEngineering\Install\Layouts;
 /**
  *
  */
-class PicalHomepage extends \AbstractInstallTask {
+class PicalHomepage extends \ITasks\AbstractInstallTask {
 
   /**
    * Configure PICAL homepage layouts.

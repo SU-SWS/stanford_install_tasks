@@ -8,7 +8,7 @@ namespace Stanford\JumpstartVPSA\Install\Menu;
 /**
  *
  */
-class JSVPSAMenuPositionRules extends \AbstractInstallTask {
+class JSVPSAMenuPositionRules extends \ITasks\AbstractInstallTask {
 
   /**
    * Create Menu Position Rules.

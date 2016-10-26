@@ -8,7 +8,7 @@ namespace Stanford\DrupalCamp\Install;
 /**
  *
  */
-class AdminTheme extends \AbstractInstallTask {
+class AdminTheme extends \ITasks\AbstractInstallTask {
 
   /**
    * Set the site name.

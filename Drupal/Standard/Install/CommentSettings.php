@@ -6,7 +6,7 @@
 
 namespace Drupal\Standard\Install;
 
-class CommentSettings extends \AbstractInstallTask {
+class CommentSettings extends \ITasks\AbstractInstallTask {
 
   /**
    * Set the site name.

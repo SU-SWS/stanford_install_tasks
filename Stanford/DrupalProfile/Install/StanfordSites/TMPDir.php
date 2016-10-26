@@ -6,7 +6,7 @@
 
 namespace Stanford\DrupalProfile\Install\StanfordSites;
 
-class TMPDir extends \AbstractInstallTask {
+class TMPDir extends \ITasks\AbstractInstallTask {
 
   /**
    * Set the site name.

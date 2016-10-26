@@ -8,7 +8,7 @@ namespace Stanford\JumpstartVPSA\Install\Menu;
 /**
  *
  */
-class JSVPSAMenuItems extends \AbstractInstallTask {
+class JSVPSAMenuItems extends \ITasks\AbstractInstallTask {
 
   /**
    * Create menu items.

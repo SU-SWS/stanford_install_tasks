@@ -8,7 +8,7 @@ namespace Stanford\JumpstartEngineering\Install\Users;
 /**
  *
  */
-class UserOne extends \AbstractInstallTask {
+class UserOne extends \ITasks\AbstractInstallTask {
 
   /**
    * Update email address for user 1.
