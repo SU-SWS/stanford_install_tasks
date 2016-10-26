@@ -26,6 +26,7 @@ class JSEMenuPositionRules extends \ITasks\AbstractInstallTask {
     $rules[] = array(
       'link_title' => 'About',
       'admin_title' => 'About by path',
+      'machine_name' => 'about_by_path',
       'conditions' => array(
         'pages' => array(
           'pages' => 'about/*',
@@ -35,6 +36,7 @@ class JSEMenuPositionRules extends \ITasks\AbstractInstallTask {
     $rules[] = array(
       'link_title' => 'Research',
       'admin_title' => 'Research by path',
+      'machine_name' => 'research_by_path',
       'conditions' => array(
         'pages' => array(
           'pages' => 'research/*',
@@ -44,6 +46,7 @@ class JSEMenuPositionRules extends \ITasks\AbstractInstallTask {
     $rules[] = array(
       'link_title' => 'Resources',
       'admin_title' => 'Resources by path',
+      'machine_name' => 'resources_by_path',
       'conditions' => array(
         'pages' => array(
           'pages' => 'resources/*',
@@ -53,6 +56,7 @@ class JSEMenuPositionRules extends \ITasks\AbstractInstallTask {
     $rules[] = array(
       'link_title' => 'News',
       'admin_title' => 'News by content type',
+      'machine_name' => 'news_by_content_type',
       'conditions' => array(
         'content_type' => array(
           'content_type' => array(
@@ -64,6 +68,7 @@ class JSEMenuPositionRules extends \ITasks\AbstractInstallTask {
     $rules[] = array(
       'link_title' => 'News',
       'admin_title' => 'News by path',
+      'machine_name' => 'news_by_path',
       'conditions' => array(
         'pages' => array(
           'pages' => 'news/*',
@@ -73,6 +78,7 @@ class JSEMenuPositionRules extends \ITasks\AbstractInstallTask {
     $rules[] = array(
       'link_title' => 'Events',
       'admin_title' => 'Events by content type',
+      'machine_name' => 'events_by_content_type',
       'conditions' => array(
         'content_type' => array(
           'content_type' => array(
@@ -84,6 +90,7 @@ class JSEMenuPositionRules extends \ITasks\AbstractInstallTask {
     $rules[] = array(
       'link_title' => 'Events',
       'admin_title' => 'Events by path',
+      'machine_name' => 'events_by_path',
       'conditions' => array(
         'pages' => array(
           'pages' => 'events/*',
@@ -93,6 +100,7 @@ class JSEMenuPositionRules extends \ITasks\AbstractInstallTask {
     $rules[] = array(
       'link_title' => 'People',
       'admin_title' => 'People by content type',
+      'machine_name' => 'people_by_content_type',
       'conditions' => array(
         'content_type' => array(
           'content_type' => array(
@@ -104,6 +112,7 @@ class JSEMenuPositionRules extends \ITasks\AbstractInstallTask {
     $rules[] = array(
       'link_title' => 'People',
       'admin_title' => 'People by path',
+      'machine_name' => 'people_by_path',
       'conditions' => array(
         'pages' => array(
           'pages' => 'people/*',
@@ -113,6 +122,7 @@ class JSEMenuPositionRules extends \ITasks\AbstractInstallTask {
     $rules[] = array(
       'link_title' => 'Publications',
       'admin_title' => 'Publications by content type',
+      'machine_name' => 'publications_by_content_type',
       'conditions' => array(
         'content_type' => array(
           'content_type' => array(
@@ -126,6 +136,7 @@ class JSEMenuPositionRules extends \ITasks\AbstractInstallTask {
     $rules[] = array(
       'link_title' => 'People',
       'admin_title' => 'Faculty by taxonomy',
+      'machine_name' => 'faculty_by_taxonomy',
       'conditions' => array(
         'taxonomy' => array(
           'vid' => $vid,
@@ -138,6 +149,7 @@ class JSEMenuPositionRules extends \ITasks\AbstractInstallTask {
     $rules[] = array(
       'link_title' => 'People',
       'admin_title' => 'Staff by taxonomy',
+      'machine_name' => 'staff_by_taxonomy',
       'conditions' => array(
         'taxonomy' => array(
           'vid' => $vid,
@@ -150,6 +162,7 @@ class JSEMenuPositionRules extends \ITasks\AbstractInstallTask {
     $rules[] = array(
       'link_title' => 'People',
       'admin_title' => 'Students by taxonomy',
+      'machine_name' => 'students_by_taxonomy',
       'conditions' => array(
         'taxonomy' => array(
           'vid' => $vid,
@@ -162,6 +175,7 @@ class JSEMenuPositionRules extends \ITasks\AbstractInstallTask {
     $rules[] = array(
       'link_title' => 'News',
       'admin_title' => 'News by taxonomy',
+      'machine_name' => 'news_by_taxonomy',
       'conditions' => array(
         'taxonomy' => array(
           'vid' => $vid,
