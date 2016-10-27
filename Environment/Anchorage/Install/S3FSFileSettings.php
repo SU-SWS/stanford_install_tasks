@@ -8,7 +8,7 @@ namespace Environment\Anchorage\Install;
 /**
  *
  */
-class S3FSFileSettings extends \AbstractInstallTask {
+class S3FSFileSettings extends \ITasks\AbstractInstallTask {
 
   /**
    * Set the site name.

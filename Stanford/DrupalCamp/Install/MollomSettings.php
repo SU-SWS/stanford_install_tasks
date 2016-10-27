@@ -8,7 +8,7 @@ namespace Stanford\DrupalCamp\Install;
 /**
  *
  */
-class MollomSettings extends \AbstractInstallTask {
+class MollomSettings extends \ITasks\AbstractInstallTask {
 
   /**
    * Set the site name.

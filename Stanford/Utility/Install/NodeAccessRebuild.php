@@ -9,7 +9,7 @@ namespace Stanford\Utility\Install;
 /**
  * Rebuild the node access database.
  */
-class NodeAccessRebuild extends \AbstractInstallTask {
+class NodeAccessRebuild extends \ITasks\AbstractInstallTask {
 
 
   public function execute(&$args = array()) {

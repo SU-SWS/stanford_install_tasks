@@ -8,7 +8,7 @@ namespace Stanford\JumpstartEngineering\Update;
 /**
  *
  */
-class AddFeaturesPage extends \AbstractUpdateTask {
+class AddFeaturesPage extends \ITasks\AbstractUpdateTask {
 
   protected $description = "Update the content of Add Features page";
 

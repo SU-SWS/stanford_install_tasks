@@ -11,7 +11,7 @@ namespace Stanford\JumpstartVPSA\Install\Content;
 /**
  *
  */
-class ImportJSVPSABeans extends \AbstractInstallTask {
+class ImportJSVPSABeans extends \ITasks\AbstractInstallTask {
 
   /**
    * Import JSVPSA BEANs.

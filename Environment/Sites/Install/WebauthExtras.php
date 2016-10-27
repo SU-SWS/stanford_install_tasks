@@ -8,7 +8,7 @@ namespace Environment\Sites\Install;
 /**
  *
  */
-class WebauthExtras extends \AbstractInstallTask {
+class WebauthExtras extends \ITasks\AbstractInstallTask {
 
   /**
    * Set the site name.

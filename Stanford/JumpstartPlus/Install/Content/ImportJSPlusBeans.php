@@ -11,7 +11,7 @@ namespace Stanford\JumpstartPlus\Install\Content;
 /**
  *
  */
-class ImportJSPlusBEANs extends \AbstractInstallTask {
+class ImportJSPlusBEANs extends \ITasks\AbstractInstallTask {
 
   /**
    * Set the site name.

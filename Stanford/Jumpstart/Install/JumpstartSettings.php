@@ -8,7 +8,7 @@ namespace Stanford\Jumpstart\Install;
 /**
  *
  */
-class JumpstartSettings extends \AbstractInstallTask {
+class JumpstartSettings extends \ITasks\AbstractInstallTask {
 
   /**
    * Set the site name.

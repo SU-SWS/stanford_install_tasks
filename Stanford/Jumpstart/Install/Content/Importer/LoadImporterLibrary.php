@@ -8,7 +8,7 @@ namespace Stanford\Jumpstart\Install\Content\Importer;
 /**
  *
  */
-class LoadImporterLibrary extends \AbstractInstallTask {
+class LoadImporterLibrary extends \ITasks\AbstractInstallTask {
 
   /**
    * Set the site name.

@@ -8,7 +8,7 @@ namespace Stanford\JumpstartEngineering\Install\Layouts;
 /**
  *
  */
-class Sitewide extends \AbstractInstallTask {
+class Sitewide extends \ITasks\AbstractInstallTask {
 
   /**
    * Configure the sitewide layout.

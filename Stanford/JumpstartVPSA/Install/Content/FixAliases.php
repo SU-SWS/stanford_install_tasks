@@ -8,7 +8,7 @@ namespace Stanford\JumpstartVPSA\Install\Content;
 /**
  *
  */
-class FixAliases extends \AbstractInstallTask {
+class FixAliases extends \ITasks\AbstractInstallTask {
 
 
   /**

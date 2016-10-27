@@ -6,7 +6,7 @@
 
 namespace Environment\Local\Install;
 
-class GeneralSettings extends \AbstractInstallTask {
+class GeneralSettings extends \ITasks\AbstractInstallTask {
 
   /**
    * Set the site name.

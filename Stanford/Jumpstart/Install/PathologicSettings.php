@@ -8,7 +8,7 @@ namespace Stanford\Jumpstart\Install;
 /**
  *
  */
-class PathologicSettings extends \AbstractInstallTask {
+class PathologicSettings extends \ITasks\AbstractInstallTask {
 
   /**
    * Set the site name.

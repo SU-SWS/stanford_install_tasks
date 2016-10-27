@@ -8,7 +8,7 @@ namespace Environment\Anchorage\Install;
 /**
  *
  */
-class SAMLSettings extends \AbstractInstallTask {
+class SAMLSettings extends \ITasks\AbstractInstallTask {
 
   /**
    * Set the site name.

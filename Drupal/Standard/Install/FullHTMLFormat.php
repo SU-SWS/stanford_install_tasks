@@ -6,7 +6,7 @@
 
 namespace Drupal\Standard\Install;
 
-class FullHTMLFormat extends \AbstractInstallTask {
+class FullHTMLFormat extends \ITasks\AbstractInstallTask {
 
   /**
    * Set the site name.

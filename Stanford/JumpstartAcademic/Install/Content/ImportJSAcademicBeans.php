@@ -5,13 +5,13 @@
  */
 
 use Stanford\Jumpstart\Install\Content\Importer\ImporterFieldProcessorCustomBody as ImporterFieldProcessorCustomBody;
-use Stanford\Jumpstart\Install\Content\Importer\ImporterFieldProcessorFieldSDestinationPublish as ImporterFieldProcessorFieldSDestinationPublish;
+use Stanford\Jumpstart\Install\Content\Importer\ImporterFieldProcessorCustomFieldSDestinationPublish as ImporterFieldProcessorFieldSDestinationPublish;
 
 namespace Stanford\JumpstartAcademic\Install\Content;
 /**
  *
  */
-class ImportJSAcademicBeans extends \AbstractInstallTask {
+class ImportJSAcademicBeans extends \ITasks\AbstractInstallTask {
 
   /**
    * Set the site name.

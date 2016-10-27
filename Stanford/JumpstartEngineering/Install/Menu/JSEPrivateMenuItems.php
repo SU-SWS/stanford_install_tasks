@@ -10,7 +10,7 @@ use Stanford\Utility\Install\CreateMenuLinks;
 /**
  *
  */
-class JSEPrivateMenuItems extends \AbstractInstallTask {
+class JSEPrivateMenuItems extends \ITasks\AbstractInstallTask {
 
   /**
    * Create menu items.

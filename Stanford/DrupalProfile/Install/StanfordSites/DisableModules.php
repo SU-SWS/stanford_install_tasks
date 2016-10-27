@@ -6,7 +6,7 @@
 
 namespace Stanford\DrupalProfile\Install\StanfordSites;
 
-class DisableModules extends \AbstractInstallTask {
+class DisableModules extends \ITasks\AbstractInstallTask {
 
   /**
    * Set the site name.

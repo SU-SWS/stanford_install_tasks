@@ -6,7 +6,7 @@
 
 namespace Drupal\Standard\Install;
 
-class ArticleContentType extends \AbstractInstallTask {
+class ArticleContentType extends \ITasks\AbstractInstallTask {
 
   /**
    * Set the site name.
