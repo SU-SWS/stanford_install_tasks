@@ -8,7 +8,7 @@ namespace Stanford\JumpstartLab\Install\Menu;
 /**
  *
  */
-class MenuRedirects extends \AbstractInstallTask {
+class MenuRedirects extends \ITasks\AbstractInstallTask {
 
   /**
    * Set the site name.

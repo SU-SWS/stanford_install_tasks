@@ -8,7 +8,7 @@ namespace Stanford\JumpstartLab\Install\Content;
 /**
  *
  */
-class ImportJSLabVocabularies extends \AbstractInstallTask {
+class ImportJSLabVocabularies extends \ITasks\AbstractInstallTask {
 
   /**
    * Set the site name.

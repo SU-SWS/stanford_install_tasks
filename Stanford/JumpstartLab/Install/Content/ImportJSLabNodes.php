@@ -11,7 +11,7 @@ namespace Stanford\JumpstartLab\Install\Content;
 /**
  *
  */
-class ImportJSLabNodes extends \AbstractInstallTask {
+class ImportJSLabNodes extends \ITasks\AbstractInstallTask {
 
   /**
    * Set the site name.
