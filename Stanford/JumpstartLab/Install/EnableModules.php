@@ -22,7 +22,6 @@ class EnableModules extends \ITasks\AbstractInstallTask {
     // installed too early.
     module_enable(array(
       "stanford_jumpstart_lab_permissions",
-      "webform",
     ));
   }
 
