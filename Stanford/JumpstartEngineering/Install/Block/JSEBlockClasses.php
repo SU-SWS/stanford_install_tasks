@@ -33,6 +33,8 @@ class JSEBlockClasses extends \ITasks\AbstractInstallTask {
       // Affiliates two-stacked
       array("views", "46f3a22e00be75cb8fe3bc16de17162a", "well span4"),
       array("views", "stanford_events_views-block", "well span4"),
+      // Events: Stanford Events List: Filtered Upcoming Block
+      array("views", "b0b97e4fb54df88f280eb220fef1829e", "well span4"),
       // News: 2 Item Recent News List Block
       array("views", "f73ff55b085ea49217d347de6630cd5a", "well span4"),
       // News with image and title: 3 Item filtered
