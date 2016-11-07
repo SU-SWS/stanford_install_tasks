@@ -37,6 +37,8 @@ class JSEBlockClasses extends \ITasks\AbstractInstallTask {
       array("views", "f73ff55b085ea49217d347de6630cd5a", "well span4"),
       // News with image and title: 3 Item filtered
       array("views", "d6a08df010339ebc8df9db319eb2052c", "well span4"),
+      // Person grid filtered
+      array("views", "e94fb0374cf38241b08947ca4e210563", "well span4"),
     );
 
     foreach ($values as $k => $value) {
