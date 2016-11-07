@@ -35,6 +35,8 @@ class JSEBlockClasses extends \ITasks\AbstractInstallTask {
       array("views", "stanford_events_views-block", "well span4"),
       // News: 2 Item Recent News List Block
       array("views", "f73ff55b085ea49217d347de6630cd5a", "well span4"),
+      // News with image and title: 3 Item filtered
+      array("views", "d6a08df010339ebc8df9db319eb2052c", "well span4"),
     );
 
     foreach ($values as $k => $value) {
