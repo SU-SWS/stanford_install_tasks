@@ -41,6 +41,10 @@ class JSEBlockClasses extends \ITasks\AbstractInstallTask {
       array("views", "d6a08df010339ebc8df9db319eb2052c", "well span4"),
       // Person grid filtered
       array("views", "e94fb0374cf38241b08947ca4e210563", "well"),
+      //filtered News view
+      array("views","e1db4622d5599968122994300d2a6f47","well"),
+      //exposed filter for News Extras view
+      array("views","b9c01c6eb8df3ae2f662a9d4a0e35311","well"),
     );
 
     foreach ($values as $k => $value) {
