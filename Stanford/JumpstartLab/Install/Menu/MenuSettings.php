@@ -34,7 +34,7 @@ class MenuSettings extends \ITasks\AbstractInstallTask {
       'link_path' => drupal_get_normal_path('people'),
       'link_title' => 'People',
       'menu_name' => 'main-menu',
-      'weight' => -7,
+      'weight' => 0,
     );
     // People / Faculty.
     $main_menu['people/jacob-smith'] = array(
@@ -68,7 +68,7 @@ class MenuSettings extends \ITasks\AbstractInstallTask {
       'link_path' => drupal_get_normal_path('projects'),
       'link_title' => 'Projects',
       'menu_name' => 'main-menu',
-      'weight' => -6,
+      'weight' => 5,
       'customized' => 1,
     );
     // Projects / Research Overview.
@@ -132,7 +132,7 @@ class MenuSettings extends \ITasks\AbstractInstallTask {
       'link_path' => drupal_get_normal_path('publications'),
       'link_title' => 'Publications',
       'menu_name' => 'main-menu',
-      'weight' => -6,
+      'weight' => 10,
       'customized' => 1,
     );
     // Participate.
@@ -140,7 +140,7 @@ class MenuSettings extends \ITasks\AbstractInstallTask {
       'link_path' => drupal_get_normal_path('participate'),
       'link_title' => 'Participate',
       'menu_name' => 'main-menu',
-      'weight' => -6,
+      'weight' => 15,
       'customized' => 1,
     );
     // Participate / Research Assistant.
@@ -186,7 +186,7 @@ class MenuSettings extends \ITasks\AbstractInstallTask {
       'link_path' => drupal_get_normal_path('resources'),
       'link_title' => 'Resources',
       'menu_name' => 'main-menu',
-      'weight' => -6,
+      'weight' => 20,
       'customized' => 1,
     );
     // About.
@@ -194,7 +194,7 @@ class MenuSettings extends \ITasks\AbstractInstallTask {
       'link_path' => drupal_get_normal_path('about/about-us'),
       'link_title' => 'About',
       'menu_name' => 'main-menu',
-      'weight' => -3,
+      'weight' => 25,
     );
     // About / Overview
     $main_menu['about/overview'] = array(
