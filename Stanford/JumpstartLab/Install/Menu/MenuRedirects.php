@@ -1,14 +1,15 @@
 <?php
-/**
- * @file
- * Abstract Task Class.
- */
 
 namespace Stanford\JumpstartLab\Install\Menu;
+
+use \ITasks\AbstractInstallTask;
+
 /**
+ * Class MenuRedirects.
  *
+ * @package Stanford\JumpstartLab\Install\Menu
  */
-class MenuRedirects extends \ITasks\AbstractInstallTask {
+class MenuRedirects extends AbstractInstallTask {
 
   /**
    * Set the site name.
@@ -69,7 +70,7 @@ class MenuRedirects extends \ITasks\AbstractInstallTask {
   }
 
   /**
-   * Requirements. Duh.
+   * {@inheritdoc}
    */
   public function requirements() {
     return array(

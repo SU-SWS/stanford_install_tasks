@@ -1,14 +1,15 @@
 <?php
-/**
- * @file
- * Abstract Task Class.
- */
 
 namespace Stanford\JumpstartLab\Install;
+
+use \ITasks\AbstractInstallTask;
+
 /**
+ * Class EnableModules.
  *
+ * @package Stanford\JumpstartLab\Install
  */
-class EnableModules extends \ITasks\AbstractInstallTask {
+class EnableModules extends AbstractInstallTask {
 
   /**
    * Set the site name.

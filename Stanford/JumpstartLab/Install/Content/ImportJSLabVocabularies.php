@@ -1,14 +1,15 @@
 <?php
-/**
- * @file
- * Abstract Task Class.
- */
 
 namespace Stanford\JumpstartLab\Install\Content;
+
+use \ITasks\AbstractInstallTask;
+
 /**
+ * Class ImportJSLabVocabularies.
  *
+ * @package Stanford\JumpstartLab\Install\Content
  */
-class ImportJSLabVocabularies extends \ITasks\AbstractInstallTask {
+class ImportJSLabVocabularies extends AbstractInstallTask {
 
   /**
    * Set the site name.
@@ -24,15 +25,17 @@ class ImportJSLabVocabularies extends \ITasks\AbstractInstallTask {
     // Restrictions.
     // These entities we do not want even if they appear in the feed.
     $restrict = array(
-      'tags',              // tags vocabulary
-      'sites_products',    // products vocabulary
+      // Tags vocabulary.
+      'tags',
+      // Products vocabulary.
+      'sites_products',
     );
 
     // Vocabularies.
     $importer = new \SitesContentImporter();
-    $importer->set_endpoint($endpoint);
-    $importer->add_restricted_vocabularies($restrict);
-    $importer->import_vocabulary_trees();
+    $importer->setEndpoint($endpoint);
+    $importer->addRestrictedVocabularies($restrict);
+    $importer->importVocabularyTrees();
 
   }
 

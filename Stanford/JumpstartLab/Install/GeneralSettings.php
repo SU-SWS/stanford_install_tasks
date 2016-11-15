@@ -1,14 +1,15 @@
 <?php
-/**
- * @file
- * Abstract Task Class.
- */
 
 namespace Stanford\JumpstartLab\Install;
+
+use \ITasks\AbstractInstallTask;
+
 /**
+ * Class GeneralSettings.
  *
+ * @package Stanford\JumpstartLab\Install
  */
-class GeneralSettings extends \ITasks\AbstractInstallTask {
+class GeneralSettings extends AbstractInstallTask {
 
   /**
    * Set the site name.
@@ -24,7 +25,8 @@ class GeneralSettings extends \ITasks\AbstractInstallTask {
     // Set the default theme.
     variable_set('theme_default', 'stanford_framework');
 
-    // Set menu position default setting to 'mark the rule's parent menu item as being "active".'
+    // Set menu position default setting to 'mark the rule's parent menu item
+    // as being "active"'.
     variable_set('menu_position_active_link_display', 'parent');
   }
 

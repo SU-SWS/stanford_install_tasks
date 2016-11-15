@@ -18,7 +18,7 @@ class CAPxConfigChange extends AbstractInstallTask {
   public function execute(&$args = array()) {
     db_update('capx_cfe')
       ->fields(array(
-        'machine_name' => 'labs_default',
+        'machine_name' => 'labs_defaulta',
         'title' => t('LABs Default'),
       ))
       ->condition('machine_name', 'jse_default')

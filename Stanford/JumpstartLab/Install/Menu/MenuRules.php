@@ -1,14 +1,16 @@
 <?php
-/**
- * @file
- * Abstract Task Class.
- */
 
 namespace Stanford\JumpstartLab\Install\Menu;
+
+use \ITasks\AbstractInstallTask;
+use Stanford\Utility\Install\InsertMenuRule;
+
 /**
+ * Class MenuRules.
  *
+ * @package Stanford\JumpstartLab\Install\Menu
  */
-class MenuRules extends \ITasks\AbstractInstallTask {
+class MenuRules extends AbstractInstallTask {
 
   /**
    * Set the site name.
@@ -18,8 +20,8 @@ class MenuRules extends \ITasks\AbstractInstallTask {
    */
   public function execute(&$args = array()) {
 
-    //module_load_include('inc', 'menu_position', 'menu_position.admin');
-    # Set menu position default setting to 'mark the rule's parent menu item as being "active".'
+    // Module_load_include('inc', 'menu_position', 'menu_position.admin');
+    // Set menu position default setting to 'mark the rule's parent menu item as being "active".
     variable_set('menu_position_active_link_display', 'parent');
     // Define the rules.
     $rules = array();
@@ -87,43 +89,43 @@ class MenuRules extends \ITasks\AbstractInstallTask {
         ),
       ),
     );
-/*
+    /*
     $rules[] = array(
-      'link_title' => 'News',
-      'admin_title' => 'News by content type',
-      'conditions' => array(
-        'content_type' => array(
-          'content_type' => array(
-            'stanford_news_item' => 'stanford_news_item',
-          ),
-        ),
-      ),
+    'link_title' => 'News',
+    'admin_title' => 'News by content type',
+    'conditions' => array(
+    'content_type' => array(
+    'content_type' => array(
+    'stanford_news_item' => 'stanford_news_item',
+    ),
+    ),
+    ),
     );
     $rules[] = array(
-      'link_title' => 'News',
-      'admin_title' => 'News by path',
-      'conditions' => array(
-        'pages' => array(
-          'pages' => 'news/*',
-        ),
-      ),
+    'link_title' => 'News',
+    'admin_title' => 'News by path',
+    'conditions' => array(
+    'pages' => array(
+    'pages' => 'news/*',
+    ),
+    ),
     );
     $vocabulary = taxonomy_vocabulary_machine_name_load('news_categories');
     $vid = $vocabulary->vid;
     $rules[] = array(
-      'link_title' => 'News',
-      'admin_title' => 'News by taxonomy',
-      'conditions' => array(
-        'taxonomy' => array(
-          'vid' => $vid,
-          'tid' => array(),
-        ),
-      ),
+    'link_title' => 'News',
+    'admin_title' => 'News by taxonomy',
+    'conditions' => array(
+    'taxonomy' => array(
+    'vid' => $vid,
+    'tid' => array(),
+    ),
+    ),
     );
-*/
+     */
 
     foreach ($rules as $mp_rule) {
-      $rule = new \Stanford\Utility\Install\InsertMenuRule();
+      $rule = new InsertMenuRule();
       $rule->insert_menu_rule($mp_rule);
     }
 

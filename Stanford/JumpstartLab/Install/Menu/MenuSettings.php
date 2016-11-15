@@ -1,14 +1,15 @@
 <?php
-/**
- * @file
- * Abstract Task Class.
- */
 
 namespace Stanford\JumpstartLab\Install\Menu;
+
+use \ITasks\AbstractInstallTask;
+
 /**
+ * Class MenuSettings.
  *
+ * @package Stanford\JumpstartLab\Install\Menu
  */
-class MenuSettings extends \ITasks\AbstractInstallTask {
+class MenuSettings extends AbstractInstallTask {
 
   /**
    * Set the site name.
@@ -25,10 +26,9 @@ class MenuSettings extends \ITasks\AbstractInstallTask {
     menu_cache_clear_all();
     menu_rebuild();
 
-    /////////////////////////////////////////////////////////////////////////////
+    // /////////////////////////////////////////////////////////////////////////
     // Jumpstart Lab Main Menus
-    /////////////////////////////////////////////////////////////////////////////
-
+    // /////////////////////////////////////////////////////////////////////////
     // People.
     $main_menu['people'] = array(
       'link_path' => drupal_get_normal_path('people'),
@@ -89,26 +89,26 @@ class MenuSettings extends \ITasks\AbstractInstallTask {
       'customized' => 1,
       'parent' => 'projects',
     );
-/*
+    /*
     // Projects / Sample Research Project Two.
     $main_menu['projects/sample-research-project-two'] = array(
-      'link_path' => drupal_get_normal_path('projects/sample-research-project-two'),
-      'link_title' => 'Sample Research Project Two',
-      'menu_name' => 'main-menu',
-      'weight' => -6,
-      'customized' => 1,
-      'parent' => 'projects',
+    'link_path' => drupal_get_normal_path('projects/sample-research-project-two'),
+    'link_title' => 'Sample Research Project Two',
+    'menu_name' => 'main-menu',
+    'weight' => -6,
+    'customized' => 1,
+    'parent' => 'projects',
     );
     // Projects / Sample Research Project Three.
     $main_menu['projects/sample-research-project-three'] = array(
-      'link_path' => drupal_get_normal_path('projects/sample-research-project-three'),
-      'link_title' => 'Sample Research Project Three',
-      'menu_name' => 'main-menu',
-      'weight' => -6,
-      'customized' => 1,
-      'parent' => 'projects',
+    'link_path' => drupal_get_normal_path('projects/sample-research-project-three'),
+    'link_title' => 'Sample Research Project Three',
+    'menu_name' => 'main-menu',
+    'weight' => -6,
+    'customized' => 1,
+    'parent' => 'projects',
     );
-*/
+     */
     // Projects / Tools/Materials.
     $main_menu['projects/toolsmaterials'] = array(
       'link_path' => drupal_get_normal_path('projects/toolsmaterials'),
@@ -161,26 +161,26 @@ class MenuSettings extends \ITasks\AbstractInstallTask {
       'customized' => 1,
       'parent' => 'participate',
     );
-/*
+    /*
     // Participate / For Parents.
     $main_menu['participate/for-parents'] = array(
-      'link_path' => drupal_get_normal_path('participate/for-parents'),
-      'link_title' => 'For Parents',
-      'menu_name' => 'main-menu',
-      'weight' => -6,
-      'customized' => 1,
-      'parent' => 'participate',
+    'link_path' => drupal_get_normal_path('participate/for-parents'),
+    'link_title' => 'For Parents',
+    'menu_name' => 'main-menu',
+    'weight' => -6,
+    'customized' => 1,
+    'parent' => 'participate',
     );
     // Participate / Sample Application Form.
     $main_menu['participate/sample-application-form'] = array(
-      'link_path' => drupal_get_normal_path('participate/sample-application-form'),
-      'link_title' => 'Sample Application Form',
-      'menu_name' => 'main-menu',
-      'weight' => -6,
-      'customized' => 1,
-      'parent' => 'participate',
+    'link_path' => drupal_get_normal_path('participate/sample-application-form'),
+    'link_title' => 'Sample Application Form',
+    'menu_name' => 'main-menu',
+    'weight' => -6,
+    'customized' => 1,
+    'parent' => 'participate',
     );
-*/
+     */
     // Resources.
     $main_menu['resources'] = array(
       'link_path' => drupal_get_normal_path('resources'),
@@ -196,21 +196,21 @@ class MenuSettings extends \ITasks\AbstractInstallTask {
       'menu_name' => 'main-menu',
       'weight' => 25,
     );
-    // About / Overview
+    // About / Overview.
     $main_menu['about/overview'] = array(
       'link_path' => drupal_get_normal_path('about/about-us'),
       'link_title' => 'Overview',
       'menu_name' => 'main-menu',
       'weight' => -10,
-      'parent' => 'about', // must be saved prior to overview item.
+      'parent' => 'about',
     );
-    // About / Video
+    // About / Video.
     $main_menu['about/video'] = array(
       'link_path' => drupal_get_normal_path('about/video'),
       'link_title' => 'Video',
       'menu_name' => 'main-menu',
       'weight' => -8,
-      'parent' => 'about', // must be saved prior to contact item.
+      'parent' => 'about',
     );
     // News Landing.
     $main_menu['news'] = array(
@@ -226,7 +226,7 @@ class MenuSettings extends \ITasks\AbstractInstallTask {
       'link_title' => 'Courses',
       'menu_name' => 'main-menu',
       'weight' => -6,
-      'parent' => 'about', // must be saved prior to web-access item.
+      'parent' => 'about',
     );
     // About / Directions & Parking.
     $main_menu['about/directions-parking'] = array(
@@ -234,7 +234,7 @@ class MenuSettings extends \ITasks\AbstractInstallTask {
       'link_title' => 'Directions & Parking',
       'menu_name' => 'main-menu',
       'weight' => -6,
-      'parent' => 'about', // must be saved prior to web-access item.
+      'parent' => 'about',
     );
 
     // About / Contact.
@@ -243,7 +243,7 @@ class MenuSettings extends \ITasks\AbstractInstallTask {
       'link_title' => 'Contact',
       'menu_name' => 'main-menu',
       'weight' => -4,
-      'parent' => 'about', // must be saved prior to contact item.
+      'parent' => 'about',
     );
     // About / Make a Gift.
     $main_menu['about/giving'] = array(
@@ -251,13 +251,12 @@ class MenuSettings extends \ITasks\AbstractInstallTask {
       'link_title' => 'Make A Gift',
       'menu_name' => 'main-menu',
       'weight' => -2,
-      'parent' => 'about', // must be saved prior to web-access item.
+      'parent' => 'about',
     );
 
-    /////////////////////////////////////////////////////////////////////////////
+    // ///////////////////////////////////////////////////////////////////////////
     // Footer Menus
-    /////////////////////////////////////////////////////////////////////////////
-
+    // ///////////////////////////////////////////////////////////////////////////
     // About.
     $footer_about['about'] = array(
       'link_path' => drupal_get_normal_path('about'),
@@ -285,12 +284,13 @@ class MenuSettings extends \ITasks\AbstractInstallTask {
 
     // Loop through each of the items and save them.
     foreach ($items as $index_one => $item) {
-      foreach($item as $k => $v) {
-        // Check to see if there is a parent declaration. If there is then find
-        // the mlid of the parent item and attach it to the menu item being saved.
+      foreach ($item as $k => $v) {
+        // Check if there is a parent declaration. If there is then find the
+        // mlid of the parent item and attach it to the menu item being saved.
         if (isset($v['parent'])) {
           $v['plid'] = $item[$v['parent']]['mlid'];
-          unset($v['parent']); // Remove fluff before save.
+          // Remove fluff before save.
+          unset($v['parent']);
         }
         // Save the menu item.
         $mlid = menu_link_save($v);

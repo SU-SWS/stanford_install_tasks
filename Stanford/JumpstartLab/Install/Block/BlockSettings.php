@@ -1,10 +1,5 @@
 <?php
 
-/**
- * @file
- * Abstract Task Class.
- */
-
 namespace Stanford\JumpstartLab\Install\Block;
 
 use \ITasks\AbstractInstallTask;
