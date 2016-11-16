@@ -254,6 +254,34 @@ class MenuSettings extends AbstractInstallTask {
       'parent' => 'about',
     );
 
+    $main_menu['private/members-only'] = array(
+      'link_path' => drupal_get_normal_path('private/members-only'),
+      'link_title' => 'Members Only',
+      'menu_name' => 'main-menu',
+      'weight' => 50,
+    );
+    $main_menu['private/cell-phone-numbers'] = array(
+      'link_path' => drupal_get_normal_path('private/cell-phone-numbers'),
+      'link_title' => 'Cell Phone Numbers',
+      'menu_name' => 'main-menu',
+      'weight' => -2,
+      'parent' => 'private/members-only',
+    );
+    $main_menu['private/sample-restricted-page-one'] = array(
+      'link_path' => drupal_get_normal_path('private/sample-restricted-page-one'),
+      'link_title' => 'Sameple Restricted Page One',
+      'menu_name' => 'main-menu',
+      'weight' => -2,
+      'parent' => 'private/members-only',
+    );
+    $main_menu['private/forms'] = array(
+      'link_path' => drupal_get_normal_path('private/forms'),
+      'link_title' => 'Forms',
+      'menu_name' => 'main-menu',
+      'weight' => -2,
+      'parent' => 'private/members-only',
+    );
+
     // ///////////////////////////////////////////////////////////////////////////
     // Footer Menus
     // ///////////////////////////////////////////////////////////////////////////
