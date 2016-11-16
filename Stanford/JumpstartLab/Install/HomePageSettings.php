@@ -51,16 +51,17 @@ class HomePageSettings extends AbstractInstallTask {
     $uuid = '3331b480-51bd-4086-bafc-6b5cd342c410';
     $endpoint = variable_get("stanford_content_server", "https://sites.stanford.edu/jsa-content/jsainstall");
 
-//    $file_processor = new \ImporterFieldProcessorFile();
-//    $file_processor->setEndpoint($endpoint);
-//    $file = $file_processor->processFieldFileCreateItem($uuid);
-//    $fid = $file->fid;
-//
-//    $settings = variable_get("sjh_stanford_jumpstart_home_mayfield_lab", array());
-//    $settings['header_image'] = $fid;
-//
-//    // Save settings.
-//    variable_set("sjh_stanford_jumpstart_home_mayfield_lab", $settings);
+
+    $file_processor = new \ImporterFieldProcessorFile();
+    $file_processor->setEndpoint($endpoint);
+    $file = $file_processor->processFieldFileCreateItem($uuid);
+    $fid = $file->fid;
+
+    $settings = variable_get("sjh_stanford_jumpstart_home_mayfield_lab", array());
+    $settings['header_image'] = $fid;
+
+    // Save settings.
+    variable_set("sjh_stanford_jumpstart_home_mayfield_lab", $settings);
 
   }
 
