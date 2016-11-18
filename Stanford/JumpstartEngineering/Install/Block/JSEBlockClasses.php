@@ -39,6 +39,8 @@ class JSEBlockClasses extends \ITasks\AbstractInstallTask {
       // Related content blocks
       // Events: Stanford Events List: Filtered Upcoming Block
       array("views", "b0b97e4fb54df88f280eb220fef1829e", "well"),
+      // News with image and title: 2 Item filtered
+      array("views", "2822b14d3cd0fffa732b52003beba914", "well"),
       // News with image and title: 3 Item filtered
       array("views", "d6a08df010339ebc8df9db319eb2052c", "well"),
       // Person grid filtered
