@@ -29,9 +29,9 @@ class ImportJSLabNodes extends AbstractInstallTask {
       'article',
       'stanford_person',
       'stanford_publication',
-      'stanford_private_page',
       'stanford_news_item',
       'stanford_course',
+      'webform',
     );
 
     // Restrictions.
@@ -44,6 +44,7 @@ class ImportJSLabNodes extends AbstractInstallTask {
       // Past events Page. (Delete after 4.5)
       'b10b8889-73b1-4842-8e1b-b8a21120e2d9',
 
+      // Undesired Private Pages.
       'ac30fcb2-63fc-4e2d-9278-a2780626ce49',
       '0f2878c0-813a-42ca-8f7f-c01630d25c28',
       '355c6ddc-5c24-4cd4-bb3d-b8a66894f9e2',

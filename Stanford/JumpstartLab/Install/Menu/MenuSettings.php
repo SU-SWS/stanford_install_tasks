@@ -81,8 +81,8 @@ class MenuSettings extends AbstractInstallTask {
       'parent' => 'projects',
     );
     // Projects / Sample Research Project One.
-    $main_menu['projects/project-example'] = array(
-      'link_path' => drupal_get_normal_path('projects/project-example'),
+    $main_menu['projects/sample-research-project-one'] = array(
+      'link_path' => drupal_get_normal_path('projects/sample-research-project-one'),
       'link_title' => 'Sample Research Project One',
       'menu_name' => 'main-menu',
       'weight' => -6,
