@@ -19,8 +19,16 @@ class EnableCourses extends \ITasks\AbstractInstallTask {
    */
   public function execute(&$args = array()) {
 
-    module_load_include('module', 'redirect', 'redirect.module');
-    module_load_include('module', 'features', 'features.module');
+    // Verify required modules are available
+    $required_modules = array('redirect', 'pathauto', 'features');
+    foreach ($required_modules as $rm) {
+      module_load_include('module', $rm, $rm . '.module');
+      if (!module_exists($rm)) {
+        throw new Exception($rm . ' module not available');
+      }
+    }
+
+    // Task modules
     $modules = array('stanford_feeds_helper', 'stanford_courses',
       'stanford_course_views', 'stanford_courses_administration');
 

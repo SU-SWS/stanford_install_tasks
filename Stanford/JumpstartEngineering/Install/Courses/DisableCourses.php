@@ -20,6 +20,10 @@ class DisableCourses extends \ITasks\AbstractInstallTask {
   public function execute(&$args = array()) {
 
     module_load_include('module', 'redirect', 'redirect.module');
+    if (!module_exists('redirect')) {
+      throw new Exception('Redirect module not available.');
+    }
+
     $modules = array( 'stanford_course_views', 'stanford_courses_administration',
       'stanford_courses', 'stanford_feeds_helper');
     module_disable($modules);
