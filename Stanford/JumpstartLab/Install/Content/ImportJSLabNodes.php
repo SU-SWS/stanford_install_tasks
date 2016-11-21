@@ -31,6 +31,7 @@ class ImportJSLabNodes extends AbstractInstallTask {
       'stanford_publication',
       'stanford_news_item',
       'stanford_course',
+      'webform',
     );
 
     // Restrictions.
