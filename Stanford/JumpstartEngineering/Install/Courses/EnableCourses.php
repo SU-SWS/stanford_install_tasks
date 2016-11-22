@@ -1,25 +1,24 @@
 <?php
-/**
+/*
  * @file
- * Enable Courses
+ *
  */
 
 namespace Stanford\JumpstartEngineering\Install\Courses;
 
-/**
- *
- */
-class EnableCourses extends \ITasks\AbstractInstallTask {
+use \ITasks\AbstractInstallTask as AbstractInstallTask;
+
+class EnableCourses extends AbstractInstallTask {
 
   /**
-   * Enable Courses on JSE sites
+   * Enable Courses on JSE sites.
    *
    * @param array $args
    *   Installation arguments.
    */
   public function execute(&$args = array()) {
 
-    // Verify required modules are available
+    // Load and verify required modules are available.
     $required_modules = array('redirect', 'pathauto', 'features');
     foreach ($required_modules as $rm) {
       module_load_include('module', $rm, $rm . '.module');
@@ -28,28 +27,28 @@ class EnableCourses extends \ITasks\AbstractInstallTask {
       }
     }
 
-    // Task modules
-    $modules = array('stanford_feeds_helper', 'stanford_courses',
-      'stanford_course_views', 'stanford_courses_administration');
+    // Enable the courses modules.
+    $modules = array(
+      'stanford_courses',
+      'stanford_course_views',
+      'stanford_courses_administration',
+      );
 
     if (module_enable($modules, TRUE)) {
-      // Todo: revert stanford_course_views
-      //features_revert(array('stanford_course_views' => array('views_view')));
-      //features_revert_module('stanford_course_views');
+      features_revert_module('stanford_course_views');
       drush_log('Enabled modules: ' . implode(', ', $modules), 'ok');
-    } else
-    {
-      drush_log('Error when enabling modules: ' . implode(', ', $modules), 'notice');
-      exit();
+    }
+    else {
+      throw new Exception ('Error when enabling modules: ' . implode(', ', $modules));
     }
 
-    // Unpublish courses node
+    // Unpublish courses node.
     $query = new \EntityFieldQuery();
 
     $entities = $query->entityCondition('entity_type', 'node')
-                      ->propertyCondition('type', 'stanford_page')
-                      ->propertyCondition('title', 'Courses')
-                      ->execute();
+      ->propertyCondition('type', 'stanford_page')
+      ->propertyCondition('title', 'Courses')
+      ->execute();
 
     if (!empty($entities['node'])) {
       $node = node_load(array_shift(array_keys($entities['node'])));
@@ -64,8 +63,8 @@ class EnableCourses extends \ITasks\AbstractInstallTask {
       node_save($node);
       redirect_delete_by_path('courses');
       redirect_delete_by_path('about/courses');
-      path_delete(array('source'=>'courses'));
-      path_delete(array('source'=>'about/courses'));
+      path_delete(array('source' => 'courses'));
+      path_delete(array('source' => 'about/courses'));
       drush_log('Unpublished node: ' . $node->title . ' ' . $node->nid, 'ok');
     }
   }
