@@ -63,12 +63,6 @@ EOD;
           ),
       )
     );
-    $info = system_get_info('module', variable_get('install_profile'));
-    variable_set('stanford_jumpstart_original', array(
-      'installed_date' => time(),
-      'installed_version' => $info['version'],
-    ));
-
   }
 
   /**
