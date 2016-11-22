@@ -2,7 +2,7 @@
 
 /*
  * @file
- * Enable Courses.
+ * Disable Courses.
  */
 
 namespace Stanford\JumpstartEngineering\Install\Courses;
