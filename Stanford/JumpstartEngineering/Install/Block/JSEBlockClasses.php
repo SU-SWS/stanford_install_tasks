@@ -49,6 +49,8 @@ class JSEBlockClasses extends \ITasks\AbstractInstallTask {
       array("views","e1db4622d5599968122994300d2a6f47","well"),
       //exposed filter for News Extras view.
       array("views","b9c01c6eb8df3ae2f662a9d4a0e35311","well"),
+      // Courses Search block
+      array("views","-exp-courses-search_page","well"),
     );
 
     foreach ($values as $k => $value) {

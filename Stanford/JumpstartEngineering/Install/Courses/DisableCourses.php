@@ -1,9 +1,5 @@
 <?php
 
-/*
- * @file
- * Disable Courses.
- */
 
 namespace Stanford\JumpstartEngineering\Install\Courses;
 
