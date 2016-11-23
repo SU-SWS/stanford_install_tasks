@@ -1,13 +1,12 @@
 <?php
-/*
- * @file
- *
- */
 
 namespace Stanford\JumpstartEngineering\Install\Courses;
 
 use \ITasks\AbstractInstallTask as AbstractInstallTask;
 
+/**
+ *
+ */
 class EnableCourses extends AbstractInstallTask {
 
   /**
@@ -32,14 +31,14 @@ class EnableCourses extends AbstractInstallTask {
       'stanford_courses',
       'stanford_course_views',
       'stanford_courses_administration',
-      );
+    );
 
     if (module_enable($modules, TRUE)) {
       features_revert_module('stanford_course_views');
       drush_log('Enabled modules: ' . implode(', ', $modules), 'ok');
     }
     else {
-      throw new Exception ('Error when enabling modules: ' . implode(', ', $modules));
+      throw new Exception('Error when enabling modules: ' . implode(', ', $modules));
     }
 
     // Unpublish courses node.

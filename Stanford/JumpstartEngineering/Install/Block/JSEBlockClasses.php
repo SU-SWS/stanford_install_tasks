@@ -29,12 +29,15 @@ class JSEBlockClasses extends \ITasks\AbstractInstallTask {
       array("bean", "jumpstart-small-custom-block-3", "well span4"),
       array("bean", "jumpstart-small-custom-block-4", "well span4"),
       array("bean", "jumpstart-small-custom-block-5", "well span4"),
+      array("views","-exp-courses-search_page","well"),
 
       // Affiliates two-stacked.
       array("views", "46f3a22e00be75cb8fe3bc16de17162a", "well span4"),
       array("views", "stanford_events_views-block", "well span4"),
       // News: 2 Item Recent News List Block.
       array("views", "f73ff55b085ea49217d347de6630cd5a", "well span4"),
+      // Exposed filter for News Extras view.
+      array("views","b9c01c6eb8df3ae2f662a9d4a0e35311", "well"),
 
       // Related content blocks.
       // Events: Stanford Events List: Filtered Upcoming Block.
@@ -45,12 +48,8 @@ class JSEBlockClasses extends \ITasks\AbstractInstallTask {
       array("views", "d6a08df010339ebc8df9db319eb2052c", "well"),
       // Person grid filtered.
       array("views", "e94fb0374cf38241b08947ca4e210563", "well"),
-      //filtered News view.
-      array("views","e1db4622d5599968122994300d2a6f47","well"),
-      //exposed filter for News Extras view.
-      array("views","b9c01c6eb8df3ae2f662a9d4a0e35311","well"),
-      // Courses Search block
-      array("views","-exp-courses-search_page","well"),
+      // Filtered News view.
+      array("views","e1db4622d5599968122994300d2a6f47", "well"),
     );
 
     foreach ($values as $k => $value) {

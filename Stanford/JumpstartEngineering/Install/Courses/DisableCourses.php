@@ -1,10 +1,11 @@
 <?php
 
-
 namespace Stanford\JumpstartEngineering\Install\Courses;
 
 use \ITasks\AbstractInstallTask as AbstractInstallTask;
-
+/**
+ *
+ */
 class DisableCourses extends AbstractInstallTask {
 
   /**
