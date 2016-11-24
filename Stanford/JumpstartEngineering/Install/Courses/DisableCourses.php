@@ -3,8 +3,9 @@
 namespace Stanford\JumpstartEngineering\Install\Courses;
 
 use \ITasks\AbstractInstallTask as AbstractInstallTask;
+
 /**
- *
+ * Disable Courses module on JSE sites.
  */
 class DisableCourses extends AbstractInstallTask {
 
@@ -38,7 +39,7 @@ class DisableCourses extends AbstractInstallTask {
       drush_log('Disabled and uninstalled modules: ' . implode(', ', $modules), 'ok');
     }
     else {
-      throw new Exception ('Error when uninstalling modules: ' . implode(', ', $modules));
+      throw new Exception('Error when uninstalling modules: ' . implode(', ', $modules));
     }
 
     // Publish courses node.
@@ -64,7 +65,7 @@ class DisableCourses extends AbstractInstallTask {
       $alias = array(
         'source' => 'node/' . $node->nid,
         'alias' => 'about/courses',
-        );
+      );
       path_save($alias);
       drush_log('Published node: ' . $node->title . ' ' . $node->nid, 'ok');
     }
