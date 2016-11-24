@@ -4,8 +4,8 @@
  * Abstract Task Class.
  */
 
-use \ITasks\AbstractInstallTask as AbstractInstallTask;
 namespace Stanford\JumpstartEngineering\Hopper;
+use \ITasks\AbstractInstallTask;
 
 /**
  * Department mods hopper helper class.

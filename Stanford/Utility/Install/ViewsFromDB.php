@@ -5,6 +5,7 @@
  */
 
 namespace Stanford\Utility\Install;
+use \ITasks\AbstractInstallTask;
 
 /**
  * Removes all the default views from the DB after the site has been built.
@@ -13,7 +14,7 @@ namespace Stanford\Utility\Install;
  * menu items this early in the sites life. A side effect is that all the
  * default views are enabled when saved to the db and they should not be.
  */
-class ViewsFromDB extends \ITasks\AbstractInstallTask {
+class ViewsFromDB extends AbstractInstallTask {
 
 
   public function execute(&$args = array()) {
@@ -47,4 +48,3 @@ class ViewsFromDB extends \ITasks\AbstractInstallTask {
   }
 
 }
-

@@ -5,10 +5,12 @@
  */
 
 namespace Stanford\DrupalCamp\Install;
+use \ITasks\AbstractInstallTask;
+
 /**
  *
  */
-class BlockClass extends \ITasks\AbstractInstallTask {
+class BlockClass extends AbstractInstallTask {
 
   /**
    * Set the site name.

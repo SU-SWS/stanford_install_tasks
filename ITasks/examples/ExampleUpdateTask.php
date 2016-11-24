@@ -5,11 +5,12 @@
  */
 
 namespace Stanford\Jumpstart\Update;
+use \ITasks\AbstractUpdateTask;
 
 /**
  * Update task to change the site name to a random time.
  */
-class SiteName extends \ITasks\AbstractUpdateTask {
+class SiteName extends AbstractUpdateTask {
 
   // The description of this task.
   protected $description = "Change the site name to my new site name";

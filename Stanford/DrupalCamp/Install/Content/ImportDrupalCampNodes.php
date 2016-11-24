@@ -4,14 +4,16 @@
  * Abstract Task Class.
  */
 
-use Stanford\DrupalCamp\Install\Content\Importer\ImporterFieldProcessorCustomBody as ImporterFieldProcessorCustomBody;
-use Stanford\DrupalCamp\Install\Content\Importer\ImporterFieldProcessorFieldSDestinationPublish as ImporterFieldProcessorFieldSDestinationPublish;
 
 namespace Stanford\DrupalCamp\Install\Content;
+use Stanford\DrupalCamp\Install\Content\Importer\ImporterFieldProcessorCustomBody as ImporterFieldProcessorCustomBody;
+use Stanford\DrupalCamp\Install\Content\Importer\ImporterFieldProcessorFieldSDestinationPublish as ImporterFieldProcessorFieldSDestinationPublish;
+use \ITasks\AbstractInstallTask;
+
 /**
  *
  */
-class ImportDrupalCampNodes extends \ITasks\AbstractInstallTask {
+class ImportDrupalCampNodes extends AbstractInstallTask {
 
   /**
    * Set the site name.
@@ -37,10 +39,3 @@ class ImportDrupalCampNodes extends \ITasks\AbstractInstallTask {
   }
 
 }
-
-
-
-
-
-
-

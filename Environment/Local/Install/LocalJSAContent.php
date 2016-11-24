@@ -5,8 +5,9 @@
  */
 
 namespace Environment\Local\Install;
+use \ITasks\AbstractInstallTask;
 
-class LocalJSAContent extends \ITasks\AbstractInstallTask {
+class LocalJSAContent extends AbstractInstallTask {
 
   /**
    * Set the site name.

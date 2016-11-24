@@ -5,10 +5,12 @@
  */
 
 namespace Stanford\Jumpstart\Install;
+use \ITasks\AbstractInstallTask;
+
 /**
  *
  */
-class PrivateFileDelete extends \ITasks\AbstractInstallTask {
+class PrivateFileDelete extends AbstractInstallTask {
 
   /**
    * Set the site name.
@@ -25,5 +27,3 @@ class PrivateFileDelete extends \ITasks\AbstractInstallTask {
   }
 
 }
-
-

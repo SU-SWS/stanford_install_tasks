@@ -4,14 +4,16 @@
  * Abstract Task Class.
  */
 
-use Stanford\Jumpstart\Install\Content\Importer\ImporterFieldProcessorCustomBody as ImporterFieldProcessorCustomBody;
-use Stanford\Jumpstart\Install\Content\Importer\ImporterFieldProcessorFieldSDestinationPublish as ImporterFieldProcessorFieldSDestinationPublish;
 
 namespace Stanford\JumpstartVPSA\Install\Content;
+use Stanford\Jumpstart\Install\Content\Importer\ImporterFieldProcessorCustomBody as ImporterFieldProcessorCustomBody;
+use Stanford\Jumpstart\Install\Content\Importer\ImporterFieldProcessorFieldSDestinationPublish as ImporterFieldProcessorFieldSDestinationPublish;
+use \ITasks\AbstractInstallTask;
+
 /**
  *
  */
-class ImportJSVPSANodes extends \ITasks\AbstractInstallTask {
+class ImportJSVPSANodes extends AbstractInstallTask {
 
   /**
    * Import JSVPSA Nodes.
@@ -56,10 +58,3 @@ class ImportJSVPSANodes extends \ITasks\AbstractInstallTask {
   }
 
 }
-
-
-
-
-
-
-

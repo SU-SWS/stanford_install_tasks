@@ -4,13 +4,15 @@
  * Abstract Task Class.
  */
 
-use Stanford\DrupalProfile\Install\StanfordSites\SitesHelper;
 
 namespace Stanford\DrupalProfile\Install;
+use \ITasks\AbstractInstallTask;
+use Stanford\DrupalProfile\Install\StanfordSites\SitesHelper;
+
 /**
  *
  */
-class Authentication extends \ITasks\AbstractInstallTask {
+class Authentication extends AbstractInstallTask {
 
   /**
    * Set the site name.

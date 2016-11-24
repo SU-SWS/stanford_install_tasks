@@ -6,11 +6,12 @@
 
 namespace Stanford\JumpstartEngineering\Install\Menu;
 use Stanford\Utility\Install\CreateRedirects;
+use \ITasks\AbstractInstallTask;
 
 /**
  *
  */
-class JSEMenuRedirects extends \ITasks\AbstractInstallTask {
+class JSEMenuRedirects extends AbstractInstallTask {
 
   /**
    * Create menu redirects.

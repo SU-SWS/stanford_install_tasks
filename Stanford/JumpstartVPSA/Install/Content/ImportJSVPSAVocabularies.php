@@ -5,10 +5,12 @@
  */
 
 namespace Stanford\JumpstartVPSA\Install\Content;
+use \ITasks\AbstractInstallTask;
+
 /**
  *
  */
-class ImportJSVPSAVocabularies extends \ITasks\AbstractInstallTask {
+class ImportJSVPSAVocabularies extends AbstractInstallTask {
 
   /**
    * Import JSVPSA Vocabularies and terms.
@@ -38,10 +40,3 @@ class ImportJSVPSAVocabularies extends \ITasks\AbstractInstallTask {
   }
 
 }
-
-
-
-
-
-
-

@@ -5,10 +5,12 @@
  */
 
 namespace Stanford\JumpstartEngineering\Install\Menu;
+use \ITasks\AbstractInstallTask;
+
 /**
  *
  */
-class JSEMenuItems extends \ITasks\AbstractInstallTask {
+class JSEMenuItems extends AbstractInstallTask {
 
   /**
    * Create menu items.

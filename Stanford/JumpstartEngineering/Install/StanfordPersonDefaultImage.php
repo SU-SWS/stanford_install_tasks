@@ -5,10 +5,12 @@
  */
 
 namespace Stanford\JumpstartEngineering\Install;
+use \ITasks\AbstractInstallTask;
+
 /**
  *
  */
-class StanfordPersonDefaultImage extends \ITasks\AbstractInstallTask {
+class StanfordPersonDefaultImage extends AbstractInstallTask {
 
   /**
    * Set the site name.
@@ -29,4 +31,3 @@ class StanfordPersonDefaultImage extends \ITasks\AbstractInstallTask {
     variable_set('stanford_person_profile_picture', $file->fid);
   }
 }
-

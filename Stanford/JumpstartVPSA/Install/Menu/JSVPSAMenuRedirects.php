@@ -5,10 +5,12 @@
  */
 
 namespace Stanford\JumpstartVPSA\Install\Menu;
+use \ITasks\AbstractInstallTask;
+
 /**
  *
  */
-class JSVPSAMenuRedirects extends \ITasks\AbstractInstallTask {
+class JSVPSAMenuRedirects extends AbstractInstallTask {
 
   /**
    * Create menu redirects.

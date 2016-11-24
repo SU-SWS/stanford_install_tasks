@@ -4,14 +4,17 @@
  * Import JSE nodes.
  */
 
-//use Stanford\Jumpstart\Install\Content\Importer\ImporterFieldProcessorCustomBody as ImporterFieldProcessorCustomBody;
-//use Stanford\Jumpstart\Install\Content\Importer\ImporterFieldProcessorCustomFieldSDestinationPublish as ImporterFieldProcessorFieldSDestinationPublish;
-
 namespace Stanford\JumpstartEngineering\Install\Content;
+
+use ITasks\AbstractInstallTask;
+use Stanford\Jumpstart\Install\Content\Importer\LoadImporterLibrary;
+use Stanford\Jumpstart\Install\Content\Importer\ImporterFieldProcessorCustomBody;
+use Stanford\Jumpstart\Install\Content\Importer\ImporterFieldProcessorCustomFieldSDestinationPublish;
+
 /**
- *
+ * Import JSE Nodes class.
  */
-class ImportJSENodes extends \ITasks\AbstractInstallTask {
+class ImportJSENodes extends AbstractInstallTask {
 
   /**
    * Import JSE Nodes.
@@ -20,6 +23,11 @@ class ImportJSENodes extends \ITasks\AbstractInstallTask {
    *   Installation arguments.
    */
   public function execute(&$args = array()) {
+
+    // Load the importer library.
+    $loader = new LoadImporterLibrary();
+    $loader->execute();
+
     // This could take a while.
     drupal_set_time_limit(600);
 
@@ -38,10 +46,3 @@ class ImportJSENodes extends \ITasks\AbstractInstallTask {
   }
 
 }
-
-
-
-
-
-
-

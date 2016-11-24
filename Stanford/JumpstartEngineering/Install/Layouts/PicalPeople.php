@@ -5,10 +5,12 @@
  */
 
 namespace Stanford\JumpstartEngineering\Install\Layouts;
+use \ITasks\AbstractInstallTask;
+
 /**
  *
  */
-class PicalPeople extends \ITasks\AbstractInstallTask {
+class PicalPeople extends AbstractInstallTask {
 
   /**
    * Configure PICAL stanford_person node display.

@@ -5,7 +5,9 @@
  */
 
 namespace Stanford\DrupalProfile\Install\StanfordSites;
-class ThemeSettings extends \ITasks\AbstractInstallTask {
+use \ITasks\AbstractInstallTask;
+
+class ThemeSettings extends AbstractInstallTask {
 
   /**
    * Set the site name.

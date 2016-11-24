@@ -5,17 +5,19 @@
  */
 
 namespace Stanford\JumpstartEngineering\Install\Users;
+use \ITasks\AbstractInstallTask;
+
 /**
  *
  */
-class UserOne extends \ITasks\AbstractInstallTask {
+class UserOne extends AbstractInstallTask {
 
   /**
    * Update email address for user 1.
    *
    * @param array $args
    *   Installation arguments.
-   * 
+   *
    */
   public function execute(&$args = array()) {
 

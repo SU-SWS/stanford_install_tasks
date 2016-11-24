@@ -5,10 +5,12 @@
  */
 
 namespace Stanford\Jumpstart\Install\Content;
+use \ITasks\AbstractInstallTask;
+
 /**
  *
  */
-class FourOFour extends \ITasks\AbstractInstallTask {
+class FourOFour extends AbstractInstallTask {
 
   /**
    * Set the site name.

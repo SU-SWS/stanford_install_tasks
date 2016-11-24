@@ -5,10 +5,12 @@
  */
 
 namespace Stanford\Jumpstart\Install\User;
+use \ITasks\AbstractInstallTask;
+
 /**
  *
  */
-class LindseyUser extends \ITasks\AbstractInstallTask {
+class LindseyUser extends AbstractInstallTask {
 
   /**
    * Set the site name.
@@ -40,9 +42,3 @@ class LindseyUser extends \ITasks\AbstractInstallTask {
   }
 
 }
-
-
-
-
-
-

@@ -4,14 +4,15 @@
  * Abstract Task Class.
  */
 
+namespace Stanford\JumpstartPlus\Install\Content;
 use Stanford\Jumpstart\Install\Content\Importer\ImporterFieldProcessorCustomBody as ImporterFieldProcessorCustomBody;
 use Stanford\Jumpstart\Install\Content\Importer\ImporterFieldProcessorFieldSDestinationPublish as ImporterFieldProcessorFieldSDestinationPublish;
+use \ITasks\AbstractInstallTask;
 
-namespace Stanford\JumpstartPlus\Install\Content;
 /**
  *
  */
-class ImportJSPlusNodes extends \ITasks\AbstractInstallTask {
+class ImportJSPlusNodes extends AbstractInstallTask {
 
   /**
    * Set the site name.
@@ -58,10 +59,3 @@ class ImportJSPlusNodes extends \ITasks\AbstractInstallTask {
   }
 
 }
-
-
-
-
-
-
-

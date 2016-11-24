@@ -5,10 +5,12 @@
  */
 
 namespace Stanford\JumpstartVPSA\Install;
+use \ITasks\AbstractInstallTask;
+
 /**
  *
  */
-class EnableModules extends \ITasks\AbstractInstallTask {
+class EnableModules extends AbstractInstallTask {
 
   /**
    * Enable a couple of final modules because they depend on everything.

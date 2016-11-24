@@ -5,8 +5,9 @@
  */
 
 namespace Drupal\Standard\Install;
+use \ITasks\AbstractInstallTask;
 
-class BodyFieldBase extends \ITasks\AbstractInstallTask {
+class BodyFieldBase extends AbstractInstallTask {
 
   /**
    * Set the site name.
