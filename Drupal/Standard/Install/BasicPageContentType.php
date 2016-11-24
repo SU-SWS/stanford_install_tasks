@@ -5,8 +5,9 @@
  */
 
 namespace Drupal\Standard\Install;
+use \ITasks\AbstractInstallTask;
 
-class BasicPageContentType extends \ITasks\AbstractInstallTask {
+class BasicPageContentType extends AbstractInstallTask {
 
   /**
    * Set the site name.

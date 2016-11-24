@@ -5,10 +5,12 @@
  */
 
 namespace Stanford\JumpstartEngineering\Install\Courses;
+use \ITasks\AbstractInstallTask;
+
 /**
  *
  */
-class CoursesBlockClasses extends \ITasks\AbstractInstallTask {
+class CoursesBlockClasses extends AbstractInstallTask {
 
   /**
    * Set Block Classes.
@@ -29,7 +31,7 @@ class CoursesBlockClasses extends \ITasks\AbstractInstallTask {
       $update->condition('delta',$value[1]);
       $update->execute();
     }
-    
+
     CoursesBlockClasses_set_context();
   }
   /**
@@ -47,7 +49,7 @@ class CoursesBlockClasses extends \ITasks\AbstractInstallTask {
  * Callback to set context for courses.
  */
 function CoursesBlockClasses_set_context() {
-  
+
   $context = new \stdClass();
   $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
   $context->api_version = 3;
@@ -82,6 +84,6 @@ function CoursesBlockClasses_set_context() {
     ),
   );
   $context->condition_mode = 0;
-  
+
   context_save($context);
 }

@@ -5,10 +5,12 @@
  */
 
 namespace Stanford\JumpstartEngineering\Install\CAPx;
+use \ITasks\AbstractInstallTask;
+
 /**
  *
  */
-class CAPxDisplay extends \ITasks\AbstractInstallTask {
+class CAPxDisplay extends AbstractInstallTask {
 
   /**
    * Define the context for the CAP display view mode for person pages.

@@ -5,10 +5,12 @@
  */
 
 namespace Stanford\Jumpstart\Install;
+use \ITasks\AbstractInstallTask;
+
 /**
  *
  */
-class GetHelpPage extends \ITasks\AbstractInstallTask {
+class GetHelpPage extends AbstractInstallTask {
 
   /**
    * Set Content for the Add features page.

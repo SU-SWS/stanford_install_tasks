@@ -6,11 +6,12 @@
 
 namespace Stanford\JumpstartEngineering\Install\Menu;
 use Stanford\Utility\Install\CreateMenuLinks;
+use \ITasks\AbstractInstallTask;
 
 /**
  *
  */
-class JSEPrivateMenuItems extends \ITasks\AbstractInstallTask {
+class JSEPrivateMenuItems extends AbstractInstallTask {
 
   /**
    * Create menu items.

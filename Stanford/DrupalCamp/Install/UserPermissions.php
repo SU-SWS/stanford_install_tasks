@@ -5,10 +5,12 @@
  */
 
 namespace Stanford\DrupalCamp\Install;
+use \ITasks\AbstractInstallTask;
+
 /**
  *
  */
-class UserPermissions extends \ITasks\AbstractInstallTask {
+class UserPermissions extends AbstractInstallTask {
 
   /**
    * Set the site name.

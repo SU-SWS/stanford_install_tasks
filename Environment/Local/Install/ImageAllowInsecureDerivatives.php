@@ -5,8 +5,9 @@
  */
 
 namespace Environment\Local\Install;
+use \ITasks\AbstractInstallTask;
 
-class ImageAllowInsecureDerivatives extends \ITasks\AbstractInstallTask {
+class ImageAllowInsecureDerivatives extends AbstractInstallTask {
 
   /**
    * Set the site name.

@@ -6,6 +6,7 @@
  */
 
 namespace Stanford\Utility\Install;
+use \ITasks\AbstractInstallTask;
 
 /**
  * Menu imports process does not find any paths from views defined in
@@ -18,7 +19,7 @@ namespace Stanford\Utility\Install;
  * menu_rebuild() doesn't work. Nice try!
  */
 
-class ViewsToDB extends \ITasks\AbstractInstallTask {
+class ViewsToDB extends AbstractInstallTask {
 
 
   public function execute(&$args = array()) {
@@ -47,4 +48,3 @@ class ViewsToDB extends \ITasks\AbstractInstallTask {
   }
 
 }
-

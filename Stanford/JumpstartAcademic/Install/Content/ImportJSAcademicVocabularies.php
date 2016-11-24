@@ -5,10 +5,12 @@
  */
 
 namespace Stanford\JumpstartAcademic\Install\Content;
+use \ITasks\AbstractInstallTask;
+
 /**
  *
  */
-class ImportJSAcademicVocabularies extends \ITasks\AbstractInstallTask {
+class ImportJSAcademicVocabularies extends AbstractInstallTask {
 
   /**
    * Set the site name.
@@ -37,10 +39,3 @@ class ImportJSAcademicVocabularies extends \ITasks\AbstractInstallTask {
   }
 
 }
-
-
-
-
-
-
-

@@ -5,8 +5,9 @@
  */
 
 namespace Drupal\Standard\Install;
+use \ITasks\AbstractInstallTask;
 
-class StandardBlocks extends \ITasks\AbstractInstallTask {
+class StandardBlocks extends AbstractInstallTask {
 
   /**
    * Set the site name.

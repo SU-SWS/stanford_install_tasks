@@ -5,8 +5,9 @@
  */
 
 namespace Drupal\Standard\Install;
+use \ITasks\AbstractInstallTask;
 
-class UserConfig extends \ITasks\AbstractInstallTask {
+class UserConfig extends AbstractInstallTask {
 
   /**
    * Set the site name.
@@ -36,6 +37,3 @@ class UserConfig extends \ITasks\AbstractInstallTask {
   }
 
 }
-
-
-

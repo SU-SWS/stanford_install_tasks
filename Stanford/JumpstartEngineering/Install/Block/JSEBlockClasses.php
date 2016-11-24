@@ -5,10 +5,12 @@
  */
 
 namespace Stanford\JumpstartEngineering\Install\Block;
+use \ITasks\AbstractInstallTask;
+
 /**
  *
  */
-class JSEBlockClasses extends \ITasks\AbstractInstallTask {
+class JSEBlockClasses extends AbstractInstallTask {
 
   /**
    * Set Block Classes.

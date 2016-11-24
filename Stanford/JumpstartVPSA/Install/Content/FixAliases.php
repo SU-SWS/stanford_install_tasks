@@ -5,10 +5,12 @@
  */
 
 namespace Stanford\JumpstartVPSA\Install\Content;
+use \ITasks\AbstractInstallTask;
+
 /**
  *
  */
-class FixAliases extends \ITasks\AbstractInstallTask {
+class FixAliases extends AbstractInstallTask {
 
 
   /**
@@ -38,10 +40,3 @@ class FixAliases extends \ITasks\AbstractInstallTask {
   }
 
 }
-
-
-
-
-
-
-

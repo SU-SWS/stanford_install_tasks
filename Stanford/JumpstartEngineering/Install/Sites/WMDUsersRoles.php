@@ -5,10 +5,12 @@
  */
 
 namespace Stanford\JumpstartEngineering\Install\Sites;
+use \ITasks\AbstractInstallTask;
+
 /**
  *
  */
-class WMDUsersRoles extends \ITasks\AbstractInstallTask {
+class WMDUsersRoles extends AbstractInstallTask {
 
   /**
    * Create and update users; map roles

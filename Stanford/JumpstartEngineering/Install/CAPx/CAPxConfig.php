@@ -5,10 +5,12 @@
  */
 
 namespace Stanford\JumpstartEngineering\Install\CAPx;
+use \ITasks\AbstractInstallTask;
+
 /**
  *
  */
-class CAPxConfig extends \ITasks\AbstractInstallTask {
+class CAPxConfig extends AbstractInstallTask {
 
   /**
    * Configure CAPx.

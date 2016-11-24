@@ -5,11 +5,12 @@
  */
 
 namespace ITasks;
+use \ITasks\AbstractTask;
 
 /**
  * Abstract Update Task class.
  */
-abstract class AbstractUpdateTask extends \ITasks\AbstractTask {
+abstract class AbstractUpdateTask extends AbstractTask {
 
   // The description of this update task.
   protected $description = "No description provided";

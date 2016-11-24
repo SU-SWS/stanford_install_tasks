@@ -1,8 +1,7 @@
 <?php
 
 namespace Stanford\JumpstartEngineering\Install\Courses;
-
-use \ITasks\AbstractInstallTask as AbstractInstallTask;
+use \ITasks\AbstractInstallTask;
 
 /**
  * Enable Courses on JSE sites.
