@@ -12,7 +12,7 @@ class ArticleContentType extends \ITasks\AbstractInstallTask {
   protected $description = "Installs the Drupal Standard Arcticle content type.";
 
   /**
-   * Set the site name.
+   * Execute method.
    *
    * @param array $args
    *   Installation arguments.
@@ -48,7 +48,7 @@ class ArticleContentType extends \ITasks\AbstractInstallTask {
     node_type_save($type);
     node_add_body_field($type);
 
-    // Save RDF
+    // Save RDF.
     rdf_mapping_save($rdf);
 
     // Default "Basic page" to not be promoted and have comments disabled.
@@ -61,8 +61,10 @@ class ArticleContentType extends \ITasks\AbstractInstallTask {
   }
 
   /**
-   * [requirements description]
-   * @return [type] [description]
+   * Dependencies list.
+   *
+   * @return array
+   *   An array of dependencies for this task.
    */
   public function requirements() {
     return array(
