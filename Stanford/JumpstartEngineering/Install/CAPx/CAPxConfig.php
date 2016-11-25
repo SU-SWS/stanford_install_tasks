@@ -52,12 +52,12 @@ class CAPxConfig extends AbstractInstallTask {
   }
 
   /**
-   * Validation function on wether this can be run.
+   * Verify function on wether this can be run.
    *
    * @return bool
-   *   True for passes validation.
+   *   True for passes verification.
    */
-  public function validate() {
+  public function verify() {
     // Check to see if the items already exist.
     $machine_names = array('default', 'jse_default');
     $q = db_select('capx_cfe', 'cfe');

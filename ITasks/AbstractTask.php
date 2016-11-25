@@ -26,7 +26,7 @@ abstract class AbstractTask {
 
   /**
    * Throw an exception as the child class must define this.
-   * 
+   *
    * @param array &$args
    *   An array of arguments.
    *
@@ -48,12 +48,12 @@ abstract class AbstractTask {
   }
 
   /**
-   * Validation function on wether this task can be run.
+   * Verify function on wether this task can be run.
    *
    * @return bool
    *   TRUE for a pass.
    */
-  public function validate() {
+  public function verify() {
     return TRUE;
   }
 
