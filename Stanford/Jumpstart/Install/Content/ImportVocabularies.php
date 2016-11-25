@@ -32,9 +32,9 @@ class ImportVocabularies extends AbstractInstallTask {
 
     // Vocabularies.
     $importer = new \SitesContentImporter();
-    $importer->set_endpoint($endpoint);
-    $importer->add_restricted_vocabularies($restrict);
-    $importer->import_vocabulary_trees();
+    $importer->setEndpoint($endpoint);
+    $importer->addRestrictedVocabularies($restrict);
+    $importer->importVocabularyTrees();
 
   }
 

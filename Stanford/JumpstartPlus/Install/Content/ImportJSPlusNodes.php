@@ -42,19 +42,19 @@ class ImportJSPlusNodes extends AbstractInstallTask {
     );
 
     $importer = new \SitesContentImporter();
-    $importer->set_endpoint($endpoint);
-    $importer->add_import_content_type($content_types);
-    $importer->add_uuid_restrictions($restrict);
-    $importer->importer_content_nodes_recent_by_type();
+    $importer->setEndpoint($endpoint);
+    $importer->addImportContentType($content_types);
+    $importer->addUuidRestrictions($restrict);
+    $importer->importerContentNodesRecentByType();
 
     // JS+ ONLY CONTENT
     $filters = array('tid_raw' => array('41'));  // 41 is term id for JS+
     $view_importer = new \SitesContentImporterViews();
-    $view_importer->set_endpoint($endpoint);
-    $view_importer->set_resource('content');
-    $view_importer->set_filters($filters);
-    $importer->add_uuid_restrictions($restrict);
-    $view_importer->import_content_by_views_and_filters();
+    $view_importer->setEndpoint($endpoint);
+    $view_importer->setResource('content');
+    $view_importer->setFilters($filters);
+    $importer->addUuidRestrictions($restrict);
+    $view_importer->importContentByViewsAndFilters();
 
   }
 

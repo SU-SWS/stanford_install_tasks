@@ -58,9 +58,9 @@ class ImportJSAcademicBeans extends AbstractInstallTask {
     );
 
     $importer = new \SitesContentImporter();
-    $importer->set_endpoint($endpoint);
-    $importer->set_bean_uuids($uuids);
-    $importer->import_content_beans();
+    $importer->setEndpoint($endpoint);
+    $importer->setBeanUuids($uuids);
+    $importer->importContentBeans();
 
   }
 
