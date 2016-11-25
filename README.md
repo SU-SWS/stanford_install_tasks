@@ -43,6 +43,7 @@ code below.
  */
 
 namespace Organization\Group\Project\Install;
+use \ITasks\AbstractInstallTask;
 
 class MyInstallTaskName extends AbstractInstallTask {
 
@@ -88,10 +89,12 @@ $description variable. Please see the boilerplate code below.
  * Abstract Task Class.
  */
 namespace Organization\Group\Project;
+use \ITasks\AbstractUpdateTask;
+
 /**
  *
  */
-class MyUpdateTask extends \ITasks\AbstractUpdateTask {
+class MyUpdateTask extends AbstractUpdateTask {
 
   // Description of update task.
   protected $description = "Change the site name to my new site name";
@@ -130,11 +133,11 @@ See type: https://api.drupal.org/api/drupal/modules!system!system.api.php/functi
 int  
 See run: https://api.drupal.org/api/drupal/modules!system!system.api.php/function/hook_install_tasks/7.x
 
-**installFunction**  
+**$installFunction**  
 string  
 Has to be "itasks_run_install_task"  
 
-**description**
+**$description**
 text  
 A description of what the install tasks is doing. Currently does not show up
 anywhere but there are future plans to use it.
