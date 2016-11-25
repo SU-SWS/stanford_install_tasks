@@ -2,5 +2,6 @@ name: JSE Install Content
 machine_name: jse-install-content
 description: Site content for the JSE product type will be installed
 tasks:
-  # - \Stanford\JumpstartEngineering\Install\Block\JSEBlockClasses
-  # - \Stanford\JumpstartEngineering\Install\Block\JSEContextualBlockClasses
+  - \Stanford\JumpstartEngineering\Install\Content\ImportJSEBeans
+  - \Stanford\JumpstartEngineering\Install\Content\ImportJSECustomBeans
+  - \Stanford\JumpstartEngineering\Install\Content\ImportJSENodes

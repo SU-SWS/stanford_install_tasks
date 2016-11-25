@@ -51,6 +51,29 @@ class CAPxConfig extends AbstractInstallTask {
 
   }
 
+  /**
+   * Validation function on wether this can be run.
+   *
+   * @return bool
+   *   True for passes validation.
+   */
+  public function validate() {
+    // Check to see if the items already exist.
+    $machine_names = array('default', 'jse_default');
+    $q = db_select('capx_cfe', 'cfe');
+    $q->addField('cfe', 'machine_name');
+    $q->condition('cfe.machine_name', $machine_names, 'IN');
+    $r = $q->execute()->fetchObject();
+
+    if ($r) {
+      drush_log('jse capx config already imported', 'error');
+      return FALSE;
+    }
+
+    // Pass. No previous config.
+    return TRUE;
+  }
+
 
   /**
    * Returns an array of mapper information to be used to save to the db.
