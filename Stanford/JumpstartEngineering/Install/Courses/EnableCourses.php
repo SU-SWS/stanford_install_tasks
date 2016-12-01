@@ -31,8 +31,7 @@ class EnableCourses extends AbstractInstallTask {
       'stanford_course_views',
       'stanford_courses_administration',
     );
-
-
+    
     if (module_enable($modules, TRUE)) {
       features_revert_module('stanford_course_views');
       drush_log('Enabled modules: ' . implode(', ', $modules), 'ok');
@@ -69,11 +68,10 @@ class EnableCourses extends AbstractInstallTask {
   }
 
   /**
-   * Verify if Courses should be enabled
+   * Verify if Courses should be enabled.
    *
-   * If the stanford_courses module has been enabled, then don't enable anything.
+   * If the stanford_courses module has been enabled, don't enable anything.
    */
-
   public function verify() {
     if (module_exists('stanford_courses')) {
       drush_log('The Stanford Courses module is already enabled.', 'notice');
@@ -81,5 +79,4 @@ class EnableCourses extends AbstractInstallTask {
     }
     return TRUE;
   }
-
 }
