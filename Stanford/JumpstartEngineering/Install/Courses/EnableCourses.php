@@ -79,4 +79,5 @@ class EnableCourses extends AbstractInstallTask {
     }
     return TRUE;
   }
+
 }
