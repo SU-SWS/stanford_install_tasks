@@ -3,4 +3,3 @@ machine_name: jse-dept-unmods
 description: This reverts the actions jse-dept-mods recipe.
 tasks:
   - \Stanford\JumpstartEngineering\Hopper\DeptUnMods
-  - \Stanford\JumpstartEngineering\Install\Courses\DisableCourses
