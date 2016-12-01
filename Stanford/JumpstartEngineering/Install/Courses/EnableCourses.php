@@ -31,7 +31,7 @@ class EnableCourses extends AbstractInstallTask {
       'stanford_course_views',
       'stanford_courses_administration',
     );
-    
+
     if (module_enable($modules, TRUE)) {
       features_revert_module('stanford_course_views');
       drush_log('Enabled modules: ' . implode(', ', $modules), 'ok');
