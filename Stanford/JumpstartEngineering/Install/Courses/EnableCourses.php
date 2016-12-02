@@ -67,4 +67,17 @@ class EnableCourses extends AbstractInstallTask {
     }
   }
 
+  /**
+   * Verify if Courses should be enabled.
+   *
+   * If the stanford_courses module has been enabled, don't enable anything.
+   */
+  public function verify() {
+    if (module_exists('stanford_courses')) {
+      drush_log('The Stanford Courses module is already enabled.', 'notice');
+      return FALSE;
+    }
+    return TRUE;
+  }
+
 }
