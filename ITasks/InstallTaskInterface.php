@@ -27,6 +27,13 @@ interface InstallTaskInterface {
    */
   public function requirements();
 
+  /**
+   * A verify function on wether this task can be ran.
+   *
+   * @return bool
+   *   TRUE if verify passes and this task can be ran.
+   */
+  public function verify();
 
   /**
    * Install configure form alter hook callback.

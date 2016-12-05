@@ -5,10 +5,12 @@
  */
 
 namespace Stanford\JumpstartVPSA\Install\Menu;
+use \ITasks\AbstractInstallTask;
+
 /**
  *
  */
-class JSVPSAMenuPositionRules extends \ITasks\AbstractInstallTask {
+class JSVPSAMenuPositionRules extends AbstractInstallTask {
 
   /**
    * Create Menu Position Rules.

@@ -5,10 +5,12 @@
  */
 
 namespace Stanford\JumpstartVPSA\Install\Block;
+use \ITasks\AbstractInstallTask;
+
 /**
  *
  */
-class JSVPSABlockClasses extends \ITasks\AbstractInstallTask {
+class JSVPSABlockClasses extends AbstractInstallTask {
 
   /**
    * Set Block Classes.

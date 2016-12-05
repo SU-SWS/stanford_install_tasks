@@ -5,10 +5,12 @@
  */
 
 namespace Stanford\JumpstartAcademic\Install\Content;
+use \ITasks\AbstractInstallTask;
+
 /**
  *
  */
-class ImportJSAcademicVocabularies extends \ITasks\AbstractInstallTask {
+class ImportJSAcademicVocabularies extends AbstractInstallTask {
 
   /**
    * Set the site name.
@@ -30,17 +32,10 @@ class ImportJSAcademicVocabularies extends \ITasks\AbstractInstallTask {
 
     // Vocabularies.
     $importer = new \SitesContentImporter();
-    $importer->set_endpoint($endpoint);
-    $importer->add_restricted_vocabularies($restrict);
-    $importer->import_vocabulary_trees();
+    $importer->setEndpoint($endpoint);
+    $importer->addRestrictedVocabularies($restrict);
+    $importer->importVocabularyTrees();
 
   }
 
 }
-
-
-
-
-
-
-

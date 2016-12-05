@@ -5,14 +5,18 @@
  */
 
 namespace Drupal\Standard\Install;
+use \ITasks\AbstractInstallTask;
 
-class AdministratorRole extends \ITasks\AbstractInstallTask {
+/**
+ * Class Doc Block
+ */
+class AdministratorRole extends AbstractInstallTask {
 
   /**
    * Set the site name.
    *
    * @param array $args
-   *  Installation arguments.
+   *   Installation arguments.
    */
   public function execute(&$args = array()) {
     // Create a default role for site administrators, with all available permissions assigned.
@@ -40,12 +44,4 @@ class AdministratorRole extends \ITasks\AbstractInstallTask {
     );
   }
 
-
 }
-
-
-
-
-
-
-

@@ -5,8 +5,9 @@
  */
 
 namespace Drupal\Standard\Install;
+use \ITasks\AbstractInstallTask;
 
-class TagsTaxonomy extends \ITasks\AbstractInstallTask {
+class TagsTaxonomy extends AbstractInstallTask {
 
   /**
    * Set the site name.
@@ -53,6 +54,3 @@ class TagsTaxonomy extends \ITasks\AbstractInstallTask {
   }
 
 }
-
-
-

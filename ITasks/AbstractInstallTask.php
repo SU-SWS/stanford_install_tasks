@@ -5,11 +5,13 @@
  */
 
 namespace ITasks;
+use \ITasks\AbstractTask;
+use \ITasks\InstallTaskInterface;
 
 /**
  * Abstract install tasks.
  */
-abstract class AbstractInstallTask extends \ITasks\AbstractTask implements \ITasks\InstallTaskInterface {
+abstract class AbstractInstallTask extends AbstractTask implements InstallTaskInterface {
 
   protected $displayName;
   protected $display = TRUE;

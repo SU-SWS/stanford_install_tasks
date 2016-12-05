@@ -5,14 +5,18 @@
  */
 
 namespace Drupal\Standard\Install;
+use \ITasks\AbstractInstallTask;
 
-class ArticleContentType extends \ITasks\AbstractInstallTask {
+class ArticleContentType extends AbstractInstallTask {
+
+  // Add a short description.
+  protected $description = "Installs the Drupal Standard Arcticle content type.";
 
   /**
    * Set the site name.
    *
    * @param array $args
-   *  Installation arguments.
+   *   Installation arguments.
    */
   public function execute(&$args = array()) {
 

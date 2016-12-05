@@ -5,8 +5,9 @@
  */
 
 namespace Stanford\DrupalProfile\Install;
+use \ITasks\AbstractInstallTask;
 
-class DateTimeSettings extends \ITasks\AbstractInstallTask {
+class DateTimeSettings extends AbstractInstallTask {
 
   /**
    * Set the site name.

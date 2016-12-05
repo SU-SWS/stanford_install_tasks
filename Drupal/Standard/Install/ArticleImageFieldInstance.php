@@ -5,8 +5,9 @@
  */
 
 namespace Drupal\Standard\Install;
+use \ITasks\AbstractInstallTask;
 
-class ArticleImageFieldInstance extends \ITasks\AbstractInstallTask {
+class ArticleImageFieldInstance extends AbstractInstallTask {
 
   /**
    * Set the site name.
@@ -76,4 +77,3 @@ class ArticleImageFieldInstance extends \ITasks\AbstractInstallTask {
   }
 
 }
-

@@ -4,14 +4,16 @@
  * Abstract Task Class.
  */
 
-use Stanford\Jumpstart\Install\Content\Importer\ImporterFieldProcessorCustomBody as ImporterFieldProcessorCustomBody;
-use Stanford\Jumpstart\Install\Content\Importer\ImporterFieldProcessorFieldSDestinationPublish as ImporterFieldProcessorFieldSDestinationPublish;
 
 namespace Stanford\JumpstartVPSA\Install\Content;
+use Stanford\Jumpstart\Install\Content\Importer\ImporterFieldProcessorCustomBody as ImporterFieldProcessorCustomBody;
+use Stanford\Jumpstart\Install\Content\Importer\ImporterFieldProcessorFieldSDestinationPublish as ImporterFieldProcessorFieldSDestinationPublish;
+use \ITasks\AbstractInstallTask;
+
 /**
  *
  */
-class ImportJSVPSANodes extends \ITasks\AbstractInstallTask {
+class ImportJSVPSANodes extends AbstractInstallTask {
 
   /**
    * Import JSVPSA Nodes.
@@ -33,33 +35,26 @@ class ImportJSVPSANodes extends \ITasks\AbstractInstallTask {
     );
 
     $importer = new \SitesContentImporter();
-    $importer->set_endpoint($endpoint);
-    $importer->add_field_processor(array("body" => "\Stanford\Jumpstart\Install\Content\Importer\ImporterFieldProcessorCustomBody"));
-    $importer->add_field_processor(array("field_s_destination_publish" => "\Stanford\Jumpstart\Install\Content\Importer\ImporterFieldProcessorCustomFieldSDestinationPublish"));
+    $importer->setEndpoint($endpoint);
+    $importer->addFieldProcessor(array("body" => "\Stanford\Jumpstart\Install\Content\Importer\ImporterFieldProcessorCustomBody"));
+    $importer->addFieldProcessor(array("field_s_destination_publish" => "\Stanford\Jumpstart\Install\Content\Importer\ImporterFieldProcessorCustomFieldSDestinationPublish"));
 
     // Tell the importer what is what.
-    $importer->add_import_content_type($content_types);
+    $importer->addImportContentType($content_types);
 
     // Calling this imports the 20 most recent of each content type.
-    $importer->importer_content_nodes_recent_by_type();
+    $importer->importerContentNodesRecentByType();
 
     // JSVPSA ONLY CONTENT: tid 39 = JSVPSA.
     $filters = array('tid_raw' => array('39'));
     $view_importer = new \SitesContentImporterViews();
-    $view_importer->set_endpoint($endpoint);
-    $view_importer->set_resource('content');
-    $view_importer->set_filters($filters);
-    $view_importer->add_field_processor(array("body" => "\Stanford\Jumpstart\Install\Content\Importer\ImporterFieldProcessorCustomBody"));
-    $view_importer->add_field_processor(array("field_s_destination_publish" => "\Stanford\Jumpstart\Install\Content\Importer\ImporterFieldProcessorCustomFieldSDestinationPublish"));
-    $view_importer->import_content_by_views_and_filters();
+    $view_importer->setEndpoint($endpoint);
+    $view_importer->setResource('content');
+    $view_importer->setFilters($filters);
+    $view_importer->addFieldProcessor(array("body" => "\Stanford\Jumpstart\Install\Content\Importer\ImporterFieldProcessorCustomBody"));
+    $view_importer->addFieldProcessor(array("field_s_destination_publish" => "\Stanford\Jumpstart\Install\Content\Importer\ImporterFieldProcessorCustomFieldSDestinationPublish"));
+    $view_importer->importContentByViewsAndFilters();
 
   }
 
 }
-
-
-
-
-
-
-

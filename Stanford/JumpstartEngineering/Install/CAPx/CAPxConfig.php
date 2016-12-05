@@ -5,10 +5,12 @@
  */
 
 namespace Stanford\JumpstartEngineering\Install\CAPx;
+use \ITasks\AbstractInstallTask;
+
 /**
  *
  */
-class CAPxConfig extends \ITasks\AbstractInstallTask {
+class CAPxConfig extends AbstractInstallTask {
 
   /**
    * Configure CAPx.
@@ -47,6 +49,29 @@ class CAPxConfig extends \ITasks\AbstractInstallTask {
       capx_importer_save($importer);
     }
 
+  }
+
+  /**
+   * Verify function on wether this can be run.
+   *
+   * @return bool
+   *   True for passes verification.
+   */
+  public function verify() {
+    // Check to see if the items already exist.
+    $machine_names = array('default', 'jse_default');
+    $q = db_select('capx_cfe', 'cfe');
+    $q->addField('cfe', 'machine_name');
+    $q->condition('cfe.machine_name', $machine_names, 'IN');
+    $r = $q->execute()->fetchObject();
+
+    if ($r) {
+      drush_log('jse capx config already imported', 'error');
+      return FALSE;
+    }
+
+    // Pass. No previous config.
+    return TRUE;
   }
 
 

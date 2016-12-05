@@ -5,8 +5,9 @@
  */
 
 namespace Drupal\Standard\Install;
+use \ITasks\AbstractInstallTask;
 
-class StandardMenu extends \ITasks\AbstractInstallTask {
+class StandardMenu extends AbstractInstallTask {
 
   /**
    * Set the site name.

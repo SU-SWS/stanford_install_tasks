@@ -5,8 +5,9 @@
  */
 
 namespace Stanford\Utility\Install;
+use \ITasks\AbstractInstallTask;
 
-class CreateMenuLinks extends \ITasks\AbstractInstallTask {
+class CreateMenuLinks extends AbstractInstallTask {
 
   /**
    * Create new menu links.
@@ -49,4 +50,3 @@ class CreateMenuLinks extends \ITasks\AbstractInstallTask {
   }
 
 }
-

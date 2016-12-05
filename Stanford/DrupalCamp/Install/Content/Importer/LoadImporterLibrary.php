@@ -5,10 +5,12 @@
  */
 
 namespace Stanford\DrupalCamp\Install\Content\Importer;
+use \ITasks\AbstractInstallTask;
+
 /**
  *
  */
-class LoadImporterLibrary extends \ITasks\AbstractInstallTask {
+class LoadImporterLibrary extends AbstractInstallTask {
 
   /**
    * Set the site name.
@@ -34,10 +36,3 @@ class LoadImporterLibrary extends \ITasks\AbstractInstallTask {
   }
 
 }
-
-
-
-
-
-
-

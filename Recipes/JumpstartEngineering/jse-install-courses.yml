@@ -1,0 +1,6 @@
+name: JSE Install Courses
+machine_name: jse-install-courses
+description: Install courses modules for JSE
+tasks:
+  - \Stanford\JumpstartEngineering\Install\Courses\EnableCourses
+  - \Stanford\JumpstartEngineering\Install\Courses\CoursesBlockClasses

@@ -4,14 +4,16 @@
  * Abstract Task Class.
  */
 
-use Stanford\Jumpstart\Install\Content\Importer\ImporterFieldProcessorCustomBody as ImporterFieldProcessorCustomBody;
-use Stanford\Jumpstart\Install\Content\Importer\ImporterFieldProcessorCustomFieldSDestinationPublish as ImporterFieldProcessorFieldSDestinationPublish;
 
 namespace Stanford\JumpstartAcademic\Install\Content;
+use Stanford\Jumpstart\Install\Content\Importer\ImporterFieldProcessorCustomBody as ImporterFieldProcessorCustomBody;
+use Stanford\Jumpstart\Install\Content\Importer\ImporterFieldProcessorCustomFieldSDestinationPublish as ImporterFieldProcessorFieldSDestinationPublish;
+use \ITasks\AbstractInstallTask;
+
 /**
  *
  */
-class ImportJSAcademicBeans extends \ITasks\AbstractInstallTask {
+class ImportJSAcademicBeans extends AbstractInstallTask {
 
   /**
    * Set the site name.
@@ -56,9 +58,9 @@ class ImportJSAcademicBeans extends \ITasks\AbstractInstallTask {
     );
 
     $importer = new \SitesContentImporter();
-    $importer->set_endpoint($endpoint);
-    $importer->set_bean_uuids($uuids);
-    $importer->import_content_beans();
+    $importer->setEndpoint($endpoint);
+    $importer->setBeanUuids($uuids);
+    $importer->importContentBeans();
 
   }
 
@@ -74,10 +76,3 @@ class ImportJSAcademicBeans extends \ITasks\AbstractInstallTask {
   }
 
 }
-
-
-
-
-
-
-

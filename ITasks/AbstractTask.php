@@ -26,6 +26,7 @@ abstract class AbstractTask {
 
   /**
    * Throw an exception as the child class must define this.
+   *
    * @param array &$args
    *   An array of arguments.
    *
@@ -47,7 +48,20 @@ abstract class AbstractTask {
   }
 
   /**
+   * Verify function on wether this task can be run.
+   *
+   * @return bool
+   *   TRUE for a pass.
+   */
+  public function verify() {
+    return TRUE;
+  }
+
+  /**
+   * Returns the machine name of the task.
+   *
    * @return string
+   *   The machine name.
    */
   public function getMachineName() {
     if (!empty($this->machineName)) {
@@ -57,8 +71,10 @@ abstract class AbstractTask {
   }
 
   /**
-   * [setMachineName description]
-   * @param [type] $name [description]
+   * Set the machine name to something other than the defualt.
+   *
+   * @param string $name
+   *   A new machine name.
    */
   public function setMachineName($name) {
     $this->machineName == $name;

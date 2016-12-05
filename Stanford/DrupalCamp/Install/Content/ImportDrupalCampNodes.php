@@ -4,14 +4,16 @@
  * Abstract Task Class.
  */
 
-use Stanford\DrupalCamp\Install\Content\Importer\ImporterFieldProcessorCustomBody as ImporterFieldProcessorCustomBody;
-use Stanford\DrupalCamp\Install\Content\Importer\ImporterFieldProcessorFieldSDestinationPublish as ImporterFieldProcessorFieldSDestinationPublish;
 
 namespace Stanford\DrupalCamp\Install\Content;
+use Stanford\DrupalCamp\Install\Content\Importer\ImporterFieldProcessorCustomBody as ImporterFieldProcessorCustomBody;
+use Stanford\DrupalCamp\Install\Content\Importer\ImporterFieldProcessorFieldSDestinationPublish as ImporterFieldProcessorFieldSDestinationPublish;
+use \ITasks\AbstractInstallTask;
+
 /**
  *
  */
-class ImportDrupalCampNodes extends \ITasks\AbstractInstallTask {
+class ImportDrupalCampNodes extends AbstractInstallTask {
 
   /**
    * Set the site name.
@@ -27,20 +29,13 @@ class ImportDrupalCampNodes extends \ITasks\AbstractInstallTask {
     // JSV ONLY CONTENT - Tid 35 = JSV.
     $filters = array('tid_raw' => array('111'));
     $view_importer = new \SitesContentImporterViews();
-    $view_importer->set_endpoint($endpoint);
-    $view_importer->set_resource('content');
-    $view_importer->set_filters($filters);
-    $view_importer->add_field_processor(array("body" => "\Stanford\DrupalCamp\Install\Content\Importer\ImporterFieldProcessorCustomBody"));
-    $view_importer->add_field_processor(array("field_s_destination_publish" => "\Stanford\DrupalCamp\Install\Content\Importer\ImporterFieldProcessorCustomFieldSDestinationPublish"));
-    $view_importer->import_content_by_views_and_filters();
+    $view_importer->setEndpoint($endpoint);
+    $view_importer->setResource('content');
+    $view_importer->setFilters($filters);
+    $view_importer->addFieldProcessor(array("body" => "\Stanford\DrupalCamp\Install\Content\Importer\ImporterFieldProcessorCustomBody"));
+    $view_importer->addFieldProcessor(array("field_s_destination_publish" => "\Stanford\DrupalCamp\Install\Content\Importer\ImporterFieldProcessorCustomFieldSDestinationPublish"));
+    $view_importer->importContentByViewsAndFilters();
 
   }
 
 }
-
-
-
-
-
-
-

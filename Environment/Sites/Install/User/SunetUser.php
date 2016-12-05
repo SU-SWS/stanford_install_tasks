@@ -5,10 +5,12 @@
  */
 
 namespace Environment\Sites\Install\User;
+use \ITasks\AbstractInstallTask;
+
 /**
  *
  */
-class SunetUser extends \ITasks\AbstractInstallTask {
+class SunetUser extends AbstractInstallTask {
 
   /**
    * Set the site name.

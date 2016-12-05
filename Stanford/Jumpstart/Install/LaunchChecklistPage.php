@@ -5,10 +5,12 @@
  */
 
 namespace Stanford\Jumpstart\Install;
+use \ITasks\AbstractInstallTask;
+
 /**
  *
  */
-class LaunchChecklistPage extends \ITasks\AbstractInstallTask {
+class LaunchChecklistPage extends AbstractInstallTask {
 
   /**
    * Set Content for the Add features page.

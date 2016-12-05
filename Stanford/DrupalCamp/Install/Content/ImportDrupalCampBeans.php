@@ -4,14 +4,16 @@
  * Abstract Task Class.
  */
 
+namespace Stanford\DrupalCamp\Install\Content;
+
+use \ITasks\AbstractInstallTask;
 use Stanford\DrupalCamp\Install\Content\Importer\ImporterFieldProcessorCustomBody as ImporterFieldProcessorCustomBody;
 use Stanford\DrupalCamp\Install\Content\Importer\ImporterFieldProcessorFieldSDestinationPublish as ImporterFieldProcessorFieldSDestinationPublish;
 
-namespace Stanford\DrupalCamp\Install\Content;
 /**
  *
  */
-class ImportDrupalCampBeans extends \ITasks\AbstractInstallTask {
+class ImportDrupalCampBeans extends AbstractInstallTask {
 
   /**
    * Set the site name.
@@ -33,9 +35,9 @@ class ImportDrupalCampBeans extends \ITasks\AbstractInstallTask {
       '10535876-06b1-421b-8b00-56d741e1ea70', // DrupalCamp Propose A Session Button
     );
     $importer = new \SitesContentImporter();
-    $importer->set_endpoint($endpoint);
-    $importer->set_bean_uuids($uuids);
-    $importer->import_content_beans();
+    $importer->setEndpoint($endpoint);
+    $importer->setBeanUuids($uuids);
+    $importer->importContentBeans();
 
   }
 
@@ -51,10 +53,3 @@ class ImportDrupalCampBeans extends \ITasks\AbstractInstallTask {
   }
 
 }
-
-
-
-
-
-
-

@@ -1,7 +1,6 @@
 <?php
 
 namespace Stanford\JumpstartAcademic\Install;
-
 use \ITasks\AbstractInstallTask;
 
 /**

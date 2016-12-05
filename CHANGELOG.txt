@@ -1,0 +1,9 @@
+Stanford Installation Tasks
+--------------------------------------
+7.x-1.0-alpha1                     2016-12-02
+--------------------------------------------
+- Remove enabling courses from DeptMods
+
+7.x-1.0-alpha                     2016-11-29
+--------------------------------------------
+- Initial release

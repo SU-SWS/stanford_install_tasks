@@ -5,10 +5,12 @@
  */
 
 namespace Stanford\JumpstartPlus\Install\Content;
+use \ITasks\AbstractInstallTask;
+
 /**
  *
  */
-class ImportVocabularies extends \ITasks\AbstractInstallTask {
+class ImportVocabularies extends AbstractInstallTask {
 
   /**
    * Set the site name.
@@ -32,17 +34,10 @@ class ImportVocabularies extends \ITasks\AbstractInstallTask {
 
     // Vocabularies.
     $importer = new \SitesContentImporter();
-    $importer->set_endpoint($endpoint);
-    $importer->add_restricted_vocabularies($restrict);
-    $importer->import_vocabulary_trees();
+    $importer->setEndpoint($endpoint);
+    $importer->addRestrictedVocabularies($restrict);
+    $importer->importVocabularyTrees();
 
   }
 
 }
-
-
-
-
-
-
-

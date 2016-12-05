@@ -5,10 +5,12 @@
  */
 
 namespace Stanford\JumpstartVPSA\Install\Content;
+use \ITasks\AbstractInstallTask;
+
 /**
  *
  */
-class ImportJSVPSAVocabularies extends \ITasks\AbstractInstallTask {
+class ImportJSVPSAVocabularies extends AbstractInstallTask {
 
   /**
    * Import JSVPSA Vocabularies and terms.
@@ -31,17 +33,10 @@ class ImportJSVPSAVocabularies extends \ITasks\AbstractInstallTask {
 
     // Vocabularies.
     $importer = new \SitesContentImporter();
-    $importer->set_endpoint($endpoint);
-    $importer->add_restricted_vocabularies($restrict);
-    $importer->import_vocabulary_trees();
+    $importer->setEndpoint($endpoint);
+    $importer->addRestrictedVocabularies($restrict);
+    $importer->importVocabularyTrees();
 
   }
 
 }
-
-
-
-
-
-
-

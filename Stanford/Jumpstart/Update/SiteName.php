@@ -5,10 +5,12 @@
  */
 
 namespace Stanford\Jumpstart\Update;
+use \ITasks\AbstractUpdateTask;
+
 /**
  *
  */
-class SiteName extends \ITasks\AbstractUpdateTask {
+class SiteName extends AbstractUpdateTask {
 
   protected $description = "Change the site name to my new site name";
 
