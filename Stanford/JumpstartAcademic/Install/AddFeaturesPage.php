@@ -1,14 +1,12 @@
 <?php
-/**
- * @file
- * Abstract Task Class.
- */
 
 namespace Stanford\JumpstartAcademic\Install;
 use \ITasks\AbstractInstallTask;
 
 /**
+ * Class AddFeaturesPage.
  *
+ * @package Stanford\JumpstartAcademic\Install
  */
 class AddFeaturesPage extends AbstractInstallTask {
 
@@ -27,7 +25,7 @@ class AddFeaturesPage extends AbstractInstallTask {
     $afsquota = l('Request This Feature', 'https://stanforduniversity.qualtrics.com/SE/?SID=SV_1EK9guIGepRtvwh&Name=[current-user:name]&Email=[current-user:mail]&URL=[site:url]&Feature=Increased%20File%20Storage', array('attributes' => array('class' => array('btn', 'btn-request'), 'target' => 'blank')));
     $rss = l('Request This Feature', 'https://stanforduniversity.qualtrics.com/SE/?SID=SV_1EK9guIGepRtvwh&Name=[current-user:name]&Email=[current-user:mail]&URL=[site:url]&Feature=Display%20an%20External%20RSS%20Feed', array('attributes' => array('class' => array('btn', 'btn-request'), 'target' => 'blank')));
 
-$eod = <<<EOD
+    $eod = <<<EOD
     <p>Features are a great way to enhance the functionality of your site. Because Drupal is a fully extensible content management system, you can easily extend the functionality of your site. In the list below you can choose from the standard features offered by Stanford Web Services. Additional features and functionality are available upon request.</p>
     <table width="100%" border="0" cellspacing="0" cellpadding="0" style="border:none;">
      <tr>
@@ -59,17 +57,15 @@ EOD;
     variable_set("stanford_jumpstart_help_pages_features",
       array(
         "content" =>
-        array(
-          "#markup" => $eod
-        )
+          array(
+            "#markup" => $eod,
+          ),
       )
     );
-
   }
 
   /**
-   * [requirements description]
-   * @return [type] [description]
+   * {@inheritdoc}
    */
   public function requirements() {
     return array(
@@ -77,6 +73,5 @@ EOD;
       'stanford_jumpstart',
     );
   }
-
 
 }
