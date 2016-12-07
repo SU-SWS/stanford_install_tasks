@@ -63,6 +63,14 @@ class MenuSettings extends AbstractInstallTask {
       'customized' => 1,
       'parent' => 'people',
     );
+    $main_menu['people/alumni'] = array(
+      'link_path' => drupal_get_normal_path('people/alumni'),
+      'link_title' => 'Alumni',
+      'menu_name' => 'main-menu',
+      'weight' => 0,
+      'customized' => 1,
+      'parent' => 'people',
+    );
     // Projects.
     $main_menu['projects'] = array(
       'link_path' => drupal_get_normal_path('projects'),
