@@ -36,6 +36,8 @@ class DeptMods extends AbstractInstallTask {
       drush_log('Enabled modules: ' . implode(', ', $modules), 'ok');
     }
 
+    // Rebuild system access levels
+    node_access_rebuild();
   }
 
   /**
@@ -47,6 +49,7 @@ class DeptMods extends AbstractInstallTask {
   public function requirements() {
     return array(
       'stanford_sites_jumpstart_engineering',
+      'node',
     );
   }
 

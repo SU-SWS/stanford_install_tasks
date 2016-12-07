@@ -17,7 +17,7 @@ use Stanford\Jumpstart\Install\Content\Importer\ImporterFieldProcessorCustomFiel
 class ImportJSECustomBeans extends AbstractInstallTask {
 
   /**
-   * Import Custom BEANs.
+   * Import Custom BEANs currently only for department sites.
    *
    * @param array $args
    *   Installation arguments.

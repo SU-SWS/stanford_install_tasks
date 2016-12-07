@@ -20,9 +20,8 @@ class JSEContextualBlockClasses extends AbstractInstallTask {
    */
   public function execute(&$args = array()) {
 
-
     // Install contextual block classes.
-    $cbc_layouts = array();
+    $cbc_layouts = variable_get("contextual_block_class", array());
     $cbc_layouts['stanford_jumpstart_home_gibbons']['bean-homepage-about-block'][] = 'span8 well';
     $cbc_layouts['stanford_jumpstart_home_hoover']['bean-homepage-about-block'][] = 'span4 well';
     $cbc_layouts['stanford_jumpstart_home_morris']['bean-homepage-about-block'][] = 'span4 well';
