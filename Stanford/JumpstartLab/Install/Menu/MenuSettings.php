@@ -239,8 +239,8 @@ class MenuSettings extends AbstractInstallTask {
       'parent' => 'about',
     );
     // About / Courses.
-    $main_menu['about/courses'] = array(
-      'link_path' => drupal_get_normal_path('about/courses'),
+    $main_menu['courses'] = array(
+      'link_path' => drupal_get_normal_path('courses'),
       'link_title' => 'Courses',
       'menu_name' => 'main-menu',
       'weight' => -6,
