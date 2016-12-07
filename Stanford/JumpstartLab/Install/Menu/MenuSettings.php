@@ -161,6 +161,16 @@ class MenuSettings extends AbstractInstallTask {
       'customized' => 1,
       'parent' => 'participate',
     );
+
+    // Participate.
+    $main_menu['conferences'] = array(
+      'link_path' => drupal_get_normal_path('conferences'),
+      'link_title' => 'Conferences',
+      'menu_name' => 'main-menu',
+      'weight' => -6,
+      'customized' => 1,
+      'parent' => 'participate',
+    );
     /*
     // Participate / For Parents.
     $main_menu['participate/for-parents'] = array(

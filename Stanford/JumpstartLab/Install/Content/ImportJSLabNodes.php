@@ -58,6 +58,14 @@ class ImportJSLabNodes extends AbstractInstallTask {
     $importer->addUuidRestrictions($restrict);
     $importer->importerContentNodesRecentByType();
 
+    // Prevent duplicated content.
+    $query = db_select('node', 'n')
+      ->fields('n', array('uuid'))
+      ->execute();
+    while ($uuid = $query->fetchAssoc()) {
+      $restrict[] = $uuid;
+    }
+
     // JSL ONLY CONTENT.
     $filters = array('tid_raw' => array('112'));
     $view_importer = new \SitesContentImporterViews();
