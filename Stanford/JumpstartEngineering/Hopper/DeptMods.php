@@ -36,7 +36,7 @@ class DeptMods extends AbstractInstallTask {
       drush_log('Enabled modules: ' . implode(', ', $modules), 'ok');
     }
 
-    // Rebuild system access levels
+    // Rebuild system access levels.
     node_access_rebuild();
   }
 

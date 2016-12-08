@@ -8,7 +8,7 @@ namespace Stanford\JumpstartEngineering\Install;
 use \ITasks\AbstractInstallTask;
 
 /**
- *
+ *  Configure the Get Help page.
  */
 class GetHelpPage extends AbstractInstallTask {
 

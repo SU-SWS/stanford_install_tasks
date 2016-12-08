@@ -8,12 +8,12 @@ namespace Stanford\JumpstartEngineering\Install\Courses;
 use \ITasks\AbstractInstallTask;
 
 /**
- *
+ * Configure default classes for courses blocks class.
  */
 class CoursesBlockClasses extends AbstractInstallTask {
 
   /**
-   * Set Block Classes.
+   * Set default block classes.
    *
    * @param array $args
    *   Installation arguments.
@@ -34,7 +34,7 @@ class CoursesBlockClasses extends AbstractInstallTask {
   }
 
   /**
-   *
+   * Class requirements.
    */
   public function requirements() {
     return array(
@@ -43,4 +43,3 @@ class CoursesBlockClasses extends AbstractInstallTask {
   }
 
 }
-

@@ -8,7 +8,7 @@ namespace Stanford\JumpstartEngineering\Install\Block;
 use \ITasks\AbstractInstallTask;
 
 /**
- *
+ * Default block class configuration for JSE sites class.
  */
 class JSEBlockClasses extends AbstractInstallTask {
 

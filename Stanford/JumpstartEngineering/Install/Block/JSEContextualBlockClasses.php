@@ -1,14 +1,15 @@
 <?php
+
 /**
  * @file
- * Set contextual block classes
+ * Set contextual block classes.
  */
 
 namespace Stanford\JumpstartEngineering\Install\Block;
 use \ITasks\AbstractInstallTask;
 
 /**
- *
+ * Contextual Block Classes configuration for JSE sites class.
  */
 class JSEContextualBlockClasses extends AbstractInstallTask {
 

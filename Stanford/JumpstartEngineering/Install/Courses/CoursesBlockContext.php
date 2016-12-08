@@ -1,26 +1,21 @@
 <?php
-/**
- * @file
- * Add contexts for placing courses blocks
- */
 
 namespace Stanford\JumpstartEngineering\Install\Courses;
+
 use \ITasks\AbstractInstallTask;
 
 /**
- *
+ * Set courses context class.
  */
 class CoursesBlockContexts extends AbstractInstallTask {
 
   /**
    * Set Block Contexts for courses.
-   * Callback to set context for courses.
    *
    * @param array $args
    *   Installation arguments.
    */
-
-  public function execute($args) {
+  public function execute($args = array()) {
 
     $context = new \stdClass();
     $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
@@ -61,12 +56,12 @@ class CoursesBlockContexts extends AbstractInstallTask {
   }
 
   /**
-   *
+   * Class requirements.
    */
   public function requirements() {
     return array(
       'context',
     );
   }
-}
 
+}
