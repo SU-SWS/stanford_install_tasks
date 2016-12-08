@@ -15,7 +15,7 @@ class CoursesBlockContexts extends AbstractInstallTask {
    * @param array $args
    *   Installation arguments.
    */
-  public function execute($args = array()) {
+  public function execute(&$args = array()) {
 
     $context = new \stdClass();
     $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
