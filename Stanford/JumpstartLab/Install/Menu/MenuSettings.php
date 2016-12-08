@@ -41,16 +41,15 @@ class MenuSettings extends AbstractInstallTask {
       'link_path' => drupal_get_normal_path('people/jacob-smith'),
       'link_title' => 'Director',
       'menu_name' => 'main-menu',
-      'weight' => -10,
+      'weight' => -99,
       'customized' => 1,
       'parent' => 'people',
     );
-    // People / Members.
-    $main_menu['people/students'] = array(
-      'link_path' => drupal_get_normal_path('people/students'),
-      'link_title' => 'Students',
+    $main_menu['people/members'] = array(
+      'link_path' => drupal_get_normal_path('people/members'),
+      'link_title' => 'Members',
       'menu_name' => 'main-menu',
-      'weight' => -8,
+      'weight' => -11,
       'customized' => 1,
       'parent' => 'people',
     );
