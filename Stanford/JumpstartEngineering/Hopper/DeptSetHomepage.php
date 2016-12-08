@@ -1,17 +1,13 @@
 <?php
-/**
- * @file
- * Add block classes for courses.
- */
 
-namespace Stanford\JumpstartEngineering\Install\Layouts;
+namespace Stanford\JumpstartEngineering\Hopper;
 
 use \ITasks\AbstractInstallTask;
 
 /**
  * Set the default department homepage class.
  */
-class SetDeptHomepage extends AbstractInstallTask {
+class DeptSetHomepage extends AbstractInstallTask {
 
   /**
    * Set the homepage.

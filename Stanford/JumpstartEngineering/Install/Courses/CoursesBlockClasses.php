@@ -1,10 +1,7 @@
 <?php
-/**
- * @file
- * Add block classes for courses.
- */
 
 namespace Stanford\JumpstartEngineering\Install\Courses;
+
 use \ITasks\AbstractInstallTask;
 
 /**
@@ -22,7 +19,7 @@ class CoursesBlockClasses extends AbstractInstallTask {
 
     // Install default Courses block classes.
     $values = array(
-      array("views","-exp-courses-search_page","well")
+      array("views", "-exp-courses-search_page", "well"),
     );
 
     foreach ($values as $k => $value) {

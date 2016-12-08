@@ -1,10 +1,7 @@
 <?php
-/**
- * @file
- * Abstract Task Class.
- */
 
 namespace Stanford\JumpstartEngineering\Hopper;
+
 use \ITasks\AbstractInstallTask;
 
 /**

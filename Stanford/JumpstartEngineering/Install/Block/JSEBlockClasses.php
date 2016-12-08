@@ -1,10 +1,7 @@
 <?php
-/**
- * @file
- * Add block classes
- */
 
 namespace Stanford\JumpstartEngineering\Install\Block;
+
 use \ITasks\AbstractInstallTask;
 
 /**
@@ -39,7 +36,7 @@ class JSEBlockClasses extends AbstractInstallTask {
       // News: 2 Item Recent News List Block.
       array("views", "f73ff55b085ea49217d347de6630cd5a", "well span4"),
       // Exposed filter for News Extras view.
-      array("views","b9c01c6eb8df3ae2f662a9d4a0e35311", "well"),
+      array("views", "b9c01c6eb8df3ae2f662a9d4a0e35311", "well"),
 
       // Related content blocks.
       // Events: Stanford Events List: Filtered Upcoming Block.
@@ -55,7 +52,7 @@ class JSEBlockClasses extends AbstractInstallTask {
       // Person grid six filtered.
       array("views", "88cc9b459c80892d71732a8f342e7db0", "well"),
       // Filtered News view.
-      array("views","e1db4622d5599968122994300d2a6f47", "well"),
+      array("views", "e1db4622d5599968122994300d2a6f47", "well"),
     );
 
     foreach ($values as $k => $value) {
@@ -65,8 +62,9 @@ class JSEBlockClasses extends AbstractInstallTask {
       $update->execute();
     }
   }
+
   /**
-   *
+   * Class requirements.
    */
   public function requirements() {
     return array(
