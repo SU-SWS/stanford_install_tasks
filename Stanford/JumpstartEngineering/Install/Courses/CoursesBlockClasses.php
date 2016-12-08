@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * Add block classes for courses
+ * Add block classes for courses.
  */
 
 namespace Stanford\JumpstartEngineering\Install\Courses;
