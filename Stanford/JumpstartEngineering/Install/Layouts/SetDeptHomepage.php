@@ -11,7 +11,7 @@ use \ITasks\AbstractInstallTask;
 /**
  * Set the default department homepage class.
  */
-class SetHomepage extends AbstractInstallTask {
+class SetDeptHomepage extends AbstractInstallTask {
 
   /**
    * Set the homepage.
