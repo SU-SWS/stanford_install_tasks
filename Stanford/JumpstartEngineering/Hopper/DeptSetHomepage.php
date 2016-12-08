@@ -21,7 +21,8 @@ class DeptSetHomepage extends AbstractInstallTask {
     $homepage = 'stanford_jumpstart_home_gibbons';
     try {
       stanford_homepage_set_default_layout($homepage);
-    } catch (\Exception $e) {
+    }
+    catch (\Exception $e) {
       drush_log($e->getMessage(), 'error');
       return;
     }
@@ -34,8 +35,7 @@ class DeptSetHomepage extends AbstractInstallTask {
    * Class requirements.
    */
   public function requirements() {
-    return array(
-    );
+    return array();
   }
 
 }
