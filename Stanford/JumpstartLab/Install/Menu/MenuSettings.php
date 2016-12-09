@@ -41,16 +41,15 @@ class MenuSettings extends AbstractInstallTask {
       'link_path' => drupal_get_normal_path('people/jacob-smith'),
       'link_title' => 'Director',
       'menu_name' => 'main-menu',
-      'weight' => -10,
+      'weight' => -99,
       'customized' => 1,
       'parent' => 'people',
     );
-    // People / Members.
-    $main_menu['people/students'] = array(
-      'link_path' => drupal_get_normal_path('people/students'),
-      'link_title' => 'Students',
+    $main_menu['people/members/grouped'] = array(
+      'link_path' => drupal_get_normal_path('people/members/grouped'),
+      'link_title' => 'Members',
       'menu_name' => 'main-menu',
-      'weight' => -8,
+      'weight' => -11,
       'customized' => 1,
       'parent' => 'people',
     );
@@ -60,6 +59,14 @@ class MenuSettings extends AbstractInstallTask {
       'link_title' => 'Staff',
       'menu_name' => 'main-menu',
       'weight' => -6,
+      'customized' => 1,
+      'parent' => 'people',
+    );
+    $main_menu['people/alumni'] = array(
+      'link_path' => drupal_get_normal_path('people/alumni'),
+      'link_title' => 'Alumni',
+      'menu_name' => 'main-menu',
+      'weight' => 0,
       'customized' => 1,
       'parent' => 'people',
     );
@@ -123,7 +130,7 @@ class MenuSettings extends AbstractInstallTask {
       'link_path' => drupal_get_normal_path('projects/related-research'),
       'link_title' => 'Related Research',
       'menu_name' => 'main-menu',
-      'weight' => -6,
+      'weight' => 10,
       'customized' => 1,
       'parent' => 'projects',
     );
@@ -148,7 +155,7 @@ class MenuSettings extends AbstractInstallTask {
       'link_path' => drupal_get_normal_path('participate/research-assistant'),
       'link_title' => 'Research Assistant',
       'menu_name' => 'main-menu',
-      'weight' => -6,
+      'weight' => 0,
       'customized' => 1,
       'parent' => 'participate',
     );
@@ -157,10 +164,37 @@ class MenuSettings extends AbstractInstallTask {
       'link_path' => drupal_get_normal_path('participate/study-participant'),
       'link_title' => 'Study Participant',
       'menu_name' => 'main-menu',
-      'weight' => -6,
+      'weight' => 5,
       'customized' => 1,
       'parent' => 'participate',
     );
+    // Participate / Study Participant.
+    $main_menu['participate/parents'] = array(
+      'link_path' => drupal_get_normal_path('participate/parents'),
+      'link_title' => 'For Parents',
+      'menu_name' => 'main-menu',
+      'weight' => 10,
+      'customized' => 1,
+      'parent' => 'participate',
+    );
+    $main_menu['conferences'] = array(
+      'link_path' => drupal_get_normal_path('conferences'),
+      'link_title' => 'Conferences',
+      'menu_name' => 'main-menu',
+      'weight' => 15,
+      'customized' => 1,
+      'parent' => 'participate',
+    );
+    $main_menu['participate/sample-application-webform'] = array(
+      'link_path' => drupal_get_normal_path('participate/sample-application-webform'),
+      'link_title' => 'Sample Webform',
+      'menu_name' => 'main-menu',
+      'weight' => 20,
+      'customized' => 1,
+      'parent' => 'participate',
+    );
+
+
     /*
     // Participate / For Parents.
     $main_menu['participate/for-parents'] = array(
@@ -221,8 +255,8 @@ class MenuSettings extends AbstractInstallTask {
       'parent' => 'about',
     );
     // About / Courses.
-    $main_menu['about/courses'] = array(
-      'link_path' => drupal_get_normal_path('about/courses'),
+    $main_menu['courses'] = array(
+      'link_path' => drupal_get_normal_path('courses'),
       'link_title' => 'Courses',
       'menu_name' => 'main-menu',
       'weight' => -6,

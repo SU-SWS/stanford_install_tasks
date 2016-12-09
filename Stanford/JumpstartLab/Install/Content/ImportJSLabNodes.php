@@ -31,7 +31,6 @@ class ImportJSLabNodes extends AbstractInstallTask {
       'stanford_publication',
       'stanford_news_item',
       'stanford_course',
-      'webform',
     );
 
     // Restrictions.
@@ -57,6 +56,14 @@ class ImportJSLabNodes extends AbstractInstallTask {
     $importer->addImportContentType($content_types);
     $importer->addUuidRestrictions($restrict);
     $importer->importerContentNodesRecentByType();
+
+    // Prevent duplicated content.
+    $query = db_select('node', 'n')
+      ->fields('n', array('uuid'))
+      ->execute();
+    while ($uuid = $query->fetchAssoc()) {
+      $restrict[] = $uuid;
+    }
 
     // JSL ONLY CONTENT.
     $filters = array('tid_raw' => array('112'));
