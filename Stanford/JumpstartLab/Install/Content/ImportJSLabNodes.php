@@ -50,6 +50,7 @@ class ImportJSLabNodes extends AbstractInstallTask {
       '8cac43b8-8953-4936-b857-53f4b68e1724',
       'cbcae411-e5ba-4dcf-8d2f-7e18db8439ec',
 
+      // Haley Jackson Profile.
       'b8e7f735-93e3-4717-8208-e9b0baff5dc4',
     );
 
