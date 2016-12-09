@@ -248,7 +248,7 @@ class MenuSettings extends AbstractInstallTask {
     );
     // News Landing.
     $main_menu['news'] = array(
-      'link_path' => drupal_get_normal_path('news'),
+      'link_path' => drupal_get_normal_path('news/recent-news'),
       'link_title' => 'News',
       'menu_name' => 'main-menu',
       'weight' => -5,
