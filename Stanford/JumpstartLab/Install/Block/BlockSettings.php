@@ -139,6 +139,19 @@ class BlockSettings extends AbstractInstallTask {
       $update->execute();
     }
 
+    $disable = array(
+      'stanford_sites_helper' => array('firststeps',),
+      'webauth' => array('webauth_login_block',),
+    );
+    foreach ($disable as $module => $block_ids) {
+      $disable = db_update('block')
+        ->fields(array('status' => 0, 'region' => '-1'))
+        ->condition('module', $module)
+        ->condition('delta', $block_ids, 'in')
+        ->execute();
+    }
+
+
   }
 
   /**
