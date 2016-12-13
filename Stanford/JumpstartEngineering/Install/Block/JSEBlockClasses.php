@@ -29,7 +29,7 @@ class JSEBlockClasses extends AbstractInstallTask {
       array("bean", "jumpstart-small-custom-block-4", "well span4"),
       array("bean", "jumpstart-small-custom-block-5", "well span4"),
       array("views", "-exp-courses-search_page", "well"),
-      
+
       // Affiliates two-stacked.
       array("views", "46f3a22e00be75cb8fe3bc16de17162a", "well span4"),
       array("views", "stanford_events_views-block", "well span4 column"),
