@@ -29,12 +29,14 @@ class JSEBlockClasses extends AbstractInstallTask {
       array("bean", "jumpstart-small-custom-block-4", "well span4"),
       array("bean", "jumpstart-small-custom-block-5", "well span4"),
       array("views", "-exp-courses-search_page", "well"),
-
+      
       // Affiliates two-stacked.
       array("views", "46f3a22e00be75cb8fe3bc16de17162a", "well span4"),
-      array("views", "stanford_events_views-block", "well span4"),
+      array("views", "stanford_events_views-block", "well span4 column"),
       // News: 2 Item Recent News List Block.
-      array("views", "f73ff55b085ea49217d347de6630cd5a", "well span4"),
+      array("views", "f73ff55b085ea49217d347de6630cd5a", "well span4 column"),
+      // News with teaser: 2 Item Recent News List Block.
+      array("views", "bf4ec9695a5b13242ba5a4898a6b635", "well span4 column"),
       // Exposed filter for News Extras view.
       array("views", "b9c01c6eb8df3ae2f662a9d4a0e35311", "well"),
 
