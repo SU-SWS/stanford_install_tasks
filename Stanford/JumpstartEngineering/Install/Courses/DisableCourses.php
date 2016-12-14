@@ -4,7 +4,7 @@ namespace Stanford\JumpstartEngineering\Install\Courses;
 use \ITasks\AbstractInstallTask;
 
 /**
- * Disable Courses module on JSE sites.
+ * Disable Courses module on JSE sites class.
  */
 class DisableCourses extends AbstractInstallTask {
 

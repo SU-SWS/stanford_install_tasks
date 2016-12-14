@@ -4,7 +4,7 @@ namespace Stanford\JumpstartEngineering\Install\Courses;
 use \ITasks\AbstractInstallTask;
 
 /**
- * Enable Courses on JSE sites.
+ * Enable Courses on JSE sites class.
  */
 class EnableCourses extends AbstractInstallTask {
 

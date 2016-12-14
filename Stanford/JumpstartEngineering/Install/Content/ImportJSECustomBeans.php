@@ -12,12 +12,12 @@ use Stanford\Jumpstart\Install\Content\Importer\ImporterFieldProcessorCustomBody
 use Stanford\Jumpstart\Install\Content\Importer\ImporterFieldProcessorCustomFieldSDestinationPublish;
 
 /**
- *
+ * Import JSE Custom Beans (for departments) class.
  */
 class ImportJSECustomBeans extends AbstractInstallTask {
 
   /**
-   * Import Custom BEANs.
+   * Import Custom BEANs currently only for department sites.
    *
    * @param array $args
    *   Installation arguments.

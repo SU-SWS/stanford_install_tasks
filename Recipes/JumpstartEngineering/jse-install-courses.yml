@@ -4,3 +4,4 @@ description: Install courses modules for JSE
 tasks:
   - \Stanford\JumpstartEngineering\Install\Courses\EnableCourses
   - \Stanford\JumpstartEngineering\Install\Courses\CoursesBlockClasses
+  - \Stanford\JumpstartEngineering\Install\Courses\CoursesBlockContexts
