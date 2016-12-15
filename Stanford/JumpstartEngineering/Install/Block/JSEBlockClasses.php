@@ -50,7 +50,7 @@ class JSEBlockClasses extends AbstractInstallTask {
       // Person grid filtered.
       array("views", "e94fb0374cf38241b08947ca4e210563", "well"),
       // Person grid five filtered.
-      array("views", "7c6a569773ec75eec1ddc08609e9c4cf'", "well"),
+      array("views", "7c6a569773ec75eec1ddc08609e9c4cf", "well"),
       // Person grid six filtered.
       array("views", "88cc9b459c80892d71732a8f342e7db0", "well"),
       // Filtered News view.
