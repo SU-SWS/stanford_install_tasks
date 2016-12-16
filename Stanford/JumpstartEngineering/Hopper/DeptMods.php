@@ -36,8 +36,14 @@ class DeptMods extends AbstractInstallTask {
       drush_log('Enabled modules: ' . implode(', ', $modules), 'ok');
     }
 
+    // Revert news features
+    features_revert_module('stanford_news');
+    features_revert_module('stanford_news_extras');
+
     // Rebuild system access levels.
     node_access_rebuild();
+    cache_clear_all();
+
   }
 
   /**
