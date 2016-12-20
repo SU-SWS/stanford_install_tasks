@@ -6,3 +6,4 @@ tasks:
   - \Stanford\JumpstartEngineering\Install\Content\ImportJSECustomBeans
   - \Stanford\JumpstartEngineering\Install\Block\JSEBlockClasses
   - \Stanford\JumpstartEngineering\Install\Block\JSEContextualBlockClasses
+  - \Stanford\Utility\Install\NodeAccessRebuild
