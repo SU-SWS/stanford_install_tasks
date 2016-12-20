@@ -138,7 +138,6 @@ class BlockSettings extends AbstractInstallTask {
       $update->condition('delta', $value[1]);
       $update->execute();
     }
-
   }
 
   /**
