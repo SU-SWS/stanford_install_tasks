@@ -3,12 +3,11 @@
 namespace Stanford\JumpstartLab\Install\Block;
 
 use \ITasks\AbstractInstallTask;
-use Stanford\Jumpstart\Install\Block\BlockSettings;
 
 /**
  * Class BlockSettings.
  */
-class LabBlockSettings extends AbstractInstallTask {
+class BlockSettings extends AbstractInstallTask {
 
   /**
    * Set the site name.
@@ -139,9 +138,6 @@ class LabBlockSettings extends AbstractInstallTask {
       $update->condition('delta', $value[1]);
       $update->execute();
     }
-
-    $b = new BlockSettings();
-    $b->execute($args);
   }
 
   /**
