@@ -52,6 +52,9 @@ class ImportJSLabNodes extends AbstractInstallTask {
 
       // Haley Jackson Profile.
       'b8e7f735-93e3-4717-8208-e9b0baff5dc4',
+
+      // Other "Research Overview" page we dont want.
+      '00d94894-0d54-4a4f-bc41-985da4a05778'
     );
 
     $importer = new \SitesContentImporter();
