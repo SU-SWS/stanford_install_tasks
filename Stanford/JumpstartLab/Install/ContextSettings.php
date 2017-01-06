@@ -20,8 +20,6 @@ class ContextSettings extends AbstractInstallTask {
   public function execute(&$args = array()) {
     $contexts = variable_get('context_status', array());
     $contexts['stanford_people_staff_pages'] = TRUE;
-    $contexts['people_administrators'] = TRUE;
-    $contexts['people_staff'] = TRUE;
     variable_set('context_status', $contexts);
   }
 
