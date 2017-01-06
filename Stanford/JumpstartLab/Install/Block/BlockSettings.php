@@ -36,7 +36,12 @@ class BlockSettings extends AbstractInstallTask {
       array("bean", "homepage-about-block", 'well'),
       array("bean", "jumpstart-home-page-information-", 'well'),
       array("bean", "jumpstart-affiliated-programs", "well"),
-      array("bean", "jumpstart-lab-homepage-research-", "well"),
+
+      // Home Page Columns.
+      array("bean", "jumpstart-lab-homepage-research-", "well column"),
+      array("views", "publications_common-block_4", "well column"),
+      array("views", "f73ff55b085ea49217d347de6630cd5a", "well column"),
+
       array("bean", "jumpstart-contact-us-postcard", "well"),
       array("bean", "jumpstart-degree-programs-info-f", "well"),
       array("bean", "jumpstart-featured-course", "well"),
@@ -86,9 +91,7 @@ class BlockSettings extends AbstractInstallTask {
         "shortcuts-launch-block",
       ),
       array("views", "-exp-publications-page", "well"),
-      array("views", "f73ff55b085ea49217d347de6630cd5a", "well"),
       array("views", "jumpstart_current_user-block", "shortcuts-user"),
-      array("views", "publications_common-block_4", "well"),
       array("views", "stanford_news-block", "well"),
       array("views", "stanford_events_views-block", "well"),
       array("views", "-exp-stanford_person_staff-page", "well"),

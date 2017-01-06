@@ -78,6 +78,14 @@ class MenuSettings extends AbstractInstallTask {
       'weight' => 5,
       'customized' => 1,
     );
+    // About / Video.
+    $main_menu['projects/video'] = array(
+      'link_path' => drupal_get_normal_path('projects/video'),
+      'link_title' => 'Video',
+      'menu_name' => 'main-menu',
+      'weight' => -8,
+      'parent' => 'projects',
+    );
     // Projects / Research Overview.
     $main_menu['projects/research-overview'] = array(
       'link_path' => drupal_get_normal_path('projects/research-overview'),
@@ -94,34 +102,41 @@ class MenuSettings extends AbstractInstallTask {
       'menu_name' => 'main-menu',
       'weight' => -6,
       'customized' => 1,
+      'parent' => 'projects/research-overview',
+    );
+    $main_menu['projects/sample-research-project-two'] = array(
+      'link_path' => drupal_get_normal_path('projects/sample-research-project-two'),
+      'link_title' => 'Sample Research Project Two',
+      'menu_name' => 'main-menu',
+      'weight' => -5,
+      'customized' => 1,
+      'parent' => 'projects/research-overview',
+    );
+    $main_menu['projects/sample-research-project-three'] = array(
+      'link_path' => drupal_get_normal_path('projects/sample-research-project-three'),
+      'link_title' => 'Sample Research Project Three',
+      'menu_name' => 'main-menu',
+      'weight' => -4,
+      'customized' => 1,
+      'parent' => 'projects/research-overview',
+    );
+
+    // Projects / Sample Research Project One.
+    $main_menu['research/project-example'] = array(
+      'link_path' => drupal_get_normal_path('research/project-example'),
+      'link_title' => 'Project Example',
+      'menu_name' => 'main-menu',
+      'weight' => -6,
+      'customized' => 1,
       'parent' => 'projects',
     );
-    /*
-    // Projects / Sample Research Project Two.
-    $main_menu['projects/sample-research-project-two'] = array(
-    'link_path' => drupal_get_normal_path('projects/sample-research-project-two'),
-    'link_title' => 'Sample Research Project Two',
-    'menu_name' => 'main-menu',
-    'weight' => -6,
-    'customized' => 1,
-    'parent' => 'projects',
-    );
-    // Projects / Sample Research Project Three.
-    $main_menu['projects/sample-research-project-three'] = array(
-    'link_path' => drupal_get_normal_path('projects/sample-research-project-three'),
-    'link_title' => 'Sample Research Project Three',
-    'menu_name' => 'main-menu',
-    'weight' => -6,
-    'customized' => 1,
-    'parent' => 'projects',
-    );
-     */
+
     // Projects / Tools/Materials.
     $main_menu['projects/toolsmaterials'] = array(
       'link_path' => drupal_get_normal_path('projects/toolsmaterials'),
       'link_title' => 'Tools/Materials',
       'menu_name' => 'main-menu',
-      'weight' => -6,
+      'weight' => -3,
       'customized' => 1,
       'parent' => 'projects',
     );
@@ -168,15 +183,6 @@ class MenuSettings extends AbstractInstallTask {
       'customized' => 1,
       'parent' => 'participate',
     );
-    // Participate / Study Participant.
-    $main_menu['participate/parents'] = array(
-      'link_path' => drupal_get_normal_path('participate/parents'),
-      'link_title' => 'For Parents',
-      'menu_name' => 'main-menu',
-      'weight' => 10,
-      'customized' => 1,
-      'parent' => 'participate',
-    );
     $main_menu['conferences'] = array(
       'link_path' => drupal_get_normal_path('conferences'),
       'link_title' => 'Conferences',
@@ -194,27 +200,6 @@ class MenuSettings extends AbstractInstallTask {
       'parent' => 'participate',
     );
 
-
-    /*
-    // Participate / For Parents.
-    $main_menu['participate/for-parents'] = array(
-    'link_path' => drupal_get_normal_path('participate/for-parents'),
-    'link_title' => 'For Parents',
-    'menu_name' => 'main-menu',
-    'weight' => -6,
-    'customized' => 1,
-    'parent' => 'participate',
-    );
-    // Participate / Sample Application Form.
-    $main_menu['participate/sample-application-form'] = array(
-    'link_path' => drupal_get_normal_path('participate/sample-application-form'),
-    'link_title' => 'Sample Application Form',
-    'menu_name' => 'main-menu',
-    'weight' => -6,
-    'customized' => 1,
-    'parent' => 'participate',
-    );
-     */
     // Resources.
     $main_menu['resources'] = array(
       'link_path' => drupal_get_normal_path('resources'),
@@ -236,14 +221,6 @@ class MenuSettings extends AbstractInstallTask {
       'link_title' => 'Overview',
       'menu_name' => 'main-menu',
       'weight' => -10,
-      'parent' => 'about',
-    );
-    // About / Video.
-    $main_menu['about/video'] = array(
-      'link_path' => drupal_get_normal_path('about/video'),
-      'link_title' => 'Video',
-      'menu_name' => 'main-menu',
-      'weight' => -8,
       'parent' => 'about',
     );
     // News Landing.
