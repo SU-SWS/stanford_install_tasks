@@ -70,6 +70,7 @@ class MenuSettings extends AbstractInstallTask {
       'customized' => 1,
       'parent' => 'people',
     );
+
     // Projects.
     $main_menu['projects'] = array(
       'link_path' => drupal_get_normal_path('projects'),
@@ -78,20 +79,12 @@ class MenuSettings extends AbstractInstallTask {
       'weight' => 5,
       'customized' => 1,
     );
-    // About / Video.
-    $main_menu['projects/video'] = array(
-      'link_path' => drupal_get_normal_path('projects/video'),
-      'link_title' => 'Video',
-      'menu_name' => 'main-menu',
-      'weight' => -8,
-      'parent' => 'projects',
-    );
     // Projects / Research Overview.
     $main_menu['projects/research-overview'] = array(
       'link_path' => drupal_get_normal_path('projects/research-overview'),
       'link_title' => 'Research Overview',
       'menu_name' => 'main-menu',
-      'weight' => -6,
+      'weight' => 0,
       'customized' => 1,
       'parent' => 'projects',
     );
@@ -100,7 +93,7 @@ class MenuSettings extends AbstractInstallTask {
       'link_path' => drupal_get_normal_path('projects/sample-research-project-one'),
       'link_title' => 'Sample Research Project One',
       'menu_name' => 'main-menu',
-      'weight' => -6,
+      'weight' => 0,
       'customized' => 1,
       'parent' => 'projects/research-overview',
     );
@@ -108,7 +101,7 @@ class MenuSettings extends AbstractInstallTask {
       'link_path' => drupal_get_normal_path('projects/sample-research-project-two'),
       'link_title' => 'Sample Research Project Two',
       'menu_name' => 'main-menu',
-      'weight' => -5,
+      'weight' => 5,
       'customized' => 1,
       'parent' => 'projects/research-overview',
     );
@@ -116,7 +109,7 @@ class MenuSettings extends AbstractInstallTask {
       'link_path' => drupal_get_normal_path('projects/sample-research-project-three'),
       'link_title' => 'Sample Research Project Three',
       'menu_name' => 'main-menu',
-      'weight' => -4,
+      'weight' => 10,
       'customized' => 1,
       'parent' => 'projects/research-overview',
     );
@@ -126,17 +119,16 @@ class MenuSettings extends AbstractInstallTask {
       'link_path' => drupal_get_normal_path('research/project-example'),
       'link_title' => 'Project Example',
       'menu_name' => 'main-menu',
-      'weight' => -6,
+      'weight' => 5,
       'customized' => 1,
       'parent' => 'projects',
     );
-
     // Projects / Tools/Materials.
     $main_menu['projects/toolsmaterials'] = array(
       'link_path' => drupal_get_normal_path('projects/toolsmaterials'),
       'link_title' => 'Tools/Materials',
       'menu_name' => 'main-menu',
-      'weight' => -3,
+      'weight' => 10,
       'customized' => 1,
       'parent' => 'projects',
     );
@@ -145,10 +137,19 @@ class MenuSettings extends AbstractInstallTask {
       'link_path' => drupal_get_normal_path('projects/related-research'),
       'link_title' => 'Related Research',
       'menu_name' => 'main-menu',
-      'weight' => 10,
+      'weight' => 15,
       'customized' => 1,
       'parent' => 'projects',
     );
+    // About / Video.
+    $main_menu['projects/video'] = array(
+      'link_path' => drupal_get_normal_path('projects/video'),
+      'link_title' => 'Video',
+      'menu_name' => 'main-menu',
+      'weight' => 20,
+      'parent' => 'projects',
+    );
+
     // Publications.
     $main_menu['publications'] = array(
       'link_path' => drupal_get_normal_path('publications'),
