@@ -35,6 +35,8 @@ class JSEBlockClasses extends AbstractInstallTask {
       array("views", "stanford_events_views-block", "well span4 column"),
       // News: 2 Item Recent News List Block.
       array("views", "f73ff55b085ea49217d347de6630cd5a", "well span4 column"),
+      // News Extras: 2 Item Recent News List Block.
+      array("views", "9bf4ec9695a5b13242ba5a4898a6b635", "well span4 column"),
       // News with teaser: 2 Item Recent News List Block.
       array("views", "bf4ec9695a5b13242ba5a4898a6b635", "well span4 column"),
       // Exposed filter for News Extras view.
