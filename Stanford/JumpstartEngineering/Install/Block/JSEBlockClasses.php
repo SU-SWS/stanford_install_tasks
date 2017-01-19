@@ -32,7 +32,11 @@ class JSEBlockClasses extends AbstractInstallTask {
 
       // Affiliates two-stacked.
       array("views", "46f3a22e00be75cb8fe3bc16de17162a", "well span4"),
+
+      // Events.
       array("views", "stanford_events_views-block", "well span4 column"),
+
+      // News and News Extras.
       // News: 2 Item Recent News List Block.
       array("views", "f73ff55b085ea49217d347de6630cd5a", "well span4 column"),
       // News Extras: 2 Item Recent News List Block.
