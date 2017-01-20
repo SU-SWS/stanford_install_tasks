@@ -1,6 +1,20 @@
 Stanford Installation Tasks
 --------------------------------------
 
+7.x-1.0-alpha3                     2017-01-20
+---------------------------------------------
+- For JumpstartLab
+  - HSDO-637 #Disables quick steps and webauth blocks
+  - HSDO-637 #removed block disable
+  - HSDO-637 #Execute Jumpstart/Block Settings from LabsBlockSettings
+  - HSDO-637 #webauth & site helper block settings
+
+- For JSE
+  - Adding NodeAccessRebuild utility
+  - Add module revert & cache clear
+  - SOE-1407: Add css classes to the news block
+
+
 7.x-1.0-alpha2                     2016-12-14
 --------------------------------------------
 - Added installation variables
