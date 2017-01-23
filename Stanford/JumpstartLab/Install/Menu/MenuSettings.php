@@ -281,7 +281,7 @@ class MenuSettings extends AbstractInstallTask {
     );
     $main_menu['private/sample-restricted-page-one'] = array(
       'link_path' => drupal_get_normal_path('private/sample-restricted-page-one'),
-      'link_title' => 'Sameple Restricted Page One',
+      'link_title' => 'Sample Restricted Page One',
       'menu_name' => 'main-menu',
       'weight' => -2,
       'parent' => 'private/members-only',
