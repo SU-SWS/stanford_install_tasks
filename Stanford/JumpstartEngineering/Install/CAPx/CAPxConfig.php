@@ -177,6 +177,9 @@ class CAPxConfig extends AbstractInstallTask {
       'collections' => array(),
       'entity_type' => 'node',
       'bundle_type' => 'stanford_person',
+      'multiple' => 0,
+      'subquery' => '',
+      'guuidquery' => '',
       'title' => t("Default"),
     );
     // JSE Default.
@@ -273,6 +276,9 @@ class CAPxConfig extends AbstractInstallTask {
       'collections' => array(),
       'entity_type' => 'node',
       'bundle_type' => 'stanford_person',
+      'multiple' => 0,
+      'subquery' => '',
+      'guuidquery' => '',
       'title' => t("JSE Default"),
     );
     return $mappers;
