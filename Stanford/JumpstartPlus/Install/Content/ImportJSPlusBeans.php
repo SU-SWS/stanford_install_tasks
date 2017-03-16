@@ -24,7 +24,7 @@ class ImportJSPlusBEANs extends AbstractInstallTask {
   public function execute(&$args = array()) {
 
     // @todo: Make this an option on the install form.
-    $endpoint = variable_get("stanford_content_server", "https://sites.stanford.edu/jsa-content/jsainstall");
+    $endpoint = variable_get("stanford_content_server", "https://sites1.stanford.edu/jsa-content/jsainstall");
 
     // BEANS
     $uuids = array(
