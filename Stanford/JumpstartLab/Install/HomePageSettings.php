@@ -49,7 +49,7 @@ class HomePageSettings extends AbstractInstallTask {
     // Save header background image.
     // Beaker image.
     $uuid = '3331b480-51bd-4086-bafc-6b5cd342c410';
-    $endpoint = variable_get("stanford_content_server", "https://sites1.stanford.edu/jsa-content/jsainstall");
+    $endpoint = variable_get("stanford_content_server", "https://sites.stanford.edu/jsa-content/jsainstall");
 
 
     $file_processor = new \ImporterFieldProcessorFile();
