@@ -35,7 +35,7 @@ class TMPDir extends AbstractInstallTask {
    *
    * @param array|mixed $form
    *   The form.
-   * @param array $form_state
+   * @param array|mixed $form_state
    *   The form state.
    */
   public function form(&$form, &$form_state) {
