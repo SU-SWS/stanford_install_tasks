@@ -38,12 +38,12 @@ class TMPDir extends AbstractInstallTask {
    * @param array $form_state
    *   The form state.
    */
-  public function form(array &$form = array(), array &$form_state = array()) {
+  public function form(&$form, &$form_state) {
     $form['sites']['stanford_sites_tmpdir'] = array(
       '#default_value' => '',
       "#type" => "textfield",
       "#title" => t("Temporary Files Directory"),
-      "#description" => t('Enter a path for the temporary files directory (e.g., "sites/default/files/tmp".'),
+      "#description" => t('Enter a path for the temporary files directory (e.g., "sites/default/files/tmp").'),
     );
   }
 
