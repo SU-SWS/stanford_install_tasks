@@ -33,9 +33,9 @@ class TMPDir extends AbstractInstallTask {
   /**
    * Add a form element for gathering the path to the temporary files directory.
    *
-   * @param $form
+   * @param array $form
    *   The form.
-   * @param $form_state
+   * @param array $form_state
    *   The form state.
    */
   public function form(&$form, &$form_state) {
