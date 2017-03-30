@@ -38,7 +38,7 @@ class TMPDir extends AbstractInstallTask {
    * @param array $form_state
    *   The form state.
    */
-  public function form(&$form = array(), &$form_state = array()) {
+  public function form(array &$form = array(), array &$form_state = array()) {
     $form['sites']['stanford_sites_tmpdir'] = array(
       '#default_value' => '',
       "#type" => "textfield",
