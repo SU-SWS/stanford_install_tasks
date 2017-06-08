@@ -141,6 +141,12 @@ class BlockSettings extends AbstractInstallTask {
       $update->condition('delta', $value[1]);
       $update->execute();
     }
+
+    db_update('block')
+      ->fields(array('status' => 0))
+      ->condition('module', 'webauth')
+      ->condition('delta', 'webauth_login_block')
+      ->execute();
   }
 
   /**
