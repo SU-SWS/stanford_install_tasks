@@ -107,9 +107,9 @@ class BlockSettings extends AbstractInstallTask {
       array("views", "99107f9408b38333b7b9429d6f180b75", "well"),
       // Person list.
       array("views", "84a0a512b3e0ccb8042a7d3b418168d7", "well"),
-      //Person Directory.
+      // Person Directory.
       array("views", "385e44d327c496fd55fac99bf18f15d9", "well"),
-      //Person Grouped Directory.
+      // Person Grouped Directory.
       array("views", "e37f035f29edbe11736c3500a7ea43a7", "well"),
 
       // Panama.
