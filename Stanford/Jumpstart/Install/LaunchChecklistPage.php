@@ -114,7 +114,7 @@ $eod = <<<EOD
       </ul>
       <p>Once you have gone through the launch checklist above, you can request to launch your site.&nbsp;Stanford Web Services requests at least two weeks&#39; advanced notice. Launches are scheduled Tuesdays through Thursdays. During peak periods, some dates may not be available; date flexibility is appreciated!</p>
       <p>Congratulations! This may sound scary, but you have a team behind you to make sure that launch goes as smoothly as possible.</p>
-      <p><a class="btn btn-request" href="https://stanforduniversity.qualtrics.com/SE/?SID=SV_01I4MJkFACIhhIN" target="_blank">Request Site Launch</a></p>
+      <p><a class="btn btn-request" href="https://stanforduniversity.qualtrics.com/SE/?SID=SV_01I4MJkFACIhhIN" target="_blank">Schedule Site Launch</a></p>
     </div>
 EOD;
 
