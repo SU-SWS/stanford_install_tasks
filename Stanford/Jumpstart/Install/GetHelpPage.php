@@ -56,12 +56,12 @@ $eod = <<<EOD
       The Sites User Guide provides general information about using the service as well as how to videos for common Drupal tasks.</li>
       <li><a href="http://swsblog.stanford.edu" target="_blank">Stanford Web Services Blog</a><br />
         The Stanford Web Services team blogs about all things related to Stanford Sites, Drupal, design, site building, and many other topics. This is a great resource for SWS clients.</li>
-      <li><a href="http://techcommons.stanford.edu/topics/drupal" target="_blank">Tech Commons</a><br />
+      <li><a href="https://opensource.stanford.edu/knowledge?field_topics_tid=6" target="_blank">Tech Commons</a><br />
         Tech Commons is a community-created resource for technical knowledge. There is a section for Drupal with many helpful tutorials, discussions, and information.</li>
       <li><a href="https://learndrupal.stanford.edu/" target="_blank">Learn Drupal</a><br />
         A clearinghouse for community voted best Drupal learning resources.
       </li>
-      <li><a href="http://opensource.stanford.edu/moc" target="_blank">Mornings o' Code,  Drupallers Drop-in Help, Drupallers Co-Working Sessions</a><br />
+      <li><a href="https://opensource.stanford.edu/events" target="_blank">Mornings o' Code,  Drupallers Drop-in Help, Drupallers Co-Working Sessions</a><br />
       Stanford Drupallers (new and and experienced) meet regularly to help troubleshoot each others' problems. Check the schedule for upcoming co-working sessions</li>
     </ul>
     <h2>Connect with the Drupal Community</h2>
