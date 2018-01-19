@@ -116,6 +116,7 @@ class SunetUser extends AbstractInstallTask {
    */
   public function requirements() {
     return array(
+      'webauth',
       'user',
     );
   }
