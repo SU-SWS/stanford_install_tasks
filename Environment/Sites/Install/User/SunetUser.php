@@ -45,7 +45,7 @@ class SunetUser extends AbstractInstallTask {
     $roles = array(DRUPAL_AUTHENTICATED_RID => TRUE, $sunetrole->rid => TRUE, $ownerrole->rid => TRUE);
     $account->roles = $roles;
     $account->timezone = variable_get('date_default_timezone', '');
-    drush_log(print_r($account), "ok");
+    
     $account = user_save($account);
     user_set_authmaps($account, array('authname_webauth' => $authname));
   }
