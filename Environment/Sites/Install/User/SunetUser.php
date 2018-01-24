@@ -26,7 +26,6 @@ class SunetUser extends AbstractInstallTask {
     $sunet = $args['forms']['install_configure_form']['stanford_sites_requester_sunetid'];
     $fullname = $args['forms']['install_configure_form']['stanford_sites_requester_name'];
     $email = $args['forms']['install_configure_form']['stanford_sites_requester_email'];
-
     $authname = $sunet . '@stanford.edu';
     $sunetrole = user_role_load_by_name('SUNet User');
     $ownerrole = user_role_load_by_name('site owner');
@@ -45,7 +44,7 @@ class SunetUser extends AbstractInstallTask {
     $roles = array(
       DRUPAL_AUTHENTICATED_RID => TRUE,
       $sunetrole->rid => TRUE,
-      $ownerrole->rid => TRUE
+      $ownerrole->rid => TRUE,
     );
     $account->roles = $roles;
     $account->timezone = variable_get('date_default_timezone', '');
