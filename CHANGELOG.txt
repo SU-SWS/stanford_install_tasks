@@ -1,6 +1,27 @@
 Stanford Installation Tasks
 --------------------------------------
 
+7.x-1.0-alpha4                     2018-01-24
+---------------------------------------------
+- Updated Get Help and Launch Checklist pages
+
+- For Stanford Sites:
+  - Fix bug where requester was not getting authmap set correctly
+  - Allow to specify the temporary files directory
+
+- For JSA:
+  - Updated BEANs
+  - Add redirect from "login" to "user"
+
+- For JSE:
+  - Update to CAPxConfig.php
+
+- For Jumpstart Lab:
+  - Hide WMD login block
+  - Add redirect from "login" to "user"
+  - Add entry in file_usage table for JS homepage file
+
+
 7.x-1.0-alpha3                     2017-01-20
 ---------------------------------------------
 - For JumpstartLab
