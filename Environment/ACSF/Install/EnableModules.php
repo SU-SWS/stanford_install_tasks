@@ -35,7 +35,7 @@ class EnableModules extends AbstractInstallTask {
       'paranoia',
       'stanford_ssp',
       'stanford_saml_block',
-      'syslog'
+      'syslog',
     );
   }
 
