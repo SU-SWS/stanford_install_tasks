@@ -6,6 +6,8 @@ engines:
   phpcodesniffer:
     enabled: true
     checks:
+      Controversial/CamelCaseParameterName:
+        enabled: false
       Drupal Commenting DocComment ShortNotCapital:
         enabled: false
       Drupal NamingConventions ValidFunctionName NotCamelCaps:
