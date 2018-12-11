@@ -6,8 +6,6 @@ engines:
   phpcodesniffer:
     enabled: true
     checks:
-      Controversial/CamelCaseParameterName:
-        enabled: false
       Drupal Commenting DocComment ShortNotCapital:
         enabled: false
       Drupal NamingConventions ValidFunctionName NotCamelCaps:
@@ -19,6 +17,9 @@ engines:
       standard: "Drupal"
   phpmd:
     enabled: true
+    checks:
+      Controversial/CamelCaseParameterName:
+        enabled: false
     config:
       file_extensions:
       - inc
