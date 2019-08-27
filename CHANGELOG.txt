@@ -1,6 +1,10 @@
 Stanford Installation Tasks
 --------------------------------------
 
+7.x-1.7                            2019-08-27
+---------------------------------------------
+- Changed find and replace string for file paths in body fields to load the resource from jsa-content now that it is hosted on acquia.
+
 7.x-1.6                            2019-01-11
 ---------------------------------------------
 - Changed sites.stanford.edu/jsa-content to jsa-content.stanford.edu to avoid redirects and issues with importing content.
